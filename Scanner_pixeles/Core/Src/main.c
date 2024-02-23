@@ -51,7 +51,7 @@ UART_HandleTypeDef huart1;
 uint8_t latch; //transición de estados signal
 uint16_t adc_lec; //almacena el raw del adc
 
-char msg[20] = ""; //bufer uart
+char msg[9]; //bufer uart
 uint8_t mcu_byte; //buffer de entrada de mcu externo
 
 /* USER CODE END PV */
@@ -137,21 +137,47 @@ int main(void)
 	  latch = 1;
 	  while(latch){
 
-		  if (!HAL_GPIO_ReadPin(scan_GPIO_Port, scan_Pin)) {
-			  //indicamos estamos estado de sensado
+		  if (!HAL_GPIO_ReadPin(scan_GPIO_Port, scan_Pin)) { //horizontal
 			  HAL_GPIO_WritePin(led_user_GPIO_Port, led_user_Pin, 0);
+			  HAL_Delay(250);
 
 			  //Sensamos
-			  HAL_ADC_PollForConversion(&hadc1, 1000);//msec
+			  HAL_ADC_Start(&hadc1);
+			  HAL_ADC_PollForConversion(&hadc1, 25);//msec
 			  adc_lec = HAL_ADC_GetValue(&hadc1);
 
+			  if (adc_lec > 3000){
+				  sprintf(msg,"%dh    \r\n",1);
+			  }
+			  if(adc_lec<2000){
+				  sprintf(msg,"%dh    \r\n",0);
+			  }
+
 			  //Mandamos sensado
-			  sprintf(msg,"%hu\n\r",adc_lec);
 			  HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
-			  HAL_Delay(750);
-		  }else {
-			HAL_GPIO_WritePin(led_user_GPIO_Port, led_user_Pin, 1);
-		}
+		  }
+
+		  if (!HAL_GPIO_ReadPin(next_line_GPIO_Port, next_line_Pin)) { //salto vertical
+			  HAL_GPIO_WritePin(led_user_GPIO_Port, led_user_Pin, 0);
+			  HAL_Delay(250);
+
+			  strcpy(msg,"v   \r\n");
+
+			  //Mandamos sensado
+			  HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+		  }
+
+		  if (!HAL_GPIO_ReadPin(fin_scan_GPIO_Port, fin_scan_Pin)) { //fin de la sesion
+			  HAL_GPIO_WritePin(led_user_GPIO_Port, led_user_Pin, 0);
+			  HAL_Delay(250);
+
+			  //Mandamos sensado
+			  strcpy(msg,"fin   \r\n");
+			  HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+		  }
+
+		  HAL_GPIO_WritePin(led_user_GPIO_Port, led_user_Pin, 1);
+
 
 	  }
 	  //AVANZA ESTADO
@@ -177,9 +203,8 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -190,7 +215,7 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
@@ -224,13 +249,13 @@ static void MX_ADC1_Init(void)
   hadc1.Instance = ADC1;
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc1.Init.ScanConvMode = ENABLE;
-  hadc1.Init.ContinuousConvMode = ENABLE;
+  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 3;
+  hadc1.Init.NbrOfConversion = 1;
   hadc1.Init.DMAContinuousRequests = DISABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
@@ -243,22 +268,6 @@ static void MX_ADC1_Init(void)
   sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = 1;
   sConfig.SamplingTime = ADC_SAMPLETIME_480CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Rank = 2;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Rank = 3;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -329,8 +338,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(led_user_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : next_line_Pin scan_Pin key_Pin */
-  GPIO_InitStruct.Pin = next_line_Pin|scan_Pin|key_Pin;
+  /*Configure GPIO pins : fin_scan_Pin scan_Pin next_line_Pin */
+  GPIO_InitStruct.Pin = fin_scan_Pin|scan_Pin|next_line_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -346,7 +355,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	//HAL_UART_Transmit(&huart1, &mcu_byte, 1, 250); //ECO
 
-	if (mcu_byte == 'n' || mcu_byte == 's') {
+	if (mcu_byte == 'n') {
 		latch = 0;//salimos del estado precente
 	}
 
