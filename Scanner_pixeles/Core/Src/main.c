@@ -51,9 +51,11 @@ UART_HandleTypeDef huart1;
 uint8_t latch; //transición de estados signal
 uint16_t adc_lec; //almacena el raw del adc
 
+uint16_t borde_negro = 0;
+uint16_t borde_blanco = 0;
+
 char msg[9]; //bufer uart
 uint8_t mcu_byte; //buffer de entrada de mcu externo
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,6 +107,19 @@ int main(void)
   HAL_ADC_Start(&hadc1);
   HAL_UART_Receive_IT(&huart1, &mcu_byte, 1);
 
+  //CALIBRAR
+  for (int i = 0; i < 10; ++i) {
+		  HAL_GPIO_TogglePin(led_user_GPIO_Port, led_user_Pin);
+		  HAL_Delay(250);
+
+		  HAL_ADC_Start(&hadc1);
+		  HAL_ADC_PollForConversion(&hadc1, 25);//msec
+		  borde_blanco += (HAL_ADC_GetValue(&hadc1)/10);
+	  }
+
+  borde_blanco += 1000;
+
+  borde_negro = borde_blanco + 500;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,13 +129,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
-	  //CALIBRAR
-	  for (int i = 0;i < 3; ++i){
-		  HAL_GPIO_TogglePin(led_user_GPIO_Port, led_user_Pin);
-		  HAL_Delay(750);
-	  }
-
 	  latch = 1;
 	  while(latch){//Eseramos que python acbe de crear sus cosas raras
 		  HAL_GPIO_TogglePin(led_user_GPIO_Port, led_user_Pin);
@@ -146,10 +154,10 @@ int main(void)
 			  HAL_ADC_PollForConversion(&hadc1, 25);//msec
 			  adc_lec = HAL_ADC_GetValue(&hadc1);
 
-			  if (adc_lec > 3000){
+			  if (adc_lec > borde_negro){
 				  sprintf(msg,"%dh    \r\n",1);
 			  }
-			  if(adc_lec<2000){
+			  if(adc_lec < borde_blanco){
 				  sprintf(msg,"%dh    \r\n",0);
 			  }
 

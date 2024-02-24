@@ -1,17 +1,10 @@
-00:32:48 **** Incremental Build of configuration Debug for project Scanner_pixeles ****
+01:46:39 **** Incremental Build of configuration Debug for project Scanner_pixeles ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Scanner_pixeles.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Scanner_pixeles\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Scanner_pixeles.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Scanner_pixeles.elf
- 
 arm-none-eabi-size  Scanner_pixeles.elf 
-arm-none-eabi-objdump -h -S Scanner_pixeles.elf  > "Scanner_pixeles.list"
    text	   data	    bss	    dec	    hex	filename
-  16336	    100	   2060	  18496	   4840	Scanner_pixeles.elf
+  16420	    100	   2068	  18588	   489c	Scanner_pixeles.elf
 Finished building: default.size.stdout
  
-Finished building: Scanner_pixeles.list
- 
 
-00:32:53 Build Finished. 0 errors, 0 warnings. (took 5s.645ms)
+01:46:39 Build Finished. 0 errors, 0 warnings. (took 255ms)
 

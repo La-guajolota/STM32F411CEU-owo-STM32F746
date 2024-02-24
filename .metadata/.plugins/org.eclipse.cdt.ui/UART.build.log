@@ -1,0 +1,24 @@
+15:09:14 **** Incremental Build of configuration Debug for project UART ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:41: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  111 |           sprintf(tx_buffer_uart,"%d\r\n",num);
+      |                                         ^
+../Core/Src/main.c:111:11: note: 'sprintf' output between 4 and 6 bytes into a destination of size 3
+  111 |           sprintf(tx_buffer_uart,"%d\r\n",num);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "UART.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\UART\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART.elf
+ 
+arm-none-eabi-size  UART.elf 
+arm-none-eabi-objdump -h -S UART.elf  > "UART.list"
+   text	   data	    bss	    dec	    hex	filename
+  15956	    100	   2180	  18236	   473c	UART.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART.list
+ 
+
+15:09:19 Build Finished. 0 errors, 1 warnings. (took 4s.528ms)
+
