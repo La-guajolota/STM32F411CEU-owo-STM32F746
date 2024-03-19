@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define green_GPIO_Port GPIOB
 #define red_Pin GPIO_PIN_14
 #define red_GPIO_Port GPIOB
+#define rele_Pin GPIO_PIN_15
+#define rele_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

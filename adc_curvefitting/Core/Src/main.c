@@ -33,7 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ps 254
+#define ps 200
 #define length 12
 /* USER CODE END PD */
 
@@ -109,6 +109,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	//Muestreamos
+	HAL_GPIO_WritePin(rele_GPIO_Port, rele_Pin, 0); //encendemos foco
 	for (int channel = 0; channel < 2; ++channel) {
 
 		HAL_ADC_Start(&hadc1);
@@ -123,25 +124,30 @@ int main(void)
 			default:
 				break;
 		}
+
+		HAL_Delay(250);
+		sampling++;
 	}
 
 	//mandamos por uart info
 	sprintf(msg,"%d %d\r\n",lm35,termistos);
 	HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
-	sampling++;
 	if (sampling >= ps ) { //Terminamos de tomar muestras
-		strcpy(msg,"fin\r\n");
+		strcpy(msg,"fin      \r\n");
 		HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
 		HAL_GPIO_WritePin(green_GPIO_Port,green_Pin,1);
 		HAL_GPIO_WritePin(red_GPIO_Port,red_Pin,0);
+
+		HAL_GPIO_WritePin(rele_GPIO_Port, rele_Pin, 1); //apagamos foco
+
+		HAL_Delay(60000); //se enfría
+		sampling = 0;
 	}else {
 		HAL_GPIO_WritePin(red_GPIO_Port,red_Pin,1);
 		HAL_GPIO_WritePin(green_GPIO_Port,green_Pin,0);
 	}
-
-	HAL_Delay(25);
   }
   /* USER CODE END 3 */
 }
@@ -300,7 +306,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, green_Pin|red_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, green_Pin|red_Pin|rele_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : green_Pin red_Pin */
   GPIO_InitStruct.Pin = green_Pin|red_Pin;
@@ -308,6 +314,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : rele_Pin */
+  GPIO_InitStruct.Pin = rele_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(rele_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

@@ -1,0 +1,16 @@
+09:29:40 **** Incremental Build of configuration Debug for project STM32F746G_DISCO ****
+make -j12 all 
+arm-none-eabi-g++ "E:/Sexto_sem/MCU_avanzados/adc_pantalla/TouchGFX/gui/src/model/Model.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DSTM32F746xx -DDEBUG -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32F7xx_HAL_Driver/Inc -I../../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Drivers/BSP/STM32746G-Discovery -I../../Drivers/BSP/Components/ft5336 -I../../LIBJPEG/App -I../../LIBJPEG/Target -I../../Middlewares/Third_Party/LibJPEG/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/gui/Model.d" -MT"Application/User/gui/Model.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/gui/Model.o"
+In file included from E:/Sexto_sem/MCU_avanzados/adc_pantalla/TouchGFX/gui/src/model/Model.cpp:2:
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:33: error: 'uint16_t' has not been declared
+   18 |     virtual void ADC_plot_Value(uint16_t val){
+      |                                 ^~~~~~~~
+E:/Sexto_sem/MCU_avanzados/adc_pantalla/TouchGFX/gui/src/model/Model.cpp: In member function 'void Model::tick()':
+E:/Sexto_sem/MCU_avanzados/adc_pantalla/TouchGFX/gui/src/model/Model.cpp:20:30: error: expected unqualified-id before '->' token
+   20 |                 ModelListener->ADC_plot_Value(adc_raw);
+      |                              ^~
+make: *** [Application/User/gui/subdir.mk:30: Application/User/gui/Model.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+09:29:47 Build Failed. 3 errors, 0 warnings. (took 7s.43ms)
+

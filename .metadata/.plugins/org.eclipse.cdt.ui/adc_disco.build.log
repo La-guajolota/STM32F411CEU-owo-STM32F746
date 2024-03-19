@@ -1,0 +1,10 @@
+15:31:01 **** Incremental Build of configuration Debug for project adc_disco ****
+make -j12 all 
+arm-none-eabi-size  adc_disco.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18452	    100	   2116	  20668	   50bc	adc_disco.elf
+Finished building: default.size.stdout
+ 
+
+15:31:01 Build Finished. 0 errors, 0 warnings. (took 225ms)
+
