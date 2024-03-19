@@ -1146,3 +1146,331 @@ arm-none-eabi-size  senos_triangulos_neuronal_net.elf
  164228	   4748	   2664	 171640	  29e78	senos_triangulos_neuronal_net.elf
 Finished building: default.size.stdout
  
+23:40:48 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:137:34: warning: unused variable 'res' [-Wunused-variable]
+  137 |                 EI_IMPULSE_ERROR res = run_classifier(&signal, &result, true);
+      |                                  ^~~
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 164068	   4748	   2664	 171480	  29dd8	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+23:50:32 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:148:22: error: 'triagulo' was not declared in this scope; did you mean 'triangulo'?
+  148 |           if (seno < triagulo) {
+      |                      ^~~~~~~~
+      |                      triangulo
+make: *** [Core/Src/subdir.mk:38: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:51:06 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 164084	   4748	   2672	 171504	  29df0	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+23:54:00 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 164100	   4748	   2672	 171520	  29e00	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+23:55:58 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 164100	   4748	   2672	 171520	  29e00	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:17:45 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:152:11: error: 'seno' was not declared in this scope
+  152 |           seno = result.classification[0].value;
+      |           ^~~~
+../Core/Src/main.cpp:153:11: error: 'triangulo' was not declared in this scope
+  153 |           triangulo = result.classification[1].value;
+      |           ^~~~~~~~~
+../Core/Src/main.cpp: In function 'void func(bool)':
+../Core/Src/main.cpp:775:27: error: 'w' was not declared in this scope
+  775 |                 y = a*sin(w*t*f) + 127;
+      |                           ^
+../Core/Src/main.cpp:766:15: warning: unused variable 'W' [-Wunused-variable]
+  766 |         float W = 2*3.1416; //velocidad angular
+      |               ^
+../Core/Src/main.cpp:777:32: warning: '
+   ' directive writing 1 byte into a region of size 0 [-Wformat-overflow=]
+  777 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                                ^~
+../Core/Src/main.cpp:777:24: note: 'sprintf' output between 3 and 5 bytes into a destination of size 1
+  777 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:18:51 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void func(bool)':
+../Core/Src/main.cpp:774:32: warning: '
+   ' directive writing 1 byte into a region of size 0 [-Wformat-overflow=]
+  774 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                                ^~
+../Core/Src/main.cpp:774:24: note: 'sprintf' output between 3 and 5 bytes into a destination of size 1
+  774 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 167996	   4748	   2664	 175408	  2ad30	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:21:41 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void func(bool)':
+../Core/Src/main.cpp:774:32: warning: '
+   ' directive writing 1 byte into a region of size 0 [-Wformat-overflow=]
+  774 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                                ^~
+../Core/Src/main.cpp:774:24: note: 'sprintf' output between 3 and 5 bytes into a destination of size 1
+  774 |                 sprintf(msg,"%d\n",(uint8_t)y);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168004	   4748	   2664	 175416	  2ad38	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:25:20 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168004	   4748	   2664	 175416	  2ad38	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:27:38 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 167972	   4748	   2664	 175384	  2ad18	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:30:25 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 167996	   4748	   2664	 175408	  2ad30	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:32:32 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 167996	   4748	   2664	 175408	  2ad30	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:37:14 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168060	   4748	   2664	 175472	  2ad70	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:40:28 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168052	   4748	   2664	 175464	  2ad68	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:48:45 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void func(bool)':
+../Core/Src/main.cpp:770:25: error: 'y' was not declared in this scope
+  770 |                         y = 255.0*t;
+      |                         ^
+../Core/Src/main.cpp:780:25: error: 'y' was not declared in this scope
+  780 |                         y = 255.0*t;
+      |                         ^
+make: *** [Core/Src/subdir.mk:38: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:49:27 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168324	   4748	   2664	 175736	  2ae78	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:52:56 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168316	  21412	   2664	 192392	  2ef88	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:54:46 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168316	  21412	   2664	 192392	  2ef88	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:58:07 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168316	  21412	   2664	 192392	  2ef88	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+00:59:53 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168316	  21412	   2664	 192392	  2ef88	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
+01:01:54 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+make: *** Deleting file 'senos_triangulos_neuronal_net.elf'
+make: unlink: senos_triangulos_neuronal_net.elf: Permission denied
+make: *** [makefile:152: senos_triangulos_neuronal_net.elf] Error 3
+Command canceled
+01:02:26 **** Build of configuration Debug for project senos_triangulos_neuronal_net ****
+make -j12 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: senos_triangulos_neuronal_net.elf
+ 
+arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
+arm-none-eabi-objdump -h -S senos_triangulos_neuronal_net.elf  > "senos_triangulos_neuronal_net.list"
+   text	   data	    bss	    dec	    hex	filename
+ 168332	  21412	   2664	 192408	  2ef98	senos_triangulos_neuronal_net.elf
+Finished building: default.size.stdout
+ 
+Finished building: senos_triangulos_neuronal_net.list
+ 
