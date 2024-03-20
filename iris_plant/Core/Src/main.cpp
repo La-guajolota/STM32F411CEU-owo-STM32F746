@@ -31,7 +31,7 @@
 using namespace ei;
 
 // paste the raw features here
-static float features[] = {6.7, 3.3, 5.7, 2.5};
+static float features[] = {0.0, 0.0, 0.0, 0.0};
 
 int get_feature_data(size_t offset, size_t length, float *out_ptr) {
     memcpy(out_ptr, features + offset, length * sizeof(float));
@@ -161,16 +161,15 @@ int main(void)
 			ei_printf("]\n\n\n");
 
 	//parceamos los features
-	if(HAL_OK == HAL_UART_Receive(&huart1,atributos,18,2000)){
-		ptr = strtok((char *)atributos, ", "); //dividimos en sub cadenas
+	if(HAL_OK == HAL_UART_Receive(&huart1,atributos,18,5000)){
+		ptr = strtok((char *)atributos, ","); //dividimos en sub cadenas
 		cont = 0;
 		while (ptr != NULL){
 			features[cont] = strtod(ptr, NULL);
-			ptr = strtok(NULL, ", "); // Pasamos a la siguiente subcadena
+			ptr = strtok(NULL, ","); // Pasamos a la siguiente subcadena
 			cont++;
 		}
 	}
-
 
   }
   /* USER CODE END 3 */
