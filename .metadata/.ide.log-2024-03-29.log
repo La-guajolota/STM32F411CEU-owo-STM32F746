@@ -1,0 +1,589 @@
+2024-03-30 01:07:43,438 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 772976912 Bytes (1073741824)
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 01:07:45,360 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 01:07:45,496 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:07:45,501 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 01:07:45,502 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 01:07:46,133 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 01:07:47,635 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 01:07:48,469 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 01:07:48,684 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 01:07:48,988 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 01:07:49,122 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 01:07:49,186 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 01:07:49,268 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 01:07:49,469 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 01:07:49,734 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 01:07:49,831 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 01:07:50,069 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 01:07:52,661 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 01:07:53,039 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 01:07:53,119 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 01:07:53,254 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 01:07:53,550 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 01:07:54,996 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 01:07:55,171 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 01:07:55,171 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 01:07:55,314 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 01:07:55,535 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 01:07:55,658 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 01:07:55,977 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 01:08:12,435 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 13731mS.
+2024-03-30 01:08:12,442 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 01:08:12,651 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 01:08:16,882 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 4440mS.
+2024-03-30 01:08:16,900 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 17mS.
+2024-03-30 01:08:16,925 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-03-30 01:09:00,919 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 756530088 Bytes (1073741824)
+2024-03-30 01:09:01,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 01:09:01,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 01:09:01,164 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 01:09:01,169 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 01:09:01,169 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:09:01,169 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:09:01,169 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 01:09:01,170 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 01:09:01,472 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 01:09:01,636 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 01:09:03,053 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 01:09:03,181 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 01:09:03,497 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 01:09:03,621 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 01:09:03,679 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 01:09:03,773 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 01:09:03,993 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 01:09:04,245 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 01:09:04,346 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 01:09:04,538 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 01:09:04,770 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 01:09:04,988 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 01:09:05,057 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 01:09:05,183 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 01:09:05,419 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 01:09:05,705 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 01:09:06,550 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 01:09:06,550 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 01:09:06,775 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 01:09:06,983 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 01:09:07,101 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 01:09:07,405 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 01:09:19,110 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 11178mS.
+2024-03-30 01:09:19,119 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 01:09:19,353 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 01:09:23,482 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 4363mS.
+2024-03-30 01:09:24,719 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1235mS.
+2024-03-30 01:09:24,738 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-03-30 01:10:06,130 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-03-30 01:10:43,338 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 880799160 Bytes (1073741824)
+2024-03-30 01:10:46,358 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 767502336 Bytes (1073741824)
+2024-03-30 01:10:46,694 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 790202504 Bytes (1073741824)
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 01:10:46,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 01:10:46,911 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 01:10:46,916 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 01:10:47,186 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 01:10:47,382 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 01:10:48,383 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 01:10:48,512 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 01:10:49,510 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 01:10:49,636 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 01:10:49,698 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 01:10:49,827 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 01:10:50,062 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 01:10:50,356 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 01:10:50,460 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 01:10:50,651 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 01:10:50,896 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 01:10:51,132 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 01:10:51,211 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 01:10:51,334 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 01:10:51,556 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 01:10:51,827 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 01:10:52,027 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 01:10:52,028 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 01:10:52,184 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 01:10:52,396 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 01:10:52,516 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 01:10:52,844 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 01:11:05,494 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 12044mS.
+2024-03-30 01:11:05,502 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 01:11:05,754 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 01:11:10,006 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 4504mS.
+2024-03-30 01:11:10,083 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 77mS.
+2024-03-30 01:11:10,142 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 40mS.
+2024-03-30 02:01:11,151 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 797204120 Bytes (1073741824)
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 02:01:11,339 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 02:01:12,041 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 02:01:12,046 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 02:01:12,046 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:01:12,046 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:01:12,046 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:01:12,046 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 02:01:12,046 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:01:12,046 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 02:01:12,047 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 02:01:12,747 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 02:01:13,573 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 02:01:13,887 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 02:01:14,022 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 02:01:14,335 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 02:01:14,485 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 02:01:14,549 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 02:01:14,645 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 02:01:14,865 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 02:01:15,132 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 02:01:15,236 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 02:01:15,420 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 02:01:15,662 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 02:01:15,878 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 02:01:15,950 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 02:01:16,082 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 02:01:16,292 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 02:01:16,542 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 02:01:16,716 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 02:01:16,717 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 02:01:16,875 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 02:01:17,768 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 02:01:17,887 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 02:01:18,200 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 02:01:27,310 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 8508mS.
+2024-03-30 02:01:27,324 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 02:01:27,541 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 02:01:31,128 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 3804mS.
+2024-03-30 02:01:31,144 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 16mS.
+2024-03-30 02:01:31,173 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-03-30 02:07:17,532 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-03-30 02:07:20,504 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 779051160 Bytes (1073741824)
+2024-03-30 02:07:23,330 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 802212768 Bytes (1073741824)
+2024-03-30 02:07:23,596 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 826231016 Bytes (1073741824)
+2024-03-30 02:07:23,779 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 02:07:23,780 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 02:07:23,791 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 02:07:23,795 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 02:07:23,795 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:07:23,795 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:07:23,795 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 02:07:23,796 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 02:07:24,065 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 02:07:24,218 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 02:07:24,431 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 02:07:24,584 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 02:07:24,905 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 02:07:25,044 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 02:07:25,097 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 02:07:25,182 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 02:07:25,433 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 02:07:25,689 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 02:07:25,786 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 02:07:25,988 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 02:07:26,237 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 02:07:27,682 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 02:07:27,766 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 02:07:27,881 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 02:07:28,110 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 02:07:28,425 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 02:07:28,599 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 02:07:28,602 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 02:07:28,749 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 02:07:28,952 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 02:07:29,519 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 02:07:30,063 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 02:07:38,546 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 7891mS.
+2024-03-30 02:07:38,552 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 02:07:38,758 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 02:07:43,011 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 4459mS.
+2024-03-30 02:07:43,036 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 24mS.
+2024-03-30 02:07:43,070 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-03-30 02:11:34,047 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,047 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,048 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,064 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,064 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,064 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,086 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,087 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:11:34,100 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,100 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-30 02:11:34,100 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-30 02:15:51,064 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 796865736 Bytes (1073741824)
+2024-03-30 02:15:51,260 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-30 02:15:51,261 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-30 02:15:51,931 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Initvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:327 - 	 sub Args: 
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Statevalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Statevalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-03-30 02:15:51,940 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-03-30 02:15:52,224 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp_save
+2024-03-30 02:15:52,417 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\license.tmp
+2024-03-30 02:15:52,604 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp_save
+2024-03-30 02:15:52,737 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\gpio.tmp
+2024-03-30 02:15:53,738 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp_save
+2024-03-30 02:15:53,891 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma.tmp
+2024-03-30 02:15:53,954 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp_save
+2024-03-30 02:15:54,038 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\dma_GV.tmp
+2024-03-30 02:15:54,291 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c_save
+2024-03-30 02:15:54,546 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_it.c
+2024-03-30 02:15:54,666 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h_save
+2024-03-30 02:15:54,835 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_it.h
+2024-03-30 02:15:55,060 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c_save
+2024-03-30 02:15:55,291 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\stm32f4xx_hal_msp.c
+2024-03-30 02:15:55,366 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp_save
+2024-03-30 02:15:55,493 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\MXTmpFiles\system.tmp
+2024-03-30 02:15:55,720 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-03-30 02:15:55,956 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\stm32f4xx_hal_conf.h
+2024-03-30 02:15:56,161 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-03-30 02:15:56,162 [WARN] CodeGenerator:3939 - IP not found : null
+2024-03-30 02:15:56,313 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h_save
+2024-03-30 02:15:56,505 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Inc\main.h
+2024-03-30 02:15:56,620 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c_save
+2024-03-30 02:15:57,984 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\Factor_Potencia\Core\Src\main.c
+2024-03-30 02:16:06,435 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 7835mS.
+2024-03-30 02:16:06,442 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-03-30 02:16:06,642 [INFO] ConfigFileManager:1495 - The Die is : DIE431
+2024-03-30 02:16:12,913 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 6471mS.
+2024-03-30 02:16:13,607 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 694mS.
+2024-03-30 02:16:13,621 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-03-30 02:30:25,133 [INFO] WebApp:354 - JxBrowser engine has been closed 
+2024-03-30 02:30:25,133 [INFO] WebAppUi:453 - JxBrowser engine has been closed 
+2024-03-30 02:30:25,133 [INFO] WebAppUi:490 - Close the Jxbrowser engine manually

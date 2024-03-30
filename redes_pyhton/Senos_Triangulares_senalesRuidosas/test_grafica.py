@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import random
 
 # Definir parámetros de la señal
-resolucion = 35535
+resolucion = 255
 ruiodo = int(0.05*resolucion)
 amplitud_seno = resolucion/2  # El valor máximo para una señal de 8 bits sería 127 para tener una amplitud de 255
 amplitud_diente = resolucion  # Ampliamos la amplitud del diente de sierra y la señal triangular
 
-frecuencia = 25 # Frecuencia de las señales
+frecuencia = 60 # Frecuencia de las señales
 
-duracion = 0.25  # Duración en segundos
-muestras_por_segundo = frecuencia*100  # Frecuencia de muestreo en Hz
+duracion = 1/60 # Duración en segundos
+muestras_por_segundo = frecuencia*200  # Frecuencia de muestreo en Hz
 
 # Generar valores de tiempo discreto
 muestras = int(duracion * muestras_por_segundo)
@@ -28,7 +28,7 @@ triangular_discreta = np.round(np.abs((t * frecuencia - np.floor(t * frecuencia 
 # Graficar señales con colores diferentes
 plt.scatter(radianes, seno_discreto, label='Señal Senoidal Discreta', color='blue', s=10)
 #plt.scatter(radianes, diente_de_sierra_discreta, label='Señal Diente de Sierra Discreta', color='red', s=10)
-plt.scatter(radianes, triangular_discreta, label='Señal Triangular Discreta', color='green', s=10)
+#plt.scatter(radianes, triangular_discreta, label='Señal Triangular Discreta', color='green', s=10)
 plt.xlabel('Radianes')
 plt.ylabel('Amplitud')
 plt.title('Señales Senoidal, Diente de Sierra y Triangular Discretas (Valores de 8 bits)')

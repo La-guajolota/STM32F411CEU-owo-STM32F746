@@ -1,12 +1,12 @@
-01:36:33 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
+02:06:28 **** Incremental Build of configuration Debug for project senos_triangulos_neuronal_net ****
 make -j12 all 
 arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/EdgeImpulse_sennal_16bits_2_MachineLearning/edgeimpulse/ -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.cpp: In function 'int main()':
-../Core/Src/main.cpp:141:7: warning: unused variable 'i' [-Wunused-variable]
-  141 |   int i = 0;
+../Core/Src/main.cpp:143:7: warning: unused variable 'i' [-Wunused-variable]
+  143 |   int i = 0;
       |       ^
-../Core/Src/main.cpp:142:9: warning: unused variable 't' [-Wunused-variable]
-  142 |   float t = 0.0;
+../Core/Src/main.cpp:144:9: warning: unused variable 't' [-Wunused-variable]
+  144 |   float t = 0.0;
       |         ^
 arm-none-eabi-g++ -o "senos_triangulos_neuronal_net.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\senos_triangulos_neuronal_net\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="senos_triangulos_neuronal_net.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: senos_triangulos_neuronal_net.elf
@@ -20,5 +20,5 @@ Finished building: default.size.stdout
 Finished building: senos_triangulos_neuronal_net.list
  
 
-01:38:00 Build Finished. 0 errors, 2 warnings. (took 1m:26s.929ms)
+02:08:02 Build Finished. 0 errors, 2 warnings. (took 1m:33s.403ms)
 
