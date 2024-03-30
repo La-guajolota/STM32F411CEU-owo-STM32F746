@@ -581,3 +581,318 @@ Finished building: default.size.stdout
  
 Finished building: Factor_Potencia.list
  
+12:39:02 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31016	    540	   2260	  33816	   8418	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+12:41:52 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  30888	    508	   2252	  33648	   8370	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+12:58:46 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  30896	    508	   2252	  33656	   8378	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+13:01:49 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  30848	    508	   2252	  33608	   8348	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+13:02:59 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  30896	    508	   2252	  33656	   8378	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+13:05:24 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31024	    540	   2260	  33824	   8420	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+13:08:12 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31740	    540	   2260	  34540	   86ec	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+13:36:23 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31676	    524	   2260	  34460	   869c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:00:17 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31628	    556	   2260	  34444	   868c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:01:41 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-size  Factor_Potencia.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31628	    556	   2260	  34444	   868c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+14:02:51 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31596	    556	   2260	  34412	   866c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:04:12 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31596	    508	   2260	  34364	   863c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:05:45 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31580	    508	   2260	  34348	   862c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:13:01 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:1: warning: data definition has no type or storage class
+   78 | n_char = strlen(msg);
+      | ^~~~~~
+../Core/Src/main.c:78:1: warning: type defaults to 'int' in declaration of 'n_char' [-Wimplicit-int]
+../Core/Src/main.c:78:10: error: initializer element is not constant
+   78 | n_char = strlen(msg);
+      |          ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:13:34 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:19: error: initializer element is not constant
+   78 | uint16_t n_char = strlen(msg);
+      |                   ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:15:34 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:18: error: initializer element is not constant
+   78 | uint16_t nchar = strlen(msg);
+      |                  ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:15:53 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31644	    524	   2260	  34428	   867c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:17:44 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31644	    524	   2260	  34428	   867c	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:24:44 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31620	    524	   2260	  34404	   8664	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:37:21 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:31: warning: too many arguments for format [-Wformat-extra-args]
+  143 |                   sprintf(msg,"PF:%.2f PA:%.1f phi:%.1f Vrms:%.1f Irms:%.1f Vrms:xxx.x V:xxx.x I:xxx.x \r\n\r\n",PF,PA,phi,Vrms,Irms,V,I);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31700	    556	   2260	  34516	   86d4	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:39:03 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:31: warning: too many arguments for format [-Wformat-extra-args]
+  143 |                   sprintf(msg,"PF:x.xx PA:xx.x phi:xxx.x Vrms:xx.x Irms:xx.x Vrms:xxx.x V:xxx.x I:xxx.x\r\n",PF,PA,phi,Vrms,Irms,V,I);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31692	    552	   2256	  34500	   86c4	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:40:40 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:99: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+  143 |                   sprintf(msg,"PF:%.2f PA:%.1f phi:%.1f Vrms:%.1f Irms:%.1f Vrms:%.1f V:%.1f I:%.1f \r\n",PF,PA,phi,Vrms,Irms,V,I);
+      |                                                                                                ~~~^
+      |                                                                                                   |
+      |                                                                                                   double
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31692	    552	   2256	  34500	   86c4	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 
+14:43:06 **** Incremental Build of configuration Debug for project Factor_Potencia ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Factor_Potencia.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\Factor_Potencia\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Factor_Potencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Factor_Potencia.elf
+ 
+arm-none-eabi-size  Factor_Potencia.elf 
+arm-none-eabi-objdump -h -S Factor_Potencia.elf  > "Factor_Potencia.list"
+   text	   data	    bss	    dec	    hex	filename
+  31684	    540	   2260	  34484	   86b4	Factor_Potencia.elf
+Finished building: default.size.stdout
+ 
+Finished building: Factor_Potencia.list
+ 

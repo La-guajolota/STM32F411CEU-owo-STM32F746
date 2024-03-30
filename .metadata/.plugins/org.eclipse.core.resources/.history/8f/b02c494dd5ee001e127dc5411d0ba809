@@ -73,8 +73,8 @@ bool EOC_adc = false; //bandera de fin de captura los datos del adc
 
 uint16_t samples = 0; //Contador de muestras
 
-char msg[] = "PF:x.xx PA:xx.x phi:xxx.x Vrms:xx.x Irms:xx.x V:xxx.x I:xxx.x\r\n"; //bufer para mandar al pc por uart
-//char msg2[] = "Vrms:xxx.x V:xxx.x I:xxx.x \r\n";
+char msg[] = "PF:x.xx PA:xx.x phi:xxx.x Vrms:xx.x Irms:xx.x\r\n"; //bufer para mandar al pc por uart
+char msg2[] = "Vrms:xxx.x V:xxx.x I:xxx.x \r\n";
 
 // [0]voltaje [1]corriente
 uint32_t adc_buffer[2] = {0};//buffer para lalectura del adc en dma
@@ -140,7 +140,7 @@ int main(void)
   while (1)
   {
 	  if (end_pf_cal) {
-		  sprintf(msg,"PF:%.2f PA:%.1f phi:%.1f Vrms:%.1f Irms:%.1f V:%.1f I:%.1f \r\n",PF,PA,phi,Vrms,Irms,V,I);
+		  sprintf(msg,"PF:%.2f PA:%.1f phi:%.1f Vrms:%.1f Irms:%.1f\r\n",PF,PA,phi,Vrms,Irms);
 		  //sprintf(msg2,"Vrms:%.1f V:%.1f I:%.1f \r\n",Vrms,V,I);
 		  HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
