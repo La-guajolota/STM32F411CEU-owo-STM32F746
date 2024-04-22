@@ -1,0 +1,9 @@
+../Core/Src/main.c:76:5:main	16	static
+../Core/Src/main.c:172:6:SystemClock_Config	88	static
+../Core/Src/main.c:218:13:MX_TIM1_Init	96	static
+../Core/Src/main.c:293:13:MX_TIM4_Init	56	static
+../Core/Src/main.c:342:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:410:9:convert	24	static
+../Core/Src/main.c:460:9:represent	24	static
+../Core/Src/main.c:473:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/main.c:483:6:Error_Handler	4	static,ignoring_inline_asm

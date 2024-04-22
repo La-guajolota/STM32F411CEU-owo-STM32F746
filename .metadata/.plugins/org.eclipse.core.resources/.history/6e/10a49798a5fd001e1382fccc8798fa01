@@ -1,0 +1,34 @@
+/*
+ * NEO6MV2.h
+ *
+ *  Created on: Apr 18, 2024
+ *      Author: Adrián Silva Palafox
+ */
+
+#ifndef INC_NEO6MV2_H_
+#define INC_NEO6MV2_H_
+
+/*
+ * INCLUDES
+ */
+
+//Nativas de SMT32
+#include "stm32f1xx.h"
+
+
+//Nativas de C
+
+
+/*
+ * REGISTERS
+ */
+
+/*
+ * CONSTANTS
+ */
+
+/*
+ * FUNCTIONS
+ */
+
+#endif /* INC_NEO6MV2_H_ */

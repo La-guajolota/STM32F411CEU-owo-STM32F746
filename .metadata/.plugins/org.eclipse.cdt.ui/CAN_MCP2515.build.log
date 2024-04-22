@@ -1,0 +1,10 @@
+11:47:06 **** Incremental Build of configuration Debug for project CAN_MCP2515 ****
+make -j12 all 
+arm-none-eabi-size  CAN_MCP2515.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13984	     56	   1776	  15816	   3dc8	CAN_MCP2515.elf
+Finished building: default.size.stdout
+ 
+
+11:47:06 Build Finished. 0 errors, 0 warnings. (took 260ms)
+

@@ -1,0 +1,54 @@
+20:19:39 **** Incremental Build of configuration Debug for project medidor_metereologico ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:197:50: warning: pointer targets in passing argument 2 of 'Copy_upto' differ in signedness [-Wpointer-sign]
+  197 |                                   Copy_upto("*", GGA);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/uartRingBuffer.h:76:36: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   76 | int Copy_upto (char *string, char *buffertocopyinto);
+      |                              ~~~~~~^~~~~~~~~~~~~~~~
+../Core/Src/main.c:198:49: warning: pointer targets in passing argument 1 of 'decodeGGA' differ in signedness [-Wpointer-sign]
+  198 |                                   if (decodeGGA(GGA, &gpsData.ggastruct) == 0) flagGGA = 2;  // 2 indicates the data is valid
+      |                                                 ^~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:31:
+../Core/Inc/NMEA.h:56:22: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   56 | int decodeGGA (char *GGAbuffer, GGASTRUCT *gga);
+      |                ~~~~~~^~~~~~~~~
+../Core/Src/main.c:207:50: warning: pointer targets in passing argument 2 of 'Copy_upto' differ in signedness [-Wpointer-sign]
+  207 |                                   Copy_upto("*", RMC);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/uartRingBuffer.h:76:36: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   76 | int Copy_upto (char *string, char *buffertocopyinto);
+      |                              ~~~~~~^~~~~~~~~~~~~~~~
+../Core/Src/main.c:208:49: warning: pointer targets in passing argument 1 of 'decodeRMC' differ in signedness [-Wpointer-sign]
+  208 |                                   if (decodeRMC(RMC, &gpsData.rmcstruct) == 0) flagRMC = 2;  // 2 indicates the data is valid
+      |                                                 ^~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:31:
+../Core/Inc/NMEA.h:58:22: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   58 | int decodeRMC (char *RMCbuffer, RMCSTRUCT *rmc);
+      |                ~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "medidor_metereologico.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Sexto_sem\MCU_avanzados\medidor_metereologico\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="medidor_metereologico.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: medidor_metereologico.elf
+ 
+arm-none-eabi-size  medidor_metereologico.elf 
+arm-none-eabi-objdump -h -S medidor_metereologico.elf  > "medidor_metereologico.list"
+   text	   data	    bss	    dec	    hex	filename
+  38024	    504	   3552	  42080	   a460	medidor_metereologico.elf
+Finished building: default.size.stdout
+ 
+Finished building: medidor_metereologico.list
+ 
+
+20:19:48 Build Finished. 0 errors, 4 warnings. (took 8s.927ms)
+

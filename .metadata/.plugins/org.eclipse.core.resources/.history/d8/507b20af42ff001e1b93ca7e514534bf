@@ -1,0 +1,13 @@
+/*
+ * DHT11.h
+ *
+ *  Created on: Apr 19, 2024
+ *      Author: adria
+ */
+
+#ifndef INC_DHT11_H_
+#define INC_DHT11_H_
+
+
+
+#endif /* INC_DHT11_H_ */

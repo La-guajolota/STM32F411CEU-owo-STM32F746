@@ -1,0 +1,120 @@
+2024-04-06 00:15:04,914 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 800554824 Bytes (1073741824)
+2024-04-06 00:15:07,021 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 773251240 Bytes (1073741824)
+2024-04-06 00:15:07,323 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 836882888 Bytes (1073741824)
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-06 00:15:08,197 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-04-06 00:15:08,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-06 00:15:08,213 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-04-06 00:15:08,502 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp_save
+2024-04-06 00:15:08,655 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp
+2024-04-06 00:15:08,968 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp_save
+2024-04-06 00:15:09,175 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp
+2024-04-06 00:15:10,570 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp_save
+2024-04-06 00:15:10,702 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp
+2024-04-06 00:15:10,893 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c_save
+2024-04-06 00:15:11,119 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c
+2024-04-06 00:15:11,221 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h_save
+2024-04-06 00:15:11,407 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h
+2024-04-06 00:15:11,645 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c_save
+2024-04-06 00:15:11,868 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c
+2024-04-06 00:15:11,966 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp_save
+2024-04-06 00:15:12,085 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp
+2024-04-06 00:15:12,311 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-04-06 00:15:13,271 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h
+2024-04-06 00:15:13,579 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h_save
+2024-04-06 00:15:13,810 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h
+2024-04-06 00:15:13,926 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c_save
+2024-04-06 00:15:14,336 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c
+2024-04-06 00:15:25,205 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 10380mS.
+2024-04-06 00:15:25,216 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-04-06 00:15:25,402 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-04-06 00:15:28,896 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 3680mS.
+2024-04-06 00:15:28,914 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 17mS.
+2024-04-06 00:15:28,966 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-04-06 01:12:26,865 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:12:33,791 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:12:35,743 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:12:53,520 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 796560480 Bytes (1073741824)
+2024-04-06 01:12:55,390 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 822248544 Bytes (1073741824)
+2024-04-06 01:12:55,683 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 891454560 Bytes (1073741824)
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-06 01:12:55,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-04-06 01:12:55,919 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-06 01:12:55,930 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-04-06 01:12:56,221 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp_save
+2024-04-06 01:12:56,401 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp
+2024-04-06 01:12:56,699 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp_save
+2024-04-06 01:12:56,866 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp
+2024-04-06 01:12:57,728 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp_save
+2024-04-06 01:12:57,854 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp
+2024-04-06 01:12:58,065 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c_save
+2024-04-06 01:12:58,276 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c
+2024-04-06 01:12:58,369 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h_save
+2024-04-06 01:12:58,552 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h
+2024-04-06 01:12:58,769 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c_save
+2024-04-06 01:12:58,986 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c
+2024-04-06 01:12:59,063 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp_save
+2024-04-06 01:12:59,186 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp
+2024-04-06 01:12:59,395 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-04-06 01:12:59,650 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h
+2024-04-06 01:12:59,916 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h_save
+2024-04-06 01:13:00,130 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h
+2024-04-06 01:13:00,243 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c_save
+2024-04-06 01:13:00,579 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c
+2024-04-06 01:13:08,876 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 7770mS.
+2024-04-06 01:13:08,888 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-04-06 01:13:09,077 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-04-06 01:13:19,882 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 10994mS.
+2024-04-06 01:13:19,905 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 22mS.
+2024-04-06 01:13:19,941 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-04-06 01:16:26,788 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:36,470 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:37,666 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:39,027 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:45,384 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:47,305 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:53,160 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-06 01:16:58,482 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 819333488 Bytes (1073741824)
+2024-04-06 01:16:58,850 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 780910528 Bytes (1073741824)
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-06 01:16:59,095 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-04-06 01:16:59,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-06 01:16:59,790 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-04-06 01:17:00,064 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp_save
+2024-04-06 01:17:00,216 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\license.tmp
+2024-04-06 01:17:00,527 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp_save
+2024-04-06 01:17:00,689 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\gpio.tmp
+2024-04-06 01:17:01,541 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp_save
+2024-04-06 01:17:01,671 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\cortex.tmp
+2024-04-06 01:17:01,879 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c_save
+2024-04-06 01:17:02,095 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_it.c
+2024-04-06 01:17:02,183 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h_save
+2024-04-06 01:17:02,348 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_it.h
+2024-04-06 01:17:02,568 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c_save
+2024-04-06 01:17:02,816 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\stm32f7xx_hal_msp.c
+2024-04-06 01:17:02,892 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp_save
+2024-04-06 01:17:03,024 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\MXTmpFiles\system.tmp
+2024-04-06 01:17:03,227 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-04-06 01:17:03,462 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\stm32f7xx_hal_conf.h
+2024-04-06 01:17:03,743 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h_save
+2024-04-06 01:17:03,956 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Inc\main.h
+2024-04-06 01:17:04,067 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c_save
+2024-04-06 01:17:04,389 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\sensores_melchor\Core\Src\main.c
+2024-04-06 01:17:13,308 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 8399mS.
+2024-04-06 01:17:13,318 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-04-06 01:17:13,495 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-04-06 01:17:18,561 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 5243mS.
+2024-04-06 01:17:18,583 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 21mS.
+2024-04-06 01:17:18,616 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.

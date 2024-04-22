@@ -57,10 +57,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define voltaje_digital_Pin GPIO_PIN_5
+#define voltaje_digital_GPIO_Port GPIOA
 #define voltaje_Pin GPIO_PIN_0
-#define voltaje_GPIO_Port GPIOA
+#define voltaje_GPIO_Port GPIOB
 #define corriente_Pin GPIO_PIN_1
-#define corriente_GPIO_Port GPIOA
+#define corriente_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
