@@ -1211,7 +1211,7 @@ int main(void)
  8000d6a:	2b01      	cmp	r3, #1
  8000d6c:	d00f      	beq.n	8000d8e <main+0x76>
 
-			adc_sar = 123;
+			adc_sar = 00;
 
 			break;
 		default:
@@ -1253,8 +1253,8 @@ int main(void)
  8000db4:	701a      	strb	r2, [r3, #0]
 			break;
  8000db6:	e004      	b.n	8000dc2 <main+0xaa>
-			adc_sar = 123;
- 8000db8:	237b      	movs	r3, #123	; 0x7b
+			adc_sar = 00;
+ 8000db8:	2300      	movs	r3, #0
  8000dba:	71fb      	strb	r3, [r7, #7]
 			break;
  8000dbc:	e002      	b.n	8000dc4 <main+0xac>
@@ -2078,7 +2078,7 @@ uint8_t represent(uint8_t num){
  80012a4:	af00      	add	r7, sp, #0
  80012a6:	4603      	mov	r3, r0
  80012a8:	71fb      	strb	r3, [r7, #7]
-	float volt = ((float)num) * (3.3/254.0); //voltaje leido
+	float volt = ((float)num) * (3.0/254.0); //voltaje leido
  80012aa:	79fb      	ldrb	r3, [r7, #7]
  80012ac:	ee07 3a90 	vmov	s15, r3
  80012b0:	eef8 7a67 	vcvt.f32.u32	s15, s15
@@ -2122,8 +2122,8 @@ uint8_t represent(uint8_t num){
  8001312:	46bd      	mov	sp, r7
  8001314:	bd80      	pop	{r7, pc}
  8001316:	bf00      	nop
- 8001318:	a1a9b9da 	.word	0xa1a9b9da
- 800131c:	3f8a9b9d 	.word	0x3f8a9b9d
+ 8001318:	c183060c 	.word	0xc183060c
+ 800131c:	3f883060 	.word	0x3f883060
 
 08001320 <HAL_GPIO_EXTI_Callback>:
 

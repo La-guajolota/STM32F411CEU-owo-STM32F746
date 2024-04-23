@@ -33,7 +33,6 @@ void Set_Pin_Output(GPIO_TypeDef *GPIO,uint16_t GPIO_pin){
 	HAL_GPIO_Init(DATA_PORT, &GPIO_InitStruct);
 }
 
-
 void Set_Pin_Input(GPIO_TypeDef *GPIO, uint16_t GPIO_pin){
 
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -44,6 +43,11 @@ void Set_Pin_Input(GPIO_TypeDef *GPIO, uint16_t GPIO_pin){
 	HAL_GPIO_Init(DATA_PORT, &GPIO_InitStruct);
 }
 
+
+/*
+ * DHT11
+ */
+
 void DHT11_init(void){
 	Set_Pin_Output (DATA_PORT, DATA_PIN);  // set the pin as output
 	HAL_GPIO_WritePin (DATA_PORT, DATA_PIN, 0);   // pull the pin low
@@ -51,7 +55,7 @@ void DHT11_init(void){
 	Set_Pin_Input(DATA_PORT, DATA_PIN);    // set as input
 }
 
-uint8_t Check_Response (void)
+uint8_t DHT11_Check_Response (void)
 {
 	uint8_t Response = 0;
 	delay (40);
@@ -83,3 +87,54 @@ uint8_t DHT11_Read (void)
 	return i;
 }
 
+/*
+ * DHT22
+ */
+
+void DHT22_init (void)
+{
+	Set_Pin_Output(DATA_PORT, DATA_PIN); // set the pin as output
+	HAL_GPIO_WritePin (DATA_PORT, DATA_PIN, 0);   // pull the pin low
+	delay(1200);   // wait for > 1ms
+
+	HAL_GPIO_WritePin (DATA_PORT, DATA_PIN, 1);   // pull the pin high
+	delay (20);   // wait for 30us
+
+	Set_Pin_Input(DATA_PORT, DATA_PIN);   // set as input
+}
+
+uint8_t DHT22_Check_Response (void)
+{
+	Set_Pin_Input(DATA_PORT, DATA_PIN);   // set as input
+	uint8_t Response = 0;
+	delay (40);  // wait for 40us
+	if (!(HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN))) // if the pin is low
+	{
+		delay (80);   // wait for 80us
+
+		if ((HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN))) Response = 1;  // if the pin is high, response is ok
+		else Response = -1;
+	}
+
+	while ((HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN)));   // wait for the pin to go low
+	return Response;
+}
+
+uint8_t DHT22_Read (void)
+{
+	uint8_t i,j;
+	for (j=0;j<8;j++)
+	{
+		while (!(HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN)));   // wait for the pin to go high
+		delay (40);   // wait for 40 us
+
+		if (!(HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN)))   // if the pin is low
+		{
+			i&= ~(1<<(7-j));   // write 0
+		}
+		else i|= (1<<(7-j));  // if the pin is high, write 1
+		while ((HAL_GPIO_ReadPin (DATA_PORT, DATA_PIN)));  // wait for the pin to go low
+	}
+
+	return i;
+}

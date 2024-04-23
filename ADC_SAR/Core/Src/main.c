@@ -458,7 +458,7 @@ uint8_t convert(){
 }
 
 uint8_t represent(uint8_t num){
-	float volt = ((float)num) * (3.3/254.0); //voltaje leido
+	float volt = ((float)num) * (3.0/254.0); //voltaje leido
 	volt = ((float)(int)(volt*10))/10; //ahora solo tiene un decimal
 
 	/*

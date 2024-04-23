@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="LCD_Write("/>
+		<item key="selection" value="DATA_PIN"/>
 		<list key="findhistory">
+			<item value="DHT22_PIN"/>
+			<item value="DHT22_PORT"/>
+			<item value="DTH22_PORT"/>
 			<item value="LCD_Write("/>
 			<item value="LCD_Write"/>
 			<item value="LCD_Wr"/>
@@ -19,6 +22,8 @@
 			<item value="private "/>
 		</list>
 		<list key="replacehistory">
+			<item value="DATA_PIN"/>
+			<item value="DATA_PORT"/>
 			<item value="HAL_Delay"/>
 		</list>
 	</section>

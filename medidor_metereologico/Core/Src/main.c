@@ -25,7 +25,11 @@
 /*
  * Del usuario
  */
-#include "LCD.h"
+
+//#include "LCD.h" //NO I2C
+#include "ssd1306.h"
+#include "fonts.h"
+#include "test.h"
 #include "DHT11.h"
 #include "uartRingBuffer.h"
 #include "NMEA.h"
@@ -44,7 +48,7 @@
  * datos a mostrar en lcd
  */
 struct{
-	uint8_t humedad; // 0-100%
+	uint8_t humedad[2]; // 0-100%
 	uint8_t light; //niveles de luz
 }sensores;
 
@@ -63,10 +67,14 @@ struct{
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 
+I2C_HandleTypeDef hi2c2;
+
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
+
+PCD_HandleTypeDef hpcd_USB_FS;
 
 /* USER CODE BEGIN PV */
 
@@ -79,6 +87,8 @@ static void MX_USART1_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_USB_PCD_Init(void);
+static void MX_I2C2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -138,6 +148,8 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+  MX_USB_PCD_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 
   /*
@@ -156,8 +168,9 @@ int main(void)
 
   /*
    * SALUDO AL USUARIO
-   * DEBUG DEL LCD
    */
+
+  /*
   LCD_PrintString("Hail Lechuga");
   HAL_Delay(1000);
   LCD_ClearDisplay();
@@ -166,13 +179,21 @@ int main(void)
   LCD_PrintString("GUAJOLOTERA");
   HAL_Delay(1000);
   LCD_ClearDisplay();
+   */
+
+  SSD1306_Init ();
+  SSD1306_GotoXY (10,10);
+  SSD1306_Puts ("Hail Lechuga", &Font_11x18, 1);
+  SSD1306_GotoXY (20, 20);
+  SSD1306_Puts ("COOP de lechugas GUAJOLOTERA!!", &Font_11x18, 1);
+  SSD1306_UpdateScreen();
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  LCD_Start();
+  //LCD_Start();
   Ringbuf_init();
   HAL_Delay(500);
 
@@ -211,6 +232,7 @@ int main(void)
 
 			  if ((flagGGA == 2) | (flagRMC == 2))
 			  {
+				  //LCD 2x16 I2C
 				  /*
 				  lcd_put_cur(0, 0);
 				  sprintf (lcdBuffer, "%02d:%02d:%02d, %02d%02d%02d", gpsData.ggastruct.tim.hour, \
@@ -226,6 +248,8 @@ int main(void)
 
 				  HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
 
+				  //LCD 2x16
+				  /*
 				  LCD_Position(0, 0);
 				  sprintf (msg, "%02d / %02d / %02d",gpsData.rmcstruct.date.Day, \
 				  						  	  gpsData.rmcstruct.date.Mon, gpsData.rmcstruct.date.Yr);
@@ -234,6 +258,10 @@ int main(void)
 				  sprintf (msg,"%.2f%c, %.2f%c  ", gpsData.ggastruct.lcation.latitude, gpsData.ggastruct.lcation.NS,\
 						  	  	  	  	  	  	  gpsData.ggastruct.lcation.longitude, gpsData.ggastruct.lcation.EW);
 				  LCD_PrintString(msg);
+				  */
+
+				  //OLED
+
 			  }
 
 			  else if ((flagGGA == 1) | (flagRMC == 1))
@@ -241,6 +269,7 @@ int main(void)
 				  // Instead of clearing the display, it's better if we print spaces.
 				  // This will avoid the "refreshing" part
 
+				  //LCD 2x16 I2C
 				  /*
 				  lcd_put_cur(0, 0);
 				  lcd_send_string("   NO FIX YET   ");
@@ -248,10 +277,15 @@ int main(void)
 				  lcd_send_string("   Please wait  ");
 				  */
 
+				  //LCD 2x16
+				  /*
 				  LCD_Position(0,0);
 				  LCD_PrintString("No se encuentra ");
 				  LCD_Position(1,0);
 				  LCD_PrintString("satelite...     ");
+				   */
+
+				  //OLED
 
 			  }
 
@@ -265,16 +299,25 @@ int main(void)
 				  // You are here means the VCC is less, or maybe there is some connection issue
 				  // Check the VCC, also you can try connecting to the external 5V
 
+				  //LCD 2x16 I2C
 				  /*
 				  lcd_put_cur(0, 0);
 				  lcd_send_string("    VCC Issue   ");
 				  lcd_put_cur(1, 0);
 				  lcd_send_string("Check Connection");
 				  */
+
+				  //LCD 2x16
+				  /*
 				  LCD_Position(0,0);
 				  LCD_PrintString("    VCC  bajo   ");
 				  LCD_Position(1,0);
 				  LCD_PrintString("Checar conexion ");
+				  */
+
+				  //OLED
+
+
 			  }
 
 	  }
@@ -283,20 +326,40 @@ int main(void)
 		  //Cantidad de luz
 		  sensores.light = HAL_ADC_GetValue(&hadc1);
 
+		  //LCD
+		  /*
 		  LCD_Position(0,0);
 		  LCD_PrintString("LUMINICIDAD:    ");
 		  sprintf(msg,"%d           ",sensores.light);
 		  LCD_Position(1,0);
 		  LCD_PrintString(msg);
+		  */
+
+		  //OLED
+
 	  }
 	  if (std == 2)
 	  {
 		  //Nivel de humedad
+
+		  DHT22_init();
+		  DHT22_Check_Response();
+		  sensores.humedad[0] = DHT22_Read(); //BYTE 0
+		  sensores.humedad[1] = DHT22_Read (); //BYTE 1
+		  HAL_Delay(2000); // Depeende del dampling permitido
+
+		  //LCD
+		  /*
 		  LCD_Position(0,0);
 		  LCD_PrintString("HUMEDAD         ");
-		  sprintf(msg,"%d           ",sensores.humedad);
+		  sprintf(msg,"%0.2f       ",(float)(((sensores.humedad[0]<<8)|sensores.humedad[1])/10.0));
 		  LCD_Position(1,0);
 		  LCD_PrintString(msg);
+		  */
+
+		  //OLED
+
+
 	  }
 
   }
@@ -341,8 +404,9 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC|RCC_PERIPHCLK_USB;
   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -393,6 +457,40 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
+
+}
+
+/**
+  * @brief I2C2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C2_Init(void)
+{
+
+  /* USER CODE BEGIN I2C2_Init 0 */
+
+  /* USER CODE END I2C2_Init 0 */
+
+  /* USER CODE BEGIN I2C2_Init 1 */
+
+  /* USER CODE END I2C2_Init 1 */
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.ClockSpeed = 400000;
+  hi2c2.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C2_Init 2 */
+
+  /* USER CODE END I2C2_Init 2 */
 
 }
 
@@ -525,6 +623,37 @@ static void MX_USART1_UART_Init(void)
 }
 
 /**
+  * @brief USB Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USB_PCD_Init(void)
+{
+
+  /* USER CODE BEGIN USB_Init 0 */
+
+  /* USER CODE END USB_Init 0 */
+
+  /* USER CODE BEGIN USB_Init 1 */
+
+  /* USER CODE END USB_Init 1 */
+  hpcd_USB_FS.Instance = USB;
+  hpcd_USB_FS.Init.dev_endpoints = 8;
+  hpcd_USB_FS.Init.speed = PCD_SPEED_FULL;
+  hpcd_USB_FS.Init.low_power_enable = DISABLE;
+  hpcd_USB_FS.Init.lpm_enable = DISABLE;
+  hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
+  if (HAL_PCD_Init(&hpcd_USB_FS) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USB_Init 2 */
+
+  /* USER CODE END USB_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -545,8 +674,11 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, DHT11_DATA_Pin|D4_Pin|D5_Pin|D6_Pin
-                          |D7_Pin|RS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(DHT11_DATA_GPIO_Port, DHT11_DATA_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, D4_Pin|D5_Pin|D6_Pin|D7_Pin
+                          |RS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_RESET);
