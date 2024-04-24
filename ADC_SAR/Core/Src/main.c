@@ -41,8 +41,12 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim4;
+
+UART_HandleTypeDef huart6;
 
 /* USER CODE BEGIN PV */
 
@@ -53,6 +57,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM4_Init(void);
+static void MX_ADC1_Init(void);
+static void MX_USART6_UART_Init(void);
 /* USER CODE BEGIN PFP */
 uint8_t convert(); //Realiza el algoritmo de ADC SAR
 uint8_t represent(uint8_t num);
@@ -66,6 +72,8 @@ uint8_t represent(uint8_t num);
  * modo interrupcion del adc
  */
 bool flag = false;
+//valor leido del adc
+uint8_t adc_sar = 0;
 
 /* USER CODE END 0 */
 
@@ -99,17 +107,23 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   MX_TIM4_Init();
+  MX_ADC1_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  //valor leido del adc
-  uint8_t adc_sar = 0;
-  //Contador del encoder
-  uint8_t count = 2;
+    //Contador del encoder
+    uint8_t count = 0;
+    //valor real del dac del mcu
+    volatile uint8_t adc_real = 0;
+    //valor medido en 8bits del adc implementado
+    uint8_t adc_med = 0;
+    //mag por uart
+    uint8_t msg[10] = {0};
 
-  //incializamos el pwm
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  //incializamos el encoder
-  HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
+    //incializamos el pwm
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    //incializamos el encoder
+    HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
 
   /* USER CODE END 2 */
 
@@ -135,26 +149,41 @@ int main(void)
 	 count = TIM4->CNT/4;
 
 	 //Estados del adc
-	 switch (count) {
+	switch (count) {
 		case 0://Modo continuo
 
 			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,SET);
-			adc_sar = represent(convert());
+			adc_med = convert();
+			adc_sar = represent(adc_med);
+
+			HAL_ADC_Start(&hadc1);
+			if(HAL_ADC_PollForConversion(&hadc1, 100) == HAL_OK){
+				adc_real = HAL_ADC_GetValue(&hadc1);//adc del micro
+				sprintf((char*)msg,"%d %d \r\n",adc_real,adc_med);
+				HAL_UART_Transmit(&huart6,msg, 10, 100);
+			}
 
 			break;
 		case 1://Modo por interrupcion
 
-			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-
+			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,RESET);
 			if (flag) {
-				adc_sar = represent(convert());
+				adc_med = convert();
+				adc_sar = represent(adc_med);
+				HAL_ADC_Start(&hadc1);
+				if(HAL_ADC_PollForConversion(&hadc1, 100) == HAL_OK){
+					adc_real = HAL_ADC_GetValue(&hadc1);//adc del micro
+					sprintf((char*)msg,"%d %d \r\n",adc_real,adc_med);
+					HAL_UART_Transmit(&huart6,msg, 10, 100);
+				}
+
 				flag = false;
 			}
 
 			break;
 		case 2://idle No chambea
 
-			adc_sar = 00;
+			adc_sar = 99;
 
 			break;
 		default:
@@ -208,6 +237,58 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+  hadc1.Init.Resolution = ADC_RESOLUTION_8B;
+  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Rank = 1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -331,6 +412,39 @@ static void MX_TIM4_Init(void)
   /* USER CODE BEGIN TIM4_Init 2 */
 
   /* USER CODE END TIM4_Init 2 */
+
+}
+
+/**
+  * @brief USART6 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART6_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART6_Init 0 */
+
+  /* USER CODE END USART6_Init 0 */
+
+  /* USER CODE BEGIN USART6_Init 1 */
+
+  /* USER CODE END USART6_Init 1 */
+  huart6.Instance = USART6;
+  huart6.Init.BaudRate = 9600;
+  huart6.Init.WordLength = UART_WORDLENGTH_8B;
+  huart6.Init.StopBits = UART_STOPBITS_1;
+  huart6.Init.Parity = UART_PARITY_NONE;
+  huart6.Init.Mode = UART_MODE_TX;
+  huart6.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart6.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart6) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART6_Init 2 */
+
+  /* USER CODE END USART6_Init 2 */
 
 }
 
