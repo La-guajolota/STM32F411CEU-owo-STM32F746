@@ -9,43 +9,43 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .rodata       000047c0  0800f030  0800f030  0001f030  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  080137f0  080137f0  000306c8  2**0
+  3 .ARM.extab    00000000  080137f0  080137f0  000306b8  2**0
                   CONTENTS
   4 .ARM          00000008  080137f0  080137f0  000237f0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  080137f8  080137f8  000306c8  2**0
+  5 .preinit_array 00000000  080137f8  080137f8  000306b8  2**0
                   CONTENTS, ALLOC, LOAD, DATA
   6 .init_array   0000000c  080137f8  080137f8  000237f8  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   7 .fini_array   00000008  08013804  08013804  00023804  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         000006c8  20000000  0801380c  00030000  2**3
+  8 .data         000006b8  20000000  0801380c  00030000  2**3
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          0000047c  200006c8  08013ed4  000306c8  2**2
+  9 .bss          0000048c  200006b8  08013ec4  000306b8  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  20000b44  08013ed4  00030b44  2**0
+ 10 ._user_heap_stack 00000604  20000b44  08013ec4  00030b44  2**0
                   ALLOC
- 11 .ARM.attributes 00000030  00000000  00000000  000306c8  2**0
+ 11 .ARM.attributes 00000030  00000000  00000000  000306b8  2**0
                   CONTENTS, READONLY
- 12 .comment      00000043  00000000  00000000  000306f8  2**0
+ 12 .comment      00000043  00000000  00000000  000306e8  2**0
                   CONTENTS, READONLY
- 13 .debug_info   0016d254  00000000  00000000  0003073b  2**0
+ 13 .debug_info   0016d254  00000000  00000000  0003072b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 0000f7ab  00000000  00000000  0019d98f  2**0
+ 14 .debug_abbrev 0000f7ab  00000000  00000000  0019d97f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00004860  00000000  00000000  001ad140  2**3
+ 15 .debug_aranges 00004860  00000000  00000000  001ad130  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 00003820  00000000  00000000  001b19a0  2**0
+ 16 .debug_rnglists 00003820  00000000  00000000  001b1990  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  00038908  00000000  00000000  001b51c0  2**0
+ 17 .debug_macro  00038908  00000000  00000000  001b51b0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0005255a  00000000  00000000  001edac8  2**0
+ 18 .debug_line   0005255a  00000000  00000000  001edab8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    001e98d2  00000000  00000000  00240022  2**0
+ 19 .debug_str    001e98d2  00000000  00000000  00240012  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  0001653c  00000000  00000000  004298f4  2**2
+ 20 .debug_frame  0001653c  00000000  00000000  004298e4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000054  00000000  00000000  0043fe30  2**0
+ 21 .debug_line_str 00000054  00000000  00000000  0043fe20  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -62,7 +62,7 @@ Disassembly of section .text:
  80001e2:	2301      	movs	r3, #1
  80001e4:	7023      	strb	r3, [r4, #0]
  80001e6:	bd10      	pop	{r4, pc}
- 80001e8:	200006c8 	.word	0x200006c8
+ 80001e8:	200006b8 	.word	0x200006b8
  80001ec:	00000000 	.word	0x00000000
  80001f0:	0800f00c 	.word	0x0800f00c
 
@@ -75,7 +75,7 @@ Disassembly of section .text:
  80001fe:	f3af 8000 	nop.w
  8000202:	bd08      	pop	{r3, pc}
  8000204:	00000000 	.word	0x00000000
- 8000208:	200006cc 	.word	0x200006cc
+ 8000208:	200006bc 	.word	0x200006bc
  800020c:	0800f00c 	.word	0x0800f00c
 
 08000210 <memchr>:
@@ -5884,7 +5884,7 @@ extern "C" EI_IMPULSE_ERROR process_impulse(ei_impulse_handle_t *handle,
  8002e54:	e013      	b.n	8002e7e <process_impulse+0x43a>
  8002e56:	bf00      	nop
  8002e58:	0800f97c 	.word	0x0800f97c
- 8002e5c:	200006f4 	.word	0x200006f4
+ 8002e5c:	200006e4 	.word	0x200006e4
  8002e60:	20000000 	.word	0x20000000
  8002e64:	0800f9a8 	.word	0x0800f9a8
  8002e68:	0800f9b0 	.word	0x0800f9b0
@@ -5991,13 +5991,13 @@ extern "C" EI_IMPULSE_ERROR run_classifier(
  8002f2a:	3710      	adds	r7, #16
  8002f2c:	46bd      	mov	sp, r7
  8002f2e:	bd80      	pop	{r7, pc}
- 8002f30:	200006e4 	.word	0x200006e4
+ 8002f30:	200006d4 	.word	0x200006d4
 
 08002f34 <_Z16get_feature_datajjPf>:
 using namespace ei;
 
 // paste the raw features here
-static float features[] = {6.7, 3.3, 5.7, 2.5};
+static float features[] = {0.0, 0.0, 0.0, 0.0};
 
 int get_feature_data(size_t offset, size_t length, float *out_ptr) {
  8002f34:	b580      	push	{r7, lr}
@@ -6024,7 +6024,7 @@ int get_feature_data(size_t offset, size_t length, float *out_ptr) {
  8002f5a:	46bd      	mov	sp, r7
  8002f5c:	bd80      	pop	{r7, pc}
  8002f5e:	bf00      	nop
- 8002f60:	20000054 	.word	0x20000054
+ 8002f60:	200006e8 	.word	0x200006e8
 
 08002f64 <_Z6vprintPKcSt9__va_list>:
 /* USER CODE BEGIN 0 */
@@ -6233,8 +6233,8 @@ int main(void)
  80030d0:	f7ff ff70 	bl	8002fb4 <_Z9ei_printfPKcz>
 
 	//parceamos los features
-	if(HAL_OK == HAL_UART_Receive(&huart1,atributos,18,2000)){
- 80030d4:	f44f 63fa 	mov.w	r3, #2000	; 0x7d0
+	if(HAL_OK == HAL_UART_Receive(&huart1,atributos,18,5000)){
+ 80030d4:	f241 3388 	movw	r3, #5000	; 0x1388
  80030d8:	2212      	movs	r2, #18
  80030da:	4922      	ldr	r1, [pc, #136]	; (8003164 <main+0x18c>)
  80030dc:	4822      	ldr	r0, [pc, #136]	; (8003168 <main+0x190>)
@@ -6309,7 +6309,7 @@ int main(void)
  800316c:	0800fb2c 	.word	0x0800fb2c
  8003170:	20000794 	.word	0x20000794
  8003174:	20000798 	.word	0x20000798
- 8003178:	20000054 	.word	0x20000054
+ 8003178:	200006e8 	.word	0x200006e8
 
 0800317c <_Z18SystemClock_Configv>:
 /**
@@ -11389,7 +11389,7 @@ ei_impulse_handle_t impulse_handle_365745_0 = ei_impulse_handle_t( &impulse_3657
  8005264:	46bd      	mov	sp, r7
  8005266:	bd80      	pop	{r7, pc}
  8005268:	08011420 	.word	0x08011420
- 800526c:	200006e4 	.word	0x200006e4
+ 800526c:	200006d4 	.word	0x200006d4
 
 08005270 <_GLOBAL__sub_I__ZN2ei8spectral10processing20spectral_power_edgesEPNS_9ei_matrixES3_S3_S3_f>:
  8005270:	b580      	push	{r7, lr}
@@ -12184,11 +12184,11 @@ LoopFillZerobss:
   ldr r0, =_sdata
  800561c:	20000000 	.word	0x20000000
   ldr r1, =_edata
- 8005620:	200006c8 	.word	0x200006c8
+ 8005620:	200006b8 	.word	0x200006b8
   ldr r2, =_sidata
  8005624:	0801380c 	.word	0x0801380c
   ldr r2, =_sbss
- 8005628:	200006c8 	.word	0x200006c8
+ 8005628:	200006b8 	.word	0x200006b8
   ldr r4, =_ebss
  800562c:	20000b44 	.word	0x20000b44
 
@@ -12297,9 +12297,9 @@ __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
  800569a:	3708      	adds	r7, #8
  800569c:	46bd      	mov	sp, r7
  800569e:	bd80      	pop	{r7, pc}
- 80056a0:	20000384 	.word	0x20000384
- 80056a4:	2000038c 	.word	0x2000038c
- 80056a8:	20000388 	.word	0x20000388
+ 80056a0:	20000374 	.word	0x20000374
+ 80056a4:	2000037c 	.word	0x2000037c
+ 80056a8:	20000378 	.word	0x20000378
 
 080056ac <HAL_IncTick>:
  * @note This function is declared as __weak to be overwritten in case of other 
@@ -12325,7 +12325,7 @@ __weak void HAL_IncTick(void)
  80056c4:	f85d 7b04 	ldr.w	r7, [sp], #4
  80056c8:	4770      	bx	lr
  80056ca:	bf00      	nop
- 80056cc:	2000038c 	.word	0x2000038c
+ 80056cc:	2000037c 	.word	0x2000037c
  80056d0:	200007a0 	.word	0x200007a0
 
 080056d4 <HAL_GetTick>:
@@ -14492,8 +14492,8 @@ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, ui
  8006350:	40023c00 	.word	0x40023c00
  8006354:	40023800 	.word	0x40023800
  8006358:	080114b0 	.word	0x080114b0
- 800635c:	20000384 	.word	0x20000384
- 8006360:	20000388 	.word	0x20000388
+ 800635c:	20000374 	.word	0x20000374
+ 8006360:	20000378 	.word	0x20000378
 
 08006364 <HAL_RCC_GetSysClockFreq>:
   *
@@ -14720,7 +14720,7 @@ uint32_t HAL_RCC_GetHCLKFreq(void)
  80064fc:	f85d 7b04 	ldr.w	r7, [sp], #4
  8006500:	4770      	bx	lr
  8006502:	bf00      	nop
- 8006504:	20000384 	.word	0x20000384
+ 8006504:	20000374 	.word	0x20000374
 
 08006508 <HAL_RCC_GetPCLK1Freq>:
   * @note   Each time PCLK1 changes, this function must be called to update the
@@ -18322,9 +18322,9 @@ __attribute__((weak)) void ei_printf_float(float f) {
  8007b94:	f3af 8000 	nop.w
  8007b98:	00000000 	.word	0x00000000
  8007b9c:	40240000 	.word	0x40240000
- 8007ba0:	20000398 	.word	0x20000398
+ 8007ba0:	20000388 	.word	0x20000388
  8007ba4:	0800fbcc 	.word	0x0800fbcc
- 8007ba8:	20000390 	.word	0x20000390
+ 8007ba8:	20000380 	.word	0x20000380
  8007bac:	0800fbd0 	.word	0x0800fbd0
 
 08007bb0 <_Z9ei_mallocj>:
@@ -23518,7 +23518,7 @@ static void init_tflite_tensor(size_t i, TfLiteTensor *tensor) {
  8009f48:	46bd      	mov	sp, r7
  8009f4a:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009f4e:	4770      	bx	lr
- 8009f50:	2000039c 	.word	0x2000039c
+ 8009f50:	2000038c 	.word	0x2000038c
  8009f54:	200007a4 	.word	0x200007a4
 
 08009f58 <_ZN12_GLOBAL__N_1L23init_tflite_eval_tensorEiP16TfLiteEvalTensor>:
@@ -23596,7 +23596,7 @@ static void init_tflite_eval_tensor(int i, TfLiteEvalTensor *tensor) {
  8009fbc:	46bd      	mov	sp, r7
  8009fbe:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009fc2:	4770      	bx	lr
- 8009fc4:	2000039c 	.word	0x2000039c
+ 8009fc4:	2000038c 	.word	0x2000038c
  8009fc8:	200007a4 	.word	0x200007a4
 
 08009fcc <_ZN12_GLOBAL__N_1L28AllocatePersistentBufferImplEP13TfLiteContextj>:
@@ -24672,13 +24672,13 @@ TfLiteStatus tflite_learn_4_init( void*(*alloc_fnc)(size_t,size_t) ) {
  800a704:	0800a1dd 	.word	0x0800a1dd
  800a708:	0800a2b1 	.word	0x0800a2b1
  800a70c:	08008a79 	.word	0x08008a79
- 800a710:	2000039c 	.word	0x2000039c
+ 800a710:	2000038c 	.word	0x2000038c
  800a714:	08011184 	.word	0x08011184
  800a718:	20000958 	.word	0x20000958
  800a71c:	200009a0 	.word	0x200009a0
  800a720:	08013354 	.word	0x08013354
- 800a724:	200004ec 	.word	0x200004ec
- 800a728:	2000044c 	.word	0x2000044c
+ 800a724:	200004dc 	.word	0x200004dc
+ 800a728:	2000043c 	.word	0x2000043c
 
 0800a72c <_Z20tflite_learn_4_inputiP12TfLiteTensor>:
 
@@ -24790,9 +24790,9 @@ TfLiteStatus tflite_learn_4_invoke() {
  800a7c6:	46bd      	mov	sp, r7
  800a7c8:	bd90      	pop	{r4, r7, pc}
  800a7ca:	bf00      	nop
- 800a7cc:	200004ec 	.word	0x200004ec
+ 800a7cc:	200004dc 	.word	0x200004dc
  800a7d0:	20000958 	.word	0x20000958
- 800a7d4:	2000044c 	.word	0x2000044c
+ 800a7d4:	2000043c 	.word	0x2000043c
  800a7d8:	200007b0 	.word	0x200007b0
 
 0800a7dc <_Z20tflite_learn_4_resetPFvPvE>:
@@ -24940,7 +24940,7 @@ class EonMicroContext : public MicroContext {
  800a8d4:	4770      	bx	lr
  800a8d6:	bf00      	nop
  800a8d8:	200007a4 	.word	0x200007a4
- 800a8dc:	2000039c 	.word	0x2000039c
+ 800a8dc:	2000038c 	.word	0x2000038c
 
 0800a8e0 <_GLOBAL__sub_I__Z19tflite_learn_4_initPFPvjjE>:
  800a8e0:	b580      	push	{r7, lr}
@@ -25425,8 +25425,8 @@ class EonMicroContext : public MicroContext {
  800adc6:	f024 0401 	bic.w	r4, r4, #1
  800adca:	e7c6      	b.n	800ad5a <__ieee754_sqrt+0x136>
  800adcc:	7ff00000 	.word	0x7ff00000
- 800add0:	200004f0 	.word	0x200004f0
- 800add4:	200004f8 	.word	0x200004f8
+ 800add0:	200004e0 	.word	0x200004e0
+ 800add4:	200004e8 	.word	0x200004e8
 
 0800add8 <__ieee754_sqrtf>:
  800add8:	eeb1 0ac0 	vsqrt.f32	s0, s0
@@ -27022,7 +27022,7 @@ class EonMicroContext : public MicroContext {
  800bf9a:	461c      	mov	r4, r3
  800bf9c:	e7f3      	b.n	800bf86 <__assert_func+0x12>
  800bf9e:	bf00      	nop
- 800bfa0:	200006c4 	.word	0x200006c4
+ 800bfa0:	200006b4 	.word	0x200006b4
  800bfa4:	080133d8 	.word	0x080133d8
  800bfa8:	080133e5 	.word	0x080133e5
  800bfac:	08013413 	.word	0x08013413
@@ -27033,7 +27033,7 @@ class EonMicroContext : public MicroContext {
  800bfb4:	4601      	mov	r1, r0
  800bfb6:	6818      	ldr	r0, [r3, #0]
  800bfb8:	f000 b802 	b.w	800bfc0 <_calloc_r>
- 800bfbc:	200006c4 	.word	0x200006c4
+ 800bfbc:	200006b4 	.word	0x200006b4
 
 0800bfc0 <_calloc_r>:
  800bfc0:	b537      	push	{r0, r1, r2, r4, r5, lr}
@@ -27062,7 +27062,7 @@ class EonMicroContext : public MicroContext {
  800bff0:	6818      	ldr	r0, [r3, #0]
  800bff2:	f000 b82b 	b.w	800c04c <_malloc_r>
  800bff6:	bf00      	nop
- 800bff8:	200006c4 	.word	0x200006c4
+ 800bff8:	200006b4 	.word	0x200006b4
 
 0800bffc <free>:
  800bffc:	4b02      	ldr	r3, [pc, #8]	; (800c008 <free+0xc>)
@@ -27070,7 +27070,7 @@ class EonMicroContext : public MicroContext {
  800c000:	6818      	ldr	r0, [r3, #0]
  800c002:	f001 b997 	b.w	800d334 <_free_r>
  800c006:	bf00      	nop
- 800c008:	200006c4 	.word	0x200006c4
+ 800c008:	200006b4 	.word	0x200006b4
 
 0800c00c <sbrk_aligned>:
  800c00c:	b570      	push	{r4, r5, r6, lr}
@@ -28470,8 +28470,8 @@ class EonMicroContext : public MicroContext {
  800cde8:	6800      	ldr	r0, [r0, #0]
  800cdea:	f7ff ba09 	b.w	800c200 <_strtod_l>
  800cdee:	bf00      	nop
- 800cdf0:	200006c4 	.word	0x200006c4
- 800cdf4:	2000050c 	.word	0x2000050c
+ 800cdf0:	200006b4 	.word	0x200006b4
+ 800cdf4:	200004fc 	.word	0x200004fc
 
 0800cdf8 <std>:
  800cdf8:	2300      	movs	r3, #0
@@ -28523,9 +28523,9 @@ class EonMicroContext : public MicroContext {
  800ce68:	4803      	ldr	r0, [pc, #12]	; (800ce78 <stdio_exit_handler+0x14>)
  800ce6a:	f000 b87b 	b.w	800cf64 <_fwalk_sglue>
  800ce6e:	bf00      	nop
- 800ce70:	20000500 	.word	0x20000500
+ 800ce70:	200004f0 	.word	0x200004f0
  800ce74:	0800ed89 	.word	0x0800ed89
- 800ce78:	20000678 	.word	0x20000678
+ 800ce78:	20000668 	.word	0x20000668
 
 0800ce7c <cleanup_stdio>:
  800ce7c:	6841      	ldr	r1, [r0, #4]
@@ -28623,7 +28623,7 @@ class EonMicroContext : public MicroContext {
  800cf58:	f85d eb04 	ldr.w	lr, [sp], #4
  800cf5c:	b003      	add	sp, #12
  800cf5e:	4770      	bx	lr
- 800cf60:	200006c4 	.word	0x200006c4
+ 800cf60:	200006b4 	.word	0x200006b4
 
 0800cf64 <_fwalk_sglue>:
  800cf64:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -28740,7 +28740,7 @@ class EonMicroContext : public MicroContext {
  800d05c:	6800      	ldr	r0, [r0, #0]
  800d05e:	f7ff bfe3 	b.w	800d028 <_vsiprintf_r>
  800d062:	bf00      	nop
- 800d064:	200006c4 	.word	0x200006c4
+ 800d064:	200006b4 	.word	0x200006b4
 
 0800d068 <memmove>:
  800d068:	4288      	cmp	r0, r1
@@ -28827,7 +28827,7 @@ class EonMicroContext : public MicroContext {
  800d122:	b002      	add	sp, #8
  800d124:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
  800d128:	f000 b806 	b.w	800d138 <__strtok_r>
- 800d12c:	200006c4 	.word	0x200006c4
+ 800d12c:	200006b4 	.word	0x200006b4
  800d130:	08013579 	.word	0x08013579
  800d134:	08013590 	.word	0x08013590
 
@@ -28910,7 +28910,7 @@ class EonMicroContext : public MicroContext {
  800d1dc:	6818      	ldr	r0, [r3, #0]
  800d1de:	f7ff bfd3 	b.w	800d188 <_raise_r>
  800d1e2:	bf00      	nop
- 800d1e4:	200006c4 	.word	0x200006c4
+ 800d1e4:	200006b4 	.word	0x200006b4
 
 0800d1e8 <_close_r>:
  800d1e8:	b538      	push	{r3, r4, r5, lr}
@@ -29024,7 +29024,7 @@ class EonMicroContext : public MicroContext {
  800d2be:	6818      	ldr	r0, [r3, #0]
  800d2c0:	4770      	bx	lr
  800d2c2:	bf00      	nop
- 800d2c4:	200006c4 	.word	0x200006c4
+ 800d2c4:	200006b4 	.word	0x200006b4
 
 0800d2c8 <__libc_init_array>:
  800d2c8:	b570      	push	{r4, r5, r6, lr}
@@ -32000,7 +32000,7 @@ class EonMicroContext : public MicroContext {
  800eefa:	e7f4      	b.n	800eee6 <__swsetup_r+0x92>
  800eefc:	2000      	movs	r0, #0
  800eefe:	e7f7      	b.n	800eef0 <__swsetup_r+0x9c>
- 800ef00:	200006c4 	.word	0x200006c4
+ 800ef00:	200006b4 	.word	0x200006b4
 
 0800ef04 <__swhatbuf_r>:
  800ef04:	b570      	push	{r4, r5, r6, lr}

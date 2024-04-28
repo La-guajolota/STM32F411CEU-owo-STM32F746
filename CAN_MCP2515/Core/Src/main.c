@@ -21,7 +21,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
 //NATIVAS DE C
 #include "stdio.h"
 #include "string.h"
@@ -38,8 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ID_reciver 0x0A //ID del receptor
-#define ID_transferee 0x0B //ID del transsmisor, este mcu
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -55,8 +53,6 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 uCAN_MSG txMessage;
 uCAN_MSG rxMessage;
-uint8_t OK_IN[] = "Se recivio info\r\n"; //Supunioendo es el extended dataframe
-uint8_t OK_OUT[] = "sE ENVIO INFO\r\n";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,16 +101,13 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-
   int ret;
   ret = CANSPI_Initialize();
   if(ret < 0){
-	  for (int var = 0; var < 4; ++var)
-	  {
-		  HAL_GPIO_TogglePin(TX_led_GPIO_Port,TX_led_Pin);
-		  HAL_Delay(50);
+	  while(1){
+		  HAL_GPIO_TogglePin(TX_led_GPIO_Port, TX_led_Pin);
+		  HAL_Delay(1000);
 	  }
-	  while(1){}
   }
 
   /* USER CODE END 2 */
@@ -126,49 +119,28 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
 	  if(CANSPI_Receive(&rxMessage)){
-
-		  for (int var = 0; var < 4; ++var)//BLINKEO DE RX
-			  {
-				  HAL_GPIO_TogglePin(RX_led_GPIO_Port,RX_led_Pin);
-				  HAL_Delay(50);
-			  }
-
-		  if(rxMessage.frame.id == ID_transferee){//Es la dispositivo que esperabamos
-	  		  if(rxMessage.frame.data0 == 1){//Si se recive el dato
-
-	  			  HAL_UART_Transmit(&huart1, OK_IN, sizeof(OK_IN), 100);
-
+	  	  if(rxMessage.frame.id == 0x0A){
+	  		  if(rxMessage.frame.data7 == 7){
+	  			  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_SET);
+	  		  }else{
+	  			  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_RESET);
 	  		  }
 	  	  }
-
-	  	  	HAL_Delay(2000);
-	  		txMessage.frame.idType = rxMessage.frame.idType;
-	  		txMessage.frame.id = ID_reciver;
-	  		txMessage.frame.dlc = 8;
-	  		txMessage.frame.data0 = 0;
-	  		txMessage.frame.data1 = 1;
-	  		txMessage.frame.data2 = 2;
-	  		txMessage.frame.data3 = 3;
-	  		txMessage.frame.data4 = 4;
-	  		txMessage.frame.data5 = 5;
-	  		txMessage.frame.data6 = 6;
-	  		txMessage.frame.data7 = 7;
-
-	  		if(CANSPI_Transmit(&txMessage)) //Si logramos mandar el mensaje correctamente
-	  		{
-
-	  			for (int var = 0; var < 4; ++var)//BLINKEO DE RX
-	  				{
-	  					HAL_GPIO_TogglePin(TX_led_GPIO_Port,TX_led_Pin);
-	  					HAL_Delay(50);
-	  				}
-	  				HAL_UART_Transmit(&huart1, OK_OUT, sizeof(OK_OUT), 100);
-
-	  		}
-
-	    }
+	  }
+	  HAL_Delay(250);
+		txMessage.frame.idType = rxMessage.frame.idType;
+		txMessage.frame.id = 0x36;
+		txMessage.frame.dlc = 8;
+		txMessage.frame.data0 = 1;
+		txMessage.frame.data1 = 1;
+		txMessage.frame.data2 = 2;
+		txMessage.frame.data3 = 3;
+		txMessage.frame.data4 = 4;
+		txMessage.frame.data5 = 5;
+		txMessage.frame.data6 = 6;
+		txMessage.frame.data7 = 7;
+		CANSPI_Transmit(&txMessage);
   }
   /* USER CODE END 3 */
 }
@@ -195,7 +167,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 25;
-  RCC_OscInitStruct.PLL.PLLN = 144;
+  RCC_OscInitStruct.PLL.PLLN = 168;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -241,7 +213,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -307,7 +279,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(TX_led_GPIO_Port, TX_led_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(TX_led_GPIO_Port, TX_led_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
@@ -326,7 +298,7 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = SPI_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(SPI_CS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : RX_led_Pin */

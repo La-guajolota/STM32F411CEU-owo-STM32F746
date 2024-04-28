@@ -108,14 +108,23 @@ int CANSPI_Initialize(void)
   * 16tq = 2us = 500kbps
   */
 
+  /*
+   * tq = 2 * (brp(0) + 1) / 8000000 = 0.25us
+   * tbit = (SYNC_SEG(1 fixed) + PROP_SEG + PS1 + PS2)
+   * tbit = 1tq + 3tq + 1tq + 3tq = 8tq
+   * 8tq = 2us = 500kbps
+   */
+
   /* 00(SJW 1tq) 000000 */
   MCP2515_WriteByte(MCP2515_CNF1, 0x00);
 
-  /* 1 1 100(5tq) 101(6tq) */
-  MCP2515_WriteByte(MCP2515_CNF2, 0xE5);
+  /* 11 100(5tq) 101(6tq) */
+  // 10 010(3tq) 000(1tq)
+  MCP2515_WriteByte(MCP2515_CNF2, 0x90);
 
-  /* 1 0 000 011(4tq) */
-  MCP2515_WriteByte(MCP2515_CNF3, 0x83);
+  /* 10 000 011(4tq) */
+  // 10 000 010(3tq)
+  MCP2515_WriteByte(MCP2515_CNF3, 0x82);
 
   /* Normal 모드로 설정 */
   if(!MCP2515_SetNormalMode())

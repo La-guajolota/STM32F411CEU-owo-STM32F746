@@ -123,11 +123,11 @@ int main(void)
   //Contador del encoder
   uint8_t count = 0;
   //valor real del dac del mcu
-  volatile uint8_t adc_real = 0;
+  uint8_t adc_real = 0;
   //valor medido en 8bits del adc implementado
   uint8_t adc_med = 0;
   //mag por uart
-  uint8_t msg[10] = {0};
+  char msg[10] = {0};
 
   //incializamos el pwm
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -163,8 +163,8 @@ int main(void)
 			HAL_ADC_Start(&hadc1);
 			if(HAL_ADC_PollForConversion(&hadc1, 100) == HAL_OK){
 				adc_real = HAL_ADC_GetValue(&hadc1);//adc del micro
-				sprintf((char*)msg,"%d %d \r\n",adc_real,adc_med);
-				HAL_UART_Transmit(&huart6,msg, 10, 100);
+				sprintf(msg,"%d %d\r\n",adc_real,adc_med);
+				HAL_UART_Transmit(&huart6,(uint8_t*)msg, 10, 100);
 			}
 
 			break;
@@ -177,8 +177,8 @@ int main(void)
 				HAL_ADC_Start(&hadc1);
 				if(HAL_ADC_PollForConversion(&hadc1, 100) == HAL_OK){
 					adc_real = HAL_ADC_GetValue(&hadc1);//adc del micro
-					sprintf((char*)msg,"%d %d \r\n",adc_real,adc_med);
-					HAL_UART_Transmit(&huart6,msg, 10, 100);
+					sprintf(msg,"%d %d\r\n",adc_real,adc_med);
+					HAL_UART_Transmit(&huart6,(uint8_t*)msg, 10, 100);
 				}
 
 				flag = false;

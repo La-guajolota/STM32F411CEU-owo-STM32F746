@@ -1,7 +1,10 @@
 #ifndef __CAN_SPI_H
 #define	__CAN_SPI_H
 
+//Familia de microcontrolador stm32
 #include "stm32f4xx_hal.h"
+//#include "stm32f7xx_hal.h"
+
 typedef union {
   struct {
     uint8_t idType;

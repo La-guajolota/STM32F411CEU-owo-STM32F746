@@ -182,11 +182,20 @@ int main(void)
    */
 
   SSD1306_Init ();
-  SSD1306_GotoXY (10,10);
-  SSD1306_Puts ("Hail Lechuga", &Font_11x18, 1);
-  SSD1306_GotoXY (20, 20);
-  SSD1306_Puts ("COOP de lechugas GUAJOLOTERA!!", &Font_11x18, 1);
+  SSD1306_GotoXY (0,0);
+  SSD1306_Puts ("Hail Lechuga", &Font_7x10, 1);
+  SSD1306_GotoXY (0,20);
+  SSD1306_Puts ("COOP de lechugas", &Font_7x10, 1);
+  SSD1306_GotoXY (0,40);
+  SSD1306_Puts ("GUAJOLOTERA!!", &Font_11x18, 1);
   SSD1306_UpdateScreen();
+
+  SSD1306_ScrollRight(0,7);  // scroll entire screen
+  HAL_Delay(2000);
+  SSD1306_ScrollLeft(0,7);  // scroll entire screen
+  HAL_Delay(2000);
+  SSD1306_Stopscroll();
+  SSD1306_Clear();
 
   /* USER CODE END 2 */
 
@@ -261,6 +270,19 @@ int main(void)
 				  */
 
 				  //OLED
+				  SSD1306_Clear();
+				  SSD1306_GotoXY (0,0);
+				  SSD1306_Puts ("GPS", &Font_11x18, 1);
+				  sprintf (msg, "%02d / %02d / %02d",gpsData.rmcstruct.date.Day, \
+						  	  	  	  	  	  	  	 gpsData.rmcstruct.date.Mon, gpsData.rmcstruct.date.Yr);
+				  SSD1306_GotoXY (0,20);
+				  SSD1306_Puts (msg, &Font_7x10, 1);
+				  sprintf (msg,"%.2f%c, %.2f%c  ", gpsData.ggastruct.lcation.latitude, gpsData.ggastruct.lcation.NS,\
+				  						  	  	  	  	  	  	  gpsData.ggastruct.lcation.longitude, gpsData.ggastruct.lcation.EW);
+				  SSD1306_GotoXY (0,40);
+				  SSD1306_Puts (msg, &Font_7x10, 1);
+				  SSD1306_UpdateScreen();
+				  HAL_Delay(500);
 
 			  }
 
@@ -286,7 +308,11 @@ int main(void)
 				   */
 
 				  //OLED
-
+				  SSD1306_Clear();
+				  SSD1306_GotoXY (0,0);
+				  SSD1306_Puts ("NO SATELITES!!!", &Font_11x18, 1);
+				  SSD1306_UpdateScreen();
+				  HAL_Delay(500);
 			  }
 
 			  if (VCCTimeout <= 0)
@@ -316,8 +342,11 @@ int main(void)
 				  */
 
 				  //OLED
-
-
+				  SSD1306_Clear();
+				  SSD1306_GotoXY (0,0);
+				  SSD1306_Puts ("Checar conexion", &Font_11x18, 1);
+				  SSD1306_UpdateScreen();
+				  HAL_Delay(500);
 			  }
 
 	  }
@@ -336,6 +365,14 @@ int main(void)
 		  */
 
 		  //OLED
+		  SSD1306_Clear();
+		  SSD1306_GotoXY (0,0);
+		  SSD1306_Puts ("luminicidad:", &Font_11x18, 1);
+		  sprintf(msg,"%d           ",sensores.light);
+		  SSD1306_GotoXY (0,20);
+		  SSD1306_Puts (msg, &Font_7x10, 1);
+		  SSD1306_UpdateScreen();
+		  HAL_Delay(500);
 
 	  }
 	  if (std == 2)
@@ -358,8 +395,13 @@ int main(void)
 		  */
 
 		  //OLED
-
-
+		  SSD1306_Clear();
+		  SSD1306_GotoXY (0,0);
+		  SSD1306_Puts ("HUMEDAD:", &Font_11x18, 1);
+		  sprintf(msg,"%0.2f",(float)(((sensores.humedad[0]<<8)|sensores.humedad[1])/10.0));
+		  SSD1306_GotoXY (0,20);
+		  SSD1306_Puts (msg, &Font_7x10, 1);
+		  SSD1306_UpdateScreen();
 	  }
 
   }

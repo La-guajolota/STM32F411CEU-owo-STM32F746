@@ -1,3 +1,4 @@
+"./Core/Src/ACS712.o"
 "./Core/Src/MAX6675.o"
 "./Core/Src/MLX90614.o"
 "./Core/Src/main.o"

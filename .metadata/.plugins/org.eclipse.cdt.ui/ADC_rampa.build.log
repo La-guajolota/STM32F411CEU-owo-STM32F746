@@ -1,10 +1,10 @@
-00:25:39 **** Incremental Build of configuration Debug for project ADC_rampa ****
+13:52:42 **** Build of configuration Debug for project ADC_rampa ****
 make -j12 all 
 arm-none-eabi-size  ADC_rampa.elf 
    text	   data	    bss	    dec	    hex	filename
-  22396	    100	   2340	  24836	   6104	ADC_rampa.elf
+  22376	    100	   2340	  24816	   60f0	ADC_rampa.elf
 Finished building: default.size.stdout
  
 
-00:25:40 Build Finished. 0 errors, 0 warnings. (took 450ms)
+13:52:43 Build Finished. 0 errors, 0 warnings. (took 460ms)
 

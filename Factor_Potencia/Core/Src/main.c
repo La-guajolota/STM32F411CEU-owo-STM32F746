@@ -37,8 +37,8 @@
 #define N 200 //Cantidad de muestras
 #define resolution 254.0 //resulucion en bits del adc
 
-#define Vp_max 3.3 //Voltaje pico en Volt
-#define Ip_max 3.3 //Corriente pico en Amperse
+#define Vp_max 170.0 //Voltaje pico en Volt
+#define Ip_max 0.212 //Corriente pico en Amperse
 #define V_pendiente (Vp_max/(resolution/2.0))
 #define I_pediente (Ip_max/(resolution/2.0))
 
@@ -74,7 +74,7 @@ bool EOC_adc = false; //bandera de fin de captura los datos del adc
 
 uint16_t samples = 0; //Contador de muestras
 
-char msg[] = "PF:x.xx PA:xx.x phi:xxx.x Vrms:xx.x Irms:xx.x V:xxx.x I:xxx.x\r\n"; //bufer para mandar al pc por uart
+char msg[] = "PF:x.xx PA:x.xx Vrms:xx.xx Irms:xx.xx\r\n"; //bufer para mandar al pc por uart
 //char msg2[] = "Vrms:xxx.x V:xxx.x I:xxx.x \r\n";
 
 // [0]voltaje [1]corriente
@@ -143,15 +143,16 @@ int main(void)
   while (1)
   {
 	  if (end_pf_cal) {
-		  sprintf(msg,"PF:%.2f PA:%.1f phi:%.1f Vrms:%.1f Irms:%.1f V:%.1f I:%.1f \r\n",PF,PA,phi,Vrms,Irms,V,I);
-		  //sprintf(msg2,"Vrms:%.1f V:%.1f I:%.1f \r\n",Vrms,V,I);
-		  HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+		  sprintf(msg,"PF:%.2f PA:%.2f Vrms:%.2f Irms:%.2f\r\n",PF,PA,Vrms,Irms);
+		  //sprintf(msg2,"PF:%.1f V:%.1f I:%.1f \r\n",PF,V,I);
+		  HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
 		  PA = 0;
 		  Vrms = 0;
 		  Irms = 0;
 
 		  end_pf_cal = false;
+		  //HAL_GPIO_TogglePin(led_GPIO_Port,led_Pin);
 	}
 
 	 if (EOC_adc){ //por interrupcion del adc_dma
@@ -170,8 +171,20 @@ int main(void)
 
 	if (samples >= N) {
 		//Terminamos de calcular
-		Vrms = sqrtf(Vrms);
-		Irms = sqrtf(Irms);
+		if(Vrms<=99.0)
+		{
+			Vrms = sqrtf(Vrms);
+		}else{//Ajuste deacuerdo a lo que podemos medir
+			Vrms = sqrtf(Vrms)+20.0;
+		}
+
+		if(Irms<=0.09)
+		{
+			Irms = sqrtf(Irms);
+		}else{//Ajuste deacuerdo a lo que podemos medir
+			Irms = sqrtf(Irms)+0.05;
+		}
+
 		PF = PA/(Vrms*Irms);
 
 		phi = (360.0/w)*acosf(PF);
@@ -447,7 +460,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 1000000;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
@@ -487,13 +500,25 @@ static void MX_DMA_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 /* USER CODE BEGIN MX_GPIO_Init_1 */
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : led_Pin */
+  GPIO_InitStruct.Pin = led_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(led_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
