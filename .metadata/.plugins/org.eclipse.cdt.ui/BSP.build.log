@@ -1,0 +1,10 @@
+21:08:14 **** Build of configuration Debug for project BSP ****
+make all 
+arm-none-eabi-size  STM32746G_DISCOVERY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75448	   1500	 164224	 241172	  3ae14	STM32746G_DISCOVERY.elf
+Finished building: default.size.stdout
+ 
+
+21:08:15 Build Finished. 0 errors, 0 warnings. (took 659ms)
+

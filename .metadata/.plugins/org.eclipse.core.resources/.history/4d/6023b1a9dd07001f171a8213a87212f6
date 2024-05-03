@@ -1,0 +1,110 @@
+/*
+ * ACS712.c
+ *
+ *  Created on: Apr 7, 2024
+ *      Author: adria
+ */
+
+#include "ACS712.h"
+
+/*
+ * Defines del periferico en uso
+ */
+extern ADC_HandleTypeDef hadc3;
+extern TIM_HandleTypeDef htim14;
+
+#define timer &htim14
+#define adc &hadc3
+
+/*
+ * Defines para los calculos
+ */
+#define ACS712_FF_SINUS           (1.0/sqrt(2))
+#define ACS712_FF_SQUARE          (1.0)
+#define ACS712_FF_TRIANGLE        (1.0/sqrt(3))
+#define ACS712_FF_SAWTOOTH        (1.0/sqrt(3))
+
+#define ACS712_DEFAULT_FREQ       60 //hz
+#define ACS712_DEFAULT_NOISE      21 //hz
+
+#define sensibilidad 1
+#define mV_amps 66.0
+
+#define _microsAdjust 0.9986
+
+/*
+ * Equivalente a mcros()
+ * Arduino
+ *
+ * __HAL_TIM_GET_COUNTER(&htim14)
+ */
+
+//  TYPE   mV per Ampere
+//  5A        185.0
+//  20A       100.0
+//  30A        66.0 --El que tenemos
+
+/*
+ * Adquiere un sampling
+ */
+uint32_t corriente(){
+
+	//Calibrado
+	uint32_t val = (HAL_ADC_GetValue(adc)-32767)/sensibilidad;
+
+	return val/
+}
+
+//  FREQUENCY DETECTION
+//  uses oversampling and averaging to minimize variation
+//  blocks for substantial amount of time, depending on minimalFrequency
+float detectFrequency(float minimalFrequency)
+{
+  int maximum = 0;
+  int minimum = 0;
+  maximum = minimum = HAL_ADC_GetValue(adc);
+
+  //  determine maxima
+  uint32_t timeOut = round(1000000.0 / minimalFrequency);
+  __HAL_TIM_SET_COUNTER(timer,0);
+  while (__HAL_TIM_GET_COUNTER(timer)< timeOut)
+  {
+    int value = HAL_ADC_GetValue(adc);
+    if (value > maximum) maximum = value;
+    if (value < minimum) minimum = value;
+  }
+
+  //  calculate quarter points
+  //  using quarter points is less noise prone than using one single midpoint
+  int Q1 = (3 * minimum + maximum ) / 4;
+  int Q3 = (minimum + 3 * maximum ) / 4;
+
+  //  10x passing Quantile points
+  //  wait for the right moment to start
+  //  to prevent endless loop a timeout is checked.
+  timeOut *= 10;
+  __HAL_TIM_SET_COUNTER(timer,0);
+  //  casting to int to keep compiler happy.
+  while (((int)(HAL_ADC_GetValue(adc)) >  Q1) && (__HAL_TIM_GET_COUNTER(timer) < timeOut));
+  while (((int)(HAL_ADC_GetValue(adc)) <= Q3) && (__HAL_TIM_GET_COUNTER(timer) < timeOut));
+  __HAL_TIM_SET_COUNTER(timer,0);
+  for (int i = 0; i < 10; i++)
+  {
+    while (((int)(HAL_ADC_GetValue(adc)) >  Q1) && (__HAL_TIM_GET_COUNTER(timer) < timeOut));
+    while (((int)(HAL_ADC_GetValue(adc)) <= Q3) && (__HAL_TIM_GET_COUNTER(timer) < timeOut));
+  }
+  uint32_t stop = __HAL_TIM_GET_COUNTER(timer);
+
+  //  calculate frequency
+  float wavelength = stop;
+  float frequency = 1e7 / wavelength;
+  if (_microsAdjust != 1.0) frequency *= _microsAdjust;
+
+  return frequency;
+}
+
+void ACS712_sens(ACS712* modulo){
+
+
+
+}

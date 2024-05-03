@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="arm_cortexM7lfsp_math"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -21,6 +22,7 @@
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
+		<item key="askReindex.detail" value="0"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.browser.opentype.OpenTypeActionSettings">
 		<item key="show_namespaces" value="true"/>

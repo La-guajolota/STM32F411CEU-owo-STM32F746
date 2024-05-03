@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="DATA_PIN"/>
+		<item key="selection" value="micros"/>
 		<list key="findhistory">
+			<item value="timer"/>
+			<item value="_analogRead(_pin)"/>
+			<item value="micros()"/>
 			<item value="DHT22_PIN"/>
 			<item value="DHT22_PORT"/>
 			<item value="DTH22_PORT"/>
@@ -22,13 +25,16 @@
 			<item value="private "/>
 		</list>
 		<list key="replacehistory">
+			<item value="micros"/>
+			<item value="HAL_ADC_GetValue(adc)"/>
+			<item value="__HAL_TIM_GET_COUNTER(timer)"/>
 			<item value="DATA_PIN"/>
 			<item value="DATA_PORT"/>
 			<item value="HAL_Delay"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="845"/>
+		<item key="DIALOG_X_ORIGIN" value="584"/>
 		<item key="DIALOG_Y_ORIGIN" value="133"/>
 		<item key="DIALOG_WIDTH" value="318"/>
 		<item key="DIALOG_HEIGHT" value="354"/>

@@ -1,0 +1,46 @@
+/*
+ * ACS712.c
+ *
+ *  Created on: Apr 7, 2024
+ *      Author: adria
+ */
+
+#include "ACS712.h"
+
+/*
+ * Defines del periferico en uso
+ */
+extern ADC_HandleTypeDef hadc3;
+extern
+
+/*
+ * Defines para los calculos
+ */
+#define ACS712_FF_SINUS           (1.0/sqrt(2))
+#define ACS712_FF_SQUARE          (1.0)
+#define ACS712_FF_TRIANGLE        (1.0/sqrt(3))
+#define ACS712_FF_SAWTOOTH        (1.0/sqrt(3))
+
+#define ACS712_DEFAULT_FREQ       60 //hz
+#define ACS712_DEFAULT_NOISE      21 //hz
+
+/*
+ * Equivalente a millis()
+ * Arduino
+ */
+void millis(uint16_t us)
+{
+	__HAL_TIM_SET_COUNTER(&htim1,0);  // set the counter value a 0
+	while (__HAL_TIM_GET_COUNTER(&htim1) < us);  // wait for the counter to reach the us input in the parameter
+}
+
+//  TYPE   mV per Ampere
+//  5A        185.0
+//  20A       100.0
+//  30A        66.0
+
+void ACS712_sens(ACS712* modulo){
+
+
+
+}

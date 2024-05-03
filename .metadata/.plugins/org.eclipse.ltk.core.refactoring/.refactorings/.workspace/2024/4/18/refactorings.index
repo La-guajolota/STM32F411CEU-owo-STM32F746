@@ -1,2 +1,6 @@
 1714265312990	Delete resource 'VL53L1X_PeopleCounting_F401'
 1714277288837	Delete resource 'STM32F746G_DISCO'
+1714288635824	Delete resource 'STM32F746G_DISCO'
+1714354470081	Delete resource 'STM32F746G_DISCO/Application/User/arm_math.h'
+1714354625841	Delete resource 'STM32F746G_DISCO/lib'
+1714355125313	Delete resource 'STM32F746G_DISCO'

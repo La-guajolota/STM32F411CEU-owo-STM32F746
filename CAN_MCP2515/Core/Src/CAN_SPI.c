@@ -109,10 +109,13 @@ int CANSPI_Initialize(void)
   */
 
   /*
+   * MODULO DE ARDUINO
+   *
    * tq = 2 * (brp(0) + 1) / 8000000 = 0.25us
    * tbit = (SYNC_SEG(1 fixed) + PROP_SEG + PS1 + PS2)
    * tbit = 1tq + 3tq + 1tq + 3tq = 8tq
    * 8tq = 2us = 500kbps
+   *
    */
 
   /* 00(SJW 1tq) 000000 */

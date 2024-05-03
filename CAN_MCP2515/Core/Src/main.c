@@ -120,27 +120,27 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  if(CANSPI_Receive(&rxMessage)){
-	  	  if(rxMessage.frame.id == 0x0A){
-	  		  if(rxMessage.frame.data7 == 7){
-	  			  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_SET);
-	  		  }else{
-	  			  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_RESET);
-	  		  }
-	  	  }
-	  }
+		  if(rxMessage.frame.id == 0x36){//0x0A
+			  if(rxMessage.frame.data1 == 1){
+				  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_SET);
+			  }else{
+				  HAL_GPIO_WritePin(RX_led_GPIO_Port, RX_led_Pin, GPIO_PIN_RESET);
+			  }
+		  }
 	  HAL_Delay(250);
-		txMessage.frame.idType = rxMessage.frame.idType;
-		txMessage.frame.id = 0x36;
-		txMessage.frame.dlc = 8;
-		txMessage.frame.data0 = 1;
-		txMessage.frame.data1 = 1;
-		txMessage.frame.data2 = 2;
-		txMessage.frame.data3 = 3;
-		txMessage.frame.data4 = 4;
-		txMessage.frame.data5 = 5;
-		txMessage.frame.data6 = 6;
-		txMessage.frame.data7 = 7;
-		CANSPI_Transmit(&txMessage);
+	  txMessage.frame.idType = rxMessage.frame.idType;
+	  txMessage.frame.id = 0x0A;//0x36
+	  txMessage.frame.dlc = 8;
+	  txMessage.frame.data0 = 1;
+	  txMessage.frame.data1 = 1;
+	  txMessage.frame.data2 = 2;
+	  txMessage.frame.data3 = 3;
+	  txMessage.frame.data4 = 4;
+	  txMessage.frame.data5 = 5;
+	  txMessage.frame.data6 = 6;
+	  txMessage.frame.data7 = 7;
+	  CANSPI_Transmit(&txMessage);
+	 }
   }
   /* USER CODE END 3 */
 }

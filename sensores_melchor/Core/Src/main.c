@@ -30,10 +30,13 @@
 
 //Desarrolladas
 #include "uitls_stm32.h"
-#include "MAX6675.h"
-#include "MLX90614.h"
-#include "mpu6050.h"
-#include "ACS712.h"
+
+//Sensores
+#include "MAX6675.h" //Termopar
+#include "MLX90614.h" //Camara IR
+#include "mpu6050.h" //Acelerometro
+#include "ACS712.h" //Sensores de corriente
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,15 +44,14 @@
 MAX6675 termocupla; //Sensa la temperatura de la carcasa
 MLX90614 infrarojo_temp; //Sensa los rodamientos flecha
 //mpu6050 vibraciones; //sensa las vibraciones del motor
-ACS712 F1; //Sensa la fase 1
-ACS712 F2; //Sensa la fase 2
-ACS712 F3; //Sensa la fase 3
+ACS712 F1 = {0,0,0}; //Sensa la fase 1
+ACS712 F2 = {0,0,1}; //Sensa la fase 2
+ACS712 F3 = {0,0,2}; //Sensa la fase 3
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define periodo ((5)*(60000))//mintos*milesegundos
-#define adc_bits 4095.0 //resolucion del adc que se use
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -64,6 +66,9 @@ I2C_HandleTypeDef hi2c1;
 
 SPI_HandleTypeDef hspi2;
 
+TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim5;
+
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
@@ -72,7 +77,7 @@ UART_HandleTypeDef huart1;
 /*
  * temp_carcasa temp_flecha rmsF1 rmsF2 rmsF3 aceX aceY aceZ Velocidad Sentido
  */
-uint8_t msg[] = "xxx.xx xxx.xx xx.x xx.x\r\n";
+uint8_t msg[] = "xx.xx x.xx \r\n";
 
 //Banderas
 //bool sensado = false; //vandera del timer para sensado
@@ -86,6 +91,8 @@ static void MX_SPI2_Init(void);
 static void MX_ADC3_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_TIM5_Init(void);
+static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -127,7 +134,15 @@ int main(void)
   MX_ADC3_Init();
   MX_USART1_UART_Init();
   MX_I2C1_Init();
+  MX_TIM5_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+
+  /*
+   * Inicializamos los timers
+   */
+  HAL_TIM_Base_Start(&htim5);
+  HAL_TIM_Base_Start(&htim2);
 
   /* USER CODE END 2 */
 
@@ -140,24 +155,23 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  //Tempertura de carcasa
-	  SENS_max6675(&termocupla, &hspi2);
+	  //SENS_max6675(&termocupla, &hspi2);
 
 	  //Tempertura de flecha
-	  SENS_MLX90614(&infrarojo_temp, &hi2c1);
+	  //SENS_MLX90614(&infrarojo_temp, &hi2c1);
 
 	  //accelerometro
 	  //SENS_mpu6050(&vibraciones, &hi2c1);
 
 	  //Corrientes por fase
-	  //SENS_ACS712(&infrarojo_temp, &hi2c1);
+	  ACS712_sense(&F1);
 
 	  //Velocidad de giro y sentido
 	  //SENS_Encoder(&encoder);
 
 	  //Enviamos trama de lo sensado
-	  sprintf((char*)msg,"%0.2f %0.2f \r\n",termocupla.temp,infrarojo_temp.ObjTemp);
+	  sprintf((char*)msg,"%0.2f %0.2f \r\n",F1.FRE,F1.RMS);
 	  HAL_UART_Transmit(&huart1, msg, sizeof(msg)/sizeof(uint8_t),10);
-	  HAL_Delay(periodo);
   }
   /* USER CODE END 3 */
 }
@@ -174,7 +188,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -184,11 +198,18 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = 10;
-  RCC_OscInitStruct.PLL.PLLN = 210;
+  RCC_OscInitStruct.PLL.PLLM = 8;
+  RCC_OscInitStruct.PLL.PLLN = 216;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Activate the Over-Drive mode
+  */
+  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
@@ -202,7 +223,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_7) != HAL_OK)
   {
     Error_Handler();
   }
@@ -231,8 +252,8 @@ static void MX_ADC3_Init(void)
   hadc3.Instance = ADC3;
   hadc3.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc3.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc3.Init.ScanConvMode = ADC_SCAN_DISABLE;
-  hadc3.Init.ContinuousConvMode = DISABLE;
+  hadc3.Init.ScanConvMode = ADC_SCAN_ENABLE;
+  hadc3.Init.ContinuousConvMode = ENABLE;
   hadc3.Init.DiscontinuousConvMode = DISABLE;
   hadc3.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc3.Init.ExternalTrigConv = ADC_SOFTWARE_START;
@@ -247,13 +268,31 @@ static void MX_ADC3_Init(void)
 
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_4;
-  sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  //sConfig.Channel = ADC_CHANNEL_4;
+  //sConfig.Rank = ADC_REGULAR_RANK_1;
+  //sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  //if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
+  //{
+  //  Error_Handler();
+  //}
+
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  //sConfig.Channel = ADC_CHANNEL_5;
+  //sConfig.Rank = ADC_REGULAR_RANK_2;
+  //if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
+  //{
+  //  Error_Handler();
+  //}
+
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  //sConfig.Channel = ADC_CHANNEL_6;
+  //sConfig.Rank = ADC_REGULAR_RANK_3;
+  //if (HAL_ADC_ConfigChannel(&hadc3, &sConfig) != HAL_OK)
+  //{
+  //  Error_Handler();
+  //}
   /* USER CODE BEGIN ADC3_Init 2 */
 
   /* USER CODE END ADC3_Init 2 */
@@ -276,7 +315,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0x00A0A3F7;
+  hi2c1.Init.Timing = 0x20404768;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
@@ -345,6 +384,96 @@ static void MX_SPI2_Init(void)
   /* USER CODE BEGIN SPI2_Init 2 */
 
   /* USER CODE END SPI2_Init 2 */
+
+}
+
+/**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 53999;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 4294967295;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
+  * @brief TIM5 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM5_Init(void)
+{
+
+  /* USER CODE BEGIN TIM5_Init 0 */
+
+  /* USER CODE END TIM5_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM5_Init 1 */
+
+  /* USER CODE END TIM5_Init 1 */
+  htim5.Instance = TIM5;
+  htim5.Init.Prescaler = 53;
+  htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim5.Init.Period = 4294967295;
+  htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim5) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim5, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim5, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM5_Init 2 */
+
+  /* USER CODE END TIM5_Init 2 */
 
 }
 
@@ -502,14 +631,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF12_SDMMC1;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : ARDUINO_PWM_D9_Pin */
-  GPIO_InitStruct.Pin = ARDUINO_PWM_D9_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF1_TIM2;
-  HAL_GPIO_Init(ARDUINO_PWM_D9_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : DCMI_D6_Pin DCMI_D7_Pin */
   GPIO_InitStruct.Pin = DCMI_D6_Pin|DCMI_D7_Pin;
@@ -714,14 +835,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF13_DCMI;
   HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : ARDUINO_PWM_CS_D5_Pin */
-  GPIO_InitStruct.Pin = ARDUINO_PWM_CS_D5_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF2_TIM5;
-  HAL_GPIO_Init(ARDUINO_PWM_CS_D5_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : CS_Pin */
   GPIO_InitStruct.Pin = CS_Pin;

@@ -1,0 +1,8 @@
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:119:10:USBD_AUDIO_DeviceDescriptor	1
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:131:10:USBD_AUDIO_LangIDStrDescriptor	1
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:251:13:IntToUnicode	3
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:174:10:USBD_AUDIO_SerialStrDescriptor	2
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:162:10:USBD_AUDIO_ManufacturerStrDescriptor	1
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:143:10:USBD_AUDIO_ProductStrDescriptor	2
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:190:10:USBD_AUDIO_ConfigStrDescriptor	1
+E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_desc.c:209:10:USBD_AUDIO_InterfaceStrDescriptor	1
