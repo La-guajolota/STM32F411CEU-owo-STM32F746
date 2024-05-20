@@ -1,11 +1,11 @@
 import numpy as np
 import random
 
-resolucion = 65535
+resolucion = 4095
 ruido = int(0.05*resolucion)
 duracion = 1  # Duración en segundos
-f_signals_max = 50 #hz
-f_sampling = f_signals_max*100 #hz sampling
+f_signals_max = 60 #hz
+f_sampling = f_signals_max*10 #hz sampling
 muestras = int(duracion * f_sampling) # Generar valores de tiempo discreto
 t = np.arange(muestras) / f_sampling
 

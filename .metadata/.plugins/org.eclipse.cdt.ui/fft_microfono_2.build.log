@@ -1,0 +1,1860 @@
+11:02:42 **** Build of configuration Debug for project fft_microfono_2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_audio.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_audio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_audio.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_camera.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_camera.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_camera.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_sd.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_sd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_sd.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.o"
+arm-none-eabi-gcc "../Drivers/STM32746G-Discovery/stm32746g_discovery_ts.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32746G-Discovery/stm32746g_discovery_ts.d" -MT"Drivers/STM32746G-Discovery/stm32746g_discovery_ts.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32746G-Discovery/stm32746g_discovery_ts.o"
+arm-none-eabi-gcc "../Drivers/Components/wm8994/wm8994.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/Components/wm8994/wm8994.d" -MT"Drivers/Components/wm8994/wm8994.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Components/wm8994/wm8994.o"
+arm-none-eabi-gcc "../Drivers/Components/ov9655/ov9655.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/SW4STM32/STM32746G_DISCOVERY/Drivers/BSP" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/Components/ov9655/ov9655.d" -MT"Drivers/Components/ov9655/ov9655.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Components/ov9655/ov9655.o"
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery.c:29:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.c:383:36: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  383 | void BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.c:423:38: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  423 | void BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      I2C_HandleTypeDef
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:31,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:89:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:218:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  218 | void  BSP_AUDIO_OUT_ClockConfig(SAI_HandleTypeDef *hsai, uint32_t AudioFreq, void *Params);
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:219:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  219 | void  BSP_AUDIO_OUT_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:220:31: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  220 | void  BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:251:28: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  251 | void  BSP_AUDIO_IN_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:252:30: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  252 | void  BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.c:77:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:130:1: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  130 | SAI_HandleTypeDef         haudio_out_sai={0};
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:131:1: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  131 | SAI_HandleTypeDef         haudio_in_sai={0};
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.h:31,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:57:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:132:1: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  132 | TIM_HandleTypeDef         haudio_tim;
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_eeprom.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:173:3: warning: implicit declaration of function 'BSP_AUDIO_OUT_ClockConfig'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  173 |   BSP_AUDIO_OUT_ClockConfig(&haudio_out_sai, AudioFreq, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_OUT_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:177:17: error: request for member 'Instance' in something not a structure or union
+  177 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.h:104:25: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  104 | void BSP_CAMERA_MspInit(DCMI_HandleTypeDef *hdcmi, void *Params);
+      |                         ^~~~~~~~~~~~~~~~~~
+      |                         DMA_HandleTypeDef
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.h:34,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.c:73:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:115:27: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  115 | uint8_t BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:178:6: warning: implicit declaration of function 'HAL_SAI_GetState'; did you mean 'HAL_I2C_GetState'? [-Wimplicit-function-declaration]
+  178 |   if(HAL_SAI_GetState(&haudio_out_sai) == HAL_SAI_STATE_RESET)
+      |      ^~~~~~~~~~~~~~~~
+      |      HAL_I2C_GetState
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.h:105:27: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  105 | void BSP_CAMERA_MspDeInit(DCMI_HandleTypeDef *hdcmi, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:72:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:119:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  119 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:178:43: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  178 |   if(HAL_SAI_GetState(&haudio_out_sai) == HAL_SAI_STATE_RESET)
+      |                                           ^~~~~~~~~~~~~~~~~~~
+      |                                           HAL_I2C_STATE_RESET
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:178:43: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:59:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.h:129:23: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  129 | void BSP_QSPI_MspInit(QSPI_HandleTypeDef *hqspi, void *Params);
+      |                       ^~~~~~~~~~~~~~~~~~
+      |                       EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:104:1: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  104 | DCMI_HandleTypeDef  hDcmiHandler;
+      | ^~~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:120:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  120 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.h:130:25: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  130 | void BSP_QSPI_MspDeInit(QSPI_HandleTypeDef *hqspi, void *Params);
+      |                         ^~~~~~~~~~~~~~~~~~
+      |                         EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:135:3: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  135 |   DCMI_HandleTypeDef *phdcmi;
+      |   ^~~~~~~~~~~~~~~~~~
+      |   DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:143:9: error: request for member 'Init' in something not a structure or union
+  143 |   phdcmi->Init.CaptureRate      = DCMI_CR_ALL_FRAME;
+      |         ^~
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:71:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:115:27: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  115 | uint8_t BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:181:5: warning: implicit declaration of function 'BSP_AUDIO_OUT_MspInit'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  181 |     BSP_AUDIO_OUT_MspInit(&haudio_out_sai, NULL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     BSP_AUDIO_OUT_DeInit
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_ts.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_ts.c:60:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+In file included from ../Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.h:36:
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:79:1: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   79 | QSPI_HandleTypeDef QSPIHandle;
+      | ^~~~~~~~~~~~~~~~~~
+      | EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.h:111:28: error: unknown type name 'HAL_SD_CardInfoTypeDef'; did you mean 'HAL_SD_CardCIDTypedef'?
+  111 | void    BSP_SD_GetCardInfo(HAL_SD_CardInfoTypeDef *CardInfo);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~
+      |                            HAL_SD_CardCIDTypedef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:119:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  119 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Play':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:227:5: warning: implicit declaration of function 'HAL_SAI_Transmit_DMA'; did you mean 'HAL_I2C_Slave_Transmit_DMA'? [-Wimplicit-function-declaration]
+  227 |     HAL_SAI_Transmit_DMA(&haudio_out_sai, (uint8_t*) pBuffer, DMA_MAX(Size / AUDIODATA_SIZE));
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     HAL_I2C_Slave_Transmit_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:143:35: error: 'DCMI_CR_ALL_FRAME' undeclared (first use in this function)
+  143 |   phdcmi->Init.CaptureRate      = DCMI_CR_ALL_FRAME;
+      |                                   ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:143:35: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:144:9: error: request for member 'Init' in something not a structure or union
+  144 |   phdcmi->Init.HSPolarity       = DCMI_HSPOLARITY_LOW;
+      |         ^~
+../Drivers/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.h:116:24: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  116 | void    BSP_SD_MspInit(SD_HandleTypeDef *hsd, void *Params);
+      |                        ^~~~~~~~~~~~~~~~
+      |                        I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:92:43: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   92 | static uint8_t QSPI_ResetMemory          (QSPI_HandleTypeDef *hqspi);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.h:37:10: fatal error: ../../../Utilities/Fonts/fonts.h: No such file or directory
+   37 | #include "../../../Utilities/Fonts/fonts.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:120:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  120 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+compilation terminated.
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Pause':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:262:5: warning: implicit declaration of function 'HAL_SAI_DMAPause' [-Wimplicit-function-declaration]
+  262 |     HAL_SAI_DMAPause(&haudio_out_sai);
+      |     ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.h:117:31: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  117 | void    BSP_SD_Detect_MspInit(SD_HandleTypeDef *hsd, void *Params);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:144:35: error: 'DCMI_HSPOLARITY_LOW' undeclared (first use in this function); did you mean 'DMA_PRIORITY_LOW'?
+  144 |   phdcmi->Init.HSPolarity       = DCMI_HSPOLARITY_LOW;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+      |                                   DMA_PRIORITY_LOW
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:145:9: error: request for member 'Init' in something not a structure or union
+  145 |   phdcmi->Init.SynchroMode      = DCMI_SYNCHRO_HARDWARE;
+      |         ^~
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_lcd.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:93:43: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   93 | static uint8_t QSPI_DummyCyclesCfg       (QSPI_HandleTypeDef *hqspi);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:109:1: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  109 | SDRAM_HandleTypeDef sdramHandle;
+      | ^~~~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:110:8: error: unknown type name 'FMC_SDRAM_TimingTypeDef'
+  110 | static FMC_SDRAM_TimingTypeDef Timing;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:111:8: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  111 | static FMC_SDRAM_CommandTypeDef Command;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:135:14: error: request for member 'Instance' in something not a structure or union
+  135 |   sdramHandle.Instance = FMC_SDRAM_DEVICE;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.h:118:26: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  118 | void    BSP_SD_MspDeInit(SD_HandleTypeDef *hsd, void *Params);
+      |                          ^~~~~~~~~~~~~~~~
+      |                          I2C_HandleTypeDef
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_ts.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:94:43: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   94 | static uint8_t QSPI_WriteEnable          (QSPI_HandleTypeDef *hqspi);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Resume':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:286:5: warning: implicit declaration of function 'HAL_SAI_DMAResume' [-Wimplicit-function-declaration]
+  286 |     HAL_SAI_DMAResume(&haudio_out_sai);
+      |     ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:135:26: error: 'FMC_SDRAM_DEVICE' undeclared (first use in this function); did you mean 'FMC_SDRTR_REIE'?
+  135 |   sdramHandle.Instance = FMC_SDRAM_DEVICE;
+      |                          ^~~~~~~~~~~~~~~~
+      |                          FMC_SDRTR_REIE
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:135:26: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:138:9: error: request for member 'LoadToActiveDelay' in something not a structure or union
+  138 |   Timing.LoadToActiveDelay    = 2;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:139:9: error: request for member 'ExitSelfRefreshDelay' in something not a structure or union
+  139 |   Timing.ExitSelfRefreshDelay = 7;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:140:9: error: request for member 'SelfRefreshTime' in something not a structure or union
+  140 |   Timing.SelfRefreshTime      = 4;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:145:35: error: 'DCMI_SYNCHRO_HARDWARE' undeclared (first use in this function)
+  145 |   phdcmi->Init.SynchroMode      = DCMI_SYNCHRO_HARDWARE;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:141:9: error: request for member 'RowCycleDelay' in something not a structure or union
+  141 |   Timing.RowCycleDelay        = 7;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:142:9: error: request for member 'WriteRecoveryTime' in something not a structure or union
+  142 |   Timing.WriteRecoveryTime    = 2;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:146:9: error: request for member 'Init' in something not a structure or union
+  146 |   phdcmi->Init.VSPolarity       = DCMI_VSPOLARITY_HIGH;
+      |         ^~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:111:1: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  111 | SD_HandleTypeDef uSdHandle;
+      | ^~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:143:9: error: request for member 'RPDelay' in something not a structure or union
+  143 |   Timing.RPDelay              = 2;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:137:12: error: request for member 'Instance' in something not a structure or union
+  137 |   uSdHandle.Instance = SDMMC1;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:144:9: error: request for member 'RCDDelay' in something not a structure or union
+  144 |   Timing.RCDDelay             = 2;
+      |         ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:146:14: error: request for member 'Init' in something not a structure or union
+  146 |   sdramHandle.Init.SDBank             = FMC_SDRAM_BANK1;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:139:12: error: request for member 'Init' in something not a structure or union
+  139 |   uSdHandle.Init.ClockEdge           = SDMMC_CLOCK_EDGE_RISING;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:95:43: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+   95 | static uint8_t QSPI_AutoPollingMemReady  (QSPI_HandleTypeDef *hqspi, uint32_t Timeout);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Stop':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:305:3: warning: implicit declaration of function 'HAL_SAI_DMAStop' [-Wimplicit-function-declaration]
+  305 |   HAL_SAI_DMAStop(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:111:13: error: request for member 'Instance' in something not a structure or union
+  111 |   QSPIHandle.Instance = QUADSPI;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:146:35: error: 'DCMI_VSPOLARITY_HIGH' undeclared (first use in this function); did you mean 'DMA_PRIORITY_HIGH'?
+  146 |   phdcmi->Init.VSPolarity       = DCMI_VSPOLARITY_HIGH;
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+      |                                   DMA_PRIORITY_HIGH
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:147:9: error: request for member 'Init' in something not a structure or union
+  147 |   phdcmi->Init.ExtendedDataMode = DCMI_EXTEND_DATA_8B;
+      |         ^~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:146:41: error: 'FMC_SDRAM_BANK1' undeclared (first use in this function)
+  146 |   sdramHandle.Init.SDBank             = FMC_SDRAM_BANK1;
+      |                                         ^~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:147:14: error: request for member 'Init' in something not a structure or union
+  147 |   sdramHandle.Init.ColumnBitsNumber   = FMC_SDRAM_COLUMN_BITS_NUM_8;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:114:7: warning: implicit declaration of function 'HAL_QSPI_DeInit'; did you mean 'BSP_QSPI_DeInit'? [-Wimplicit-function-declaration]
+  114 |   if (HAL_QSPI_DeInit(&QSPIHandle) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~
+      |       BSP_QSPI_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:139:40: error: 'SDMMC_CLOCK_EDGE_RISING' undeclared (first use in this function)
+  139 |   uSdHandle.Init.ClockEdge           = SDMMC_CLOCK_EDGE_RISING;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:139:40: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:140:12: error: request for member 'Init' in something not a structure or union
+  140 |   uSdHandle.Init.ClockBypass         = SDMMC_CLOCK_BYPASS_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_SetFrequency':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:398:3: warning: implicit declaration of function '__HAL_SAI_DISABLE' [-Wimplicit-function-declaration]
+  398 |   __HAL_SAI_DISABLE(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:401:17: error: request for member 'Init' in something not a structure or union
+  401 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:147:35: error: 'DCMI_EXTEND_DATA_8B' undeclared (first use in this function)
+  147 |   phdcmi->Init.ExtendedDataMode = DCMI_EXTEND_DATA_8B;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:148:9: error: request for member 'Init' in something not a structure or union
+  148 |   phdcmi->Init.PCKPolarity      = DCMI_PCKPOLARITY_RISING;
+      |         ^~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:120:3: warning: implicit declaration of function 'BSP_QSPI_MspInit'; did you mean 'BSP_QSPI_DeInit'? [-Wimplicit-function-declaration]
+  120 |   BSP_QSPI_MspInit(&QSPIHandle, NULL);
+      |   ^~~~~~~~~~~~~~~~
+      |   BSP_QSPI_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:402:3: warning: implicit declaration of function 'HAL_SAI_Init'; did you mean 'HAL_I2C_Init'? [-Wimplicit-function-declaration]
+  402 |   HAL_SAI_Init(&haudio_out_sai);
+      |   ^~~~~~~~~~~~
+      |   HAL_I2C_Init
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:123:13: error: request for member 'Init' in something not a structure or union
+  123 |   QSPIHandle.Init.ClockPrescaler     = 1; /* QSPI freq = 216 MHz/(1+1) = 108 Mhz */
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:124:13: error: request for member 'Init' in something not a structure or union
+  124 |   QSPIHandle.Init.FifoThreshold      = 4;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:125:13: error: request for member 'Init' in something not a structure or union
+  125 |   QSPIHandle.Init.SampleShifting     = QSPI_SAMPLE_SHIFTING_HALFCYCLE;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:147:41: error: 'FMC_SDRAM_COLUMN_BITS_NUM_8' undeclared (first use in this function)
+  147 |   sdramHandle.Init.ColumnBitsNumber   = FMC_SDRAM_COLUMN_BITS_NUM_8;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:148:14: error: request for member 'Init' in something not a structure or union
+  148 |   sdramHandle.Init.RowBitsNumber      = FMC_SDRAM_ROW_BITS_NUM_12;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:140:40: error: 'SDMMC_CLOCK_BYPASS_DISABLE' undeclared (first use in this function); did you mean 'SDMMC_CLKCR_BYPASS_Pos'?
+  140 |   uSdHandle.Init.ClockBypass         = SDMMC_CLOCK_BYPASS_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        SDMMC_CLKCR_BYPASS_Pos
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:141:12: error: request for member 'Init' in something not a structure or union
+  141 |   uSdHandle.Init.ClockPowerSave      = SDMMC_CLOCK_POWER_SAVE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:405:3: warning: implicit declaration of function '__HAL_SAI_ENABLE' [-Wimplicit-function-declaration]
+  405 |   __HAL_SAI_ENABLE(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_SetAudioFrameSlot':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:425:17: error: request for member 'SlotInit' in something not a structure or union
+  425 |   haudio_out_sai.SlotInit.SlotActive = AudioFrameSlot;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:148:35: error: 'DCMI_PCKPOLARITY_RISING' undeclared (first use in this function)
+  148 |   phdcmi->Init.PCKPolarity      = DCMI_PCKPOLARITY_RISING;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:149:9: error: request for member 'Instance' in something not a structure or union
+  149 |   phdcmi->Instance              = DCMI;
+      |         ^~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:125:40: error: 'QSPI_SAMPLE_SHIFTING_HALFCYCLE' undeclared (first use in this function)
+  125 |   QSPIHandle.Init.SampleShifting     = QSPI_SAMPLE_SHIFTING_HALFCYCLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:125:40: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:126:13: error: request for member 'Init' in something not a structure or union
+  126 |   QSPIHandle.Init.FlashSize          = POSITION_VAL(N25Q128A_FLASH_SIZE) - 1;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:127:13: error: request for member 'Init' in something not a structure or union
+  127 |   QSPIHandle.Init.ChipSelectHighTime = QSPI_CS_HIGH_TIME_6_CYCLE; /* Min 50ns for nonRead */
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:148:41: error: 'FMC_SDRAM_ROW_BITS_NUM_12' undeclared (first use in this function)
+  148 |   sdramHandle.Init.RowBitsNumber      = FMC_SDRAM_ROW_BITS_NUM_12;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:149:14: error: request for member 'Init' in something not a structure or union
+  149 |   sdramHandle.Init.MemoryDataWidth    = SDRAM_MEMORY_WIDTH;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:440:3: warning: implicit declaration of function 'BSP_AUDIO_OUT_MspDeInit'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  440 |   BSP_AUDIO_OUT_MspDeInit(&haudio_out_sai, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_OUT_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:162:5: warning: implicit declaration of function 'BSP_CAMERA_MspInit'; did you mean 'BSP_CAMERA_DeInit'? [-Wimplicit-function-declaration]
+  162 |     BSP_CAMERA_MspInit(&hDcmiHandler, NULL);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     BSP_CAMERA_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:141:40: error: 'SDMMC_CLOCK_POWER_SAVE_DISABLE' undeclared (first use in this function)
+  141 |   uSdHandle.Init.ClockPowerSave      = SDMMC_CLOCK_POWER_SAVE_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:142:12: error: request for member 'Init' in something not a structure or union
+  142 |   uSdHandle.Init.BusWide             = SDMMC_BUS_WIDE_1B;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:163:5: warning: implicit declaration of function 'HAL_DCMI_Init'; did you mean 'HAL_DMA_Init'? [-Wimplicit-function-declaration]
+  163 |     HAL_DCMI_Init(phdcmi);
+      |     ^~~~~~~~~~~~~
+      |     HAL_DMA_Init
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:448:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  448 | void HAL_SAI_TxCpltCallback(SAI_HandleTypeDef *hsai)
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:127:40: error: 'QSPI_CS_HIGH_TIME_6_CYCLE' undeclared (first use in this function)
+  127 |   QSPIHandle.Init.ChipSelectHighTime = QSPI_CS_HIGH_TIME_6_CYCLE; /* Min 50ns for nonRead */
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:128:13: error: request for member 'Init' in something not a structure or union
+  128 |   QSPIHandle.Init.ClockMode          = QSPI_CLOCK_MODE_0;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:460:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  460 | void HAL_SAI_TxHalfCpltCallback(SAI_HandleTypeDef *hsai)
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:60:42: error: 'FMC_SDRAM_MEM_BUS_WIDTH_16' undeclared (first use in this function); did you mean 'FMC_NAND_PCC_MEM_BUS_WIDTH_16'?
+   60 | #define SDRAM_MEMORY_WIDTH               FMC_SDRAM_MEM_BUS_WIDTH_16
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:149:41: note: in expansion of macro 'SDRAM_MEMORY_WIDTH'
+  149 |   sdramHandle.Init.MemoryDataWidth    = SDRAM_MEMORY_WIDTH;
+      |                                         ^~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:150:14: error: request for member 'Init' in something not a structure or union
+  150 |   sdramHandle.Init.InternalBankNumber = FMC_SDRAM_INTERN_BANKS_NUM_4;
+      |              ^
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:30,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery.h:29:
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1442:33: warning: implicit declaration of function 'HAL_DCMI_ConfigCrop'; did you mean 'HAL_DCMI_ConfigCROP'? [-Wimplicit-function-declaration]
+ 1442 | #define HAL_DCMI_ConfigCROP     HAL_DCMI_ConfigCrop
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:171:7: note: in expansion of macro 'HAL_DCMI_ConfigCROP'
+  171 |       HAL_DCMI_ConfigCROP(phdcmi,           /* Crop in the middle of the VGA picture */
+      |       ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:142:40: error: 'SDMMC_BUS_WIDE_1B' undeclared (first use in this function)
+  142 |   uSdHandle.Init.BusWide             = SDMMC_BUS_WIDE_1B;
+      |                                        ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:143:12: error: request for member 'Init' in something not a structure or union
+  143 |   uSdHandle.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:472:28: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  472 | void HAL_SAI_ErrorCallback(SAI_HandleTypeDef *hsai)
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:128:40: error: 'QSPI_CLOCK_MODE_0' undeclared (first use in this function); did you mean 'QUADSPI_CCR_FMODE_0'?
+  128 |   QSPIHandle.Init.ClockMode          = QSPI_CLOCK_MODE_0;
+      |                                        ^~~~~~~~~~~~~~~~~
+      |                                        QUADSPI_CCR_FMODE_0
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:129:13: error: request for member 'Init' in something not a structure or union
+  129 |   QSPIHandle.Init.FlashID            = QSPI_FLASH_ID_1;
+      |             ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1443:33: warning: implicit declaration of function 'HAL_DCMI_EnableCrop'; did you mean 'HAL_DCMI_EnableCROP'? [-Wimplicit-function-declaration]
+ 1443 | #define HAL_DCMI_EnableCROP     HAL_DCMI_EnableCrop
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:176:7: note: in expansion of macro 'HAL_DCMI_EnableCROP'
+  176 |       HAL_DCMI_EnableCROP(phdcmi);
+      |       ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:522:35: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  522 | __weak void BSP_AUDIO_OUT_MspInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                   ^~~~~~~~~~~~~~~~~
+      |                                   I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:150:41: error: 'FMC_SDRAM_INTERN_BANKS_NUM_4' undeclared (first use in this function)
+  150 |   sdramHandle.Init.InternalBankNumber = FMC_SDRAM_INTERN_BANKS_NUM_4;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:151:14: error: request for member 'Init' in something not a structure or union
+  151 |   sdramHandle.Init.CASLatency         = FMC_SDRAM_CAS_LATENCY_2;
+      |              ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1444:33: warning: implicit declaration of function 'HAL_DCMI_DisableCrop'; did you mean 'HAL_DCMI_DisableCROP'? [-Wimplicit-function-declaration]
+ 1444 | #define HAL_DCMI_DisableCROP    HAL_DCMI_DisableCrop
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:181:7: note: in expansion of macro 'HAL_DCMI_DisableCROP'
+  181 |       HAL_DCMI_DisableCROP(phdcmi);
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:204:15: error: request for member 'Instance' in something not a structure or union
+  204 |   hDcmiHandler.Instance              = DCMI;
+      |               ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:129:40: error: 'QSPI_FLASH_ID_1' undeclared (first use in this function); did you mean 'QSPI_FLASH_SIZE'?
+  129 |   QSPIHandle.Init.FlashID            = QSPI_FLASH_ID_1;
+      |                                        ^~~~~~~~~~~~~~~
+      |                                        QSPI_FLASH_SIZE
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:130:13: error: request for member 'Init' in something not a structure or union
+  130 |   QSPIHandle.Init.DualFlash          = QSPI_DUALFLASH_DISABLE;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:605:37: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  605 | __weak void BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                     ^~~~~~~~~~~~~~~~~
+      |                                     I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:143:40: error: 'SDMMC_HARDWARE_FLOW_CONTROL_DISABLE' undeclared (first use in this function)
+  143 |   uSdHandle.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:144:12: error: request for member 'Init' in something not a structure or union
+  144 |   uSdHandle.Init.ClockDiv            = SDMMC_TRANSFER_CLK_DIV;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:206:3: warning: implicit declaration of function 'HAL_DCMI_DeInit'; did you mean 'HAL_DMA_DeInit'? [-Wimplicit-function-declaration]
+  206 |   HAL_DCMI_DeInit(&hDcmiHandler);
+      |   ^~~~~~~~~~~~~~~
+      |   HAL_DMA_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:650:39: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  650 | __weak void BSP_AUDIO_OUT_ClockConfig(SAI_HandleTypeDef *hsai, uint32_t AudioFreq, void *Params)
+      |                                       ^~~~~~~~~~~~~~~~~
+      |                                       I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_Out_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:702:17: error: request for member 'Instance' in something not a structure or union
+  702 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:710:17: error: request for member 'Init' in something not a structure or union
+  710 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:711:17: error: request for member 'Init' in something not a structure or union
+  711 |   haudio_out_sai.Init.AudioMode = SAI_MODEMASTER_TX;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:151:41: error: 'FMC_SDRAM_CAS_LATENCY_2' undeclared (first use in this function)
+  151 |   sdramHandle.Init.CASLatency         = FMC_SDRAM_CAS_LATENCY_2;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:152:14: error: request for member 'Init' in something not a structure or union
+  152 |   sdramHandle.Init.WriteProtection    = FMC_SDRAM_WRITE_PROTECTION_DISABLE;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:207:3: warning: implicit declaration of function 'BSP_CAMERA_MspDeInit'; did you mean 'BSP_CAMERA_DeInit'? [-Wimplicit-function-declaration]
+  207 |   BSP_CAMERA_MspDeInit(&hDcmiHandler, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~
+      |   BSP_CAMERA_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:130:40: error: 'QSPI_DUALFLASH_DISABLE' undeclared (first use in this function); did you mean 'QSPI_CLK_DISABLE'?
+  130 |   QSPIHandle.Init.DualFlash          = QSPI_DUALFLASH_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                        QSPI_CLK_DISABLE
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:144:40: error: 'SDMMC_TRANSFER_CLK_DIV' undeclared (first use in this function); did you mean 'SDMMC_NSpeed_CLK_DIV'?
+  144 |   uSdHandle.Init.ClockDiv            = SDMMC_TRANSFER_CLK_DIV;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                        SDMMC_NSpeed_CLK_DIV
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:132:7: warning: implicit declaration of function 'HAL_QSPI_Init'; did you mean 'BSP_QSPI_Init'? [-Wimplicit-function-declaration]
+  132 |   if (HAL_QSPI_Init(&QSPIHandle) != HAL_OK)
+      |       ^~~~~~~~~~~~~
+      |       BSP_QSPI_Init
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:711:35: error: 'SAI_MODEMASTER_TX' undeclared (first use in this function)
+  711 |   haudio_out_sai.Init.AudioMode = SAI_MODEMASTER_TX;
+      |                                   ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:712:17: error: request for member 'Init' in something not a structure or union
+  712 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_ContinuousStart':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:219:3: warning: implicit declaration of function 'HAL_DCMI_Start_DMA'; did you mean 'HAL_DMA_Start_IT'? [-Wimplicit-function-declaration]
+  219 |   HAL_DCMI_Start_DMA(&hDcmiHandler, DCMI_MODE_CONTINUOUS, (uint32_t)buff, GetSize(CameraCurrentResolution));
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_DMA_Start_IT
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:147:3: warning: implicit declaration of function 'BSP_SD_Detect_MspInit' [-Wimplicit-function-declaration]
+  147 |   BSP_SD_Detect_MspInit(&uSdHandle, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:138:7: warning: implicit declaration of function 'QSPI_ResetMemory' [-Wimplicit-function-declaration]
+  138 |   if (QSPI_ResetMemory(&QSPIHandle) != QSPI_OK)
+      |       ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:152:41: error: 'FMC_SDRAM_WRITE_PROTECTION_DISABLE' undeclared (first use in this function)
+  152 |   sdramHandle.Init.WriteProtection    = FMC_SDRAM_WRITE_PROTECTION_DISABLE;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:153:14: error: request for member 'Init' in something not a structure or union
+  153 |   sdramHandle.Init.SDClockPeriod      = SDCLOCK_PERIOD;
+      |              ^
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:30,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery.h:29:
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3937:43: error: 'SAI_MASTERDIVIDER_ENABLE' undeclared (first use in this function); did you mean 'SAI_MASTERDIVIDER_ENABLED'?
+ 3937 | #define SAI_MASTERDIVIDER_ENABLED         SAI_MASTERDIVIDER_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:712:35: note: in expansion of macro 'SAI_MASTERDIVIDER_ENABLED'
+  712 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:154:3: warning: implicit declaration of function 'BSP_SD_MspInit'; did you mean 'BSP_SD_DeInit'? [-Wimplicit-function-declaration]
+  154 |   BSP_SD_MspInit(&uSdHandle, NULL);
+      |   ^~~~~~~~~~~~~~
+      |   BSP_SD_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:713:17: error: request for member 'Init' in something not a structure or union
+  713 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:219:37: error: 'DCMI_MODE_CONTINUOUS' undeclared (first use in this function)
+  219 |   HAL_DCMI_Start_DMA(&hDcmiHandler, DCMI_MODE_CONTINUOUS, (uint32_t)buff, GetSize(CameraCurrentResolution));
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:157:6: warning: implicit declaration of function 'HAL_SD_Init'; did you mean 'HAL_DeInit'? [-Wimplicit-function-declaration]
+  157 |   if(HAL_SD_Init(&uSdHandle) != HAL_OK)
+      |      ^~~~~~~~~~~
+      |      HAL_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:144:7: warning: implicit declaration of function 'QSPI_DummyCyclesCfg' [-Wimplicit-function-declaration]
+  144 |   if (QSPI_DummyCyclesCfg(&QSPIHandle) != QSPI_OK)
+      |       ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:158:13: error: request for member 'Instance' in something not a structure or union
+  158 |   QSPIHandle.Instance = QUADSPI;
+      |             ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:713:34: error: 'SAI_FREE_PROTOCOL' undeclared (first use in this function)
+  713 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                                  ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:714:17: error: request for member 'Init' in something not a structure or union
+  714 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_SnapshotStart':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:230:37: error: 'DCMI_MODE_SNAPSHOT' undeclared (first use in this function)
+  230 |   HAL_DCMI_Start_DMA(&hDcmiHandler, DCMI_MODE_SNAPSHOT, (uint32_t)buff, GetSize(CameraCurrentResolution));
+      |                                     ^~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.h:62:42: error: 'FMC_SDRAM_CLOCK_PERIOD_2' undeclared (first use in this function)
+   62 | #define SDCLOCK_PERIOD                   FMC_SDRAM_CLOCK_PERIOD_2
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:153:41: note: in expansion of macro 'SDCLOCK_PERIOD'
+  153 |   sdramHandle.Init.SDClockPeriod      = SDCLOCK_PERIOD;
+      |                                         ^~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:154:14: error: request for member 'Init' in something not a structure or union
+  154 |   sdramHandle.Init.ReadBurst          = FMC_SDRAM_RBURST_ENABLE;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:167:3: warning: implicit declaration of function 'BSP_QSPI_MspDeInit'; did you mean 'BSP_QSPI_DeInit'? [-Wimplicit-function-declaration]
+  167 |   BSP_QSPI_MspDeInit(&QSPIHandle, NULL);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   BSP_QSPI_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:166:8: warning: implicit declaration of function 'HAL_SD_ConfigWideBusOperation' [-Wimplicit-function-declaration]
+  166 |     if(HAL_SD_ConfigWideBusOperation(&uSdHandle, SDMMC_BUS_WIDE_4B) != HAL_OK)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:714:34: error: 'SAI_DATASIZE_16' undeclared (first use in this function)
+  714 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                                  ^~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:715:17: error: request for member 'Init' in something not a structure or union
+  715 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_Suspend':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:240:3: warning: implicit declaration of function 'HAL_DCMI_Suspend' [-Wimplicit-function-declaration]
+  240 |   HAL_DCMI_Suspend(&hDcmiHandler);
+      |   ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:154:41: error: 'FMC_SDRAM_RBURST_ENABLE' undeclared (first use in this function)
+  154 |   sdramHandle.Init.ReadBurst          = FMC_SDRAM_RBURST_ENABLE;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:155:14: error: request for member 'Init' in something not a structure or union
+  155 |   sdramHandle.Init.ReadPipeDelay      = FMC_SDRAM_RPIPE_DELAY_0;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_Read':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:181:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  181 |   QSPI_CommandTypeDef s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:184:12: error: request for member 'InstructionMode' in something not a structure or union
+  184 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:166:50: error: 'SDMMC_BUS_WIDE_4B' undeclared (first use in this function)
+  166 |     if(HAL_SD_ConfigWideBusOperation(&uSdHandle, SDMMC_BUS_WIDE_4B) != HAL_OK)
+      |                                                  ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:187:12: error: request for member 'Instance' in something not a structure or union
+  187 |   uSdHandle.Instance = SDMMC1;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:715:34: error: 'SAI_FIRSTBIT_MSB' undeclared (first use in this function)
+  715 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:716:17: error: request for member 'Init' in something not a structure or union
+  716 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_Resume':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:250:3: warning: implicit declaration of function 'HAL_DCMI_Resume' [-Wimplicit-function-declaration]
+  250 |   HAL_DCMI_Resume(&hDcmiHandler);
+      |   ^~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:190:6: warning: implicit declaration of function 'HAL_SD_DeInit'; did you mean 'BSP_SD_DeInit'? [-Wimplicit-function-declaration]
+  190 |   if(HAL_SD_DeInit(&uSdHandle) != HAL_OK)
+      |      ^~~~~~~~~~~~~
+      |      BSP_SD_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:196:12: error: request for member 'Instance' in something not a structure or union
+  196 |   uSdHandle.Instance = SDMMC1;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:155:41: error: 'FMC_SDRAM_RPIPE_DELAY_0' undeclared (first use in this function)
+  155 |   sdramHandle.Init.ReadPipeDelay      = FMC_SDRAM_RPIPE_DELAY_0;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:197:3: warning: implicit declaration of function 'BSP_SD_MspDeInit'; did you mean 'BSP_SD_DeInit'? [-Wimplicit-function-declaration]
+  197 |   BSP_SD_MspDeInit(&uSdHandle, NULL);
+      |   ^~~~~~~~~~~~~~~~
+      |   BSP_SD_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: In function 'BSP_CAMERA_Stop':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:261:6: warning: implicit declaration of function 'HAL_DCMI_Stop' [-Wimplicit-function-declaration]
+  261 |   if(HAL_DCMI_Stop(&hDcmiHandler) == HAL_OK)
+      |      ^~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:184:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  184 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:185:12: error: request for member 'Instruction' in something not a structure or union
+  185 |   s_command.Instruction       = QUAD_INOUT_FAST_READ_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:186:12: error: request for member 'AddressMode' in something not a structure or union
+  186 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:429:32: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  429 | __weak void BSP_CAMERA_MspInit(DCMI_HandleTypeDef *hdcmi, void *Params)
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:159:3: warning: implicit declaration of function 'BSP_SDRAM_MspInit'; did you mean 'BSP_SDRAM_DeInit'? [-Wimplicit-function-declaration]
+  159 |   BSP_SDRAM_MspInit(&sdramHandle, NULL); /* __weak function can be rewritten by the application */
+      |   ^~~~~~~~~~~~~~~~~
+      |   BSP_SDRAM_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:716:39: error: 'SAI_CLOCKSTROBING_RISINGEDGE' undeclared (first use in this function)
+  716 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:717:17: error: request for member 'Init' in something not a structure or union
+  717 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_ReadBlocks':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:251:6: warning: implicit declaration of function 'HAL_SD_ReadBlocks'; did you mean 'BSP_SD_ReadBlocks'? [-Wimplicit-function-declaration]
+  251 |   if(HAL_SD_ReadBlocks(&uSdHandle, (uint8_t *)pData, ReadAddr, NumOfBlocks, Timeout) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~
+      |      BSP_SD_ReadBlocks
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:161:6: warning: implicit declaration of function 'HAL_SDRAM_Init'; did you mean 'BSP_SDRAM_Init'? [-Wimplicit-function-declaration]
+  161 |   if(HAL_SDRAM_Init(&sdramHandle, &Timing) != HAL_OK)
+      |      ^~~~~~~~~~~~~~
+      |      BSP_SDRAM_Init
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:184:14: error: request for member 'Instance' in something not a structure or union
+  184 |   sdramHandle.Instance = FMC_SDRAM_DEVICE;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:526:34: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  526 | __weak void BSP_CAMERA_MspDeInit(DCMI_HandleTypeDef *hdcmi, void *Params)
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:186:33: error: 'QSPI_ADDRESS_4_LINES' undeclared (first use in this function)
+  186 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:187:12: error: request for member 'AddressSize' in something not a structure or union
+  187 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_WriteBlocks':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:271:6: warning: implicit declaration of function 'HAL_SD_WriteBlocks'; did you mean 'BSP_SD_WriteBlocks'? [-Wimplicit-function-declaration]
+  271 |   if(HAL_SD_WriteBlocks(&uSdHandle, (uint8_t *)pData, WriteAddr, NumOfBlocks, Timeout) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+      |      BSP_SD_WriteBlocks
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:549:33: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  549 | void HAL_DCMI_LineEventCallback(DCMI_HandleTypeDef *hdcmi)
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:184:26: error: 'FMC_SDRAM_DEVICE' undeclared (first use in this function); did you mean 'FMC_SDRTR_REIE'?
+  184 |   sdramHandle.Instance = FMC_SDRAM_DEVICE;
+      |                          ^~~~~~~~~~~~~~~~
+      |                          FMC_SDRTR_REIE
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:717:33: error: 'SAI_ASYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+  717 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 SAI_SYNCHRONOUS_EXT
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:718:17: error: request for member 'Init' in something not a structure or union
+  718 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:570:34: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  570 | void HAL_DCMI_VsyncEventCallback(DCMI_HandleTypeDef *hdcmi)
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_ReadBlocks_DMA':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:291:6: warning: implicit declaration of function 'HAL_SD_ReadBlocks_DMA'; did you mean 'BSP_SD_ReadBlocks_DMA'? [-Wimplicit-function-declaration]
+  291 |   if(HAL_SD_ReadBlocks_DMA(&uSdHandle, (uint8_t *)pData, ReadAddr, NumOfBlocks) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+      |      BSP_SD_ReadBlocks_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:187:33: error: 'QSPI_ADDRESS_24_BITS' undeclared (first use in this function)
+  187 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:188:12: error: request for member 'Address' in something not a structure or union
+  188 |   s_command.Address           = ReadAddr;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:189:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  189 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:591:34: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  591 | void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef *hdcmi)
+      |                                  ^~~~~~~~~~~~~~~~~~
+      |                                  DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:186:6: warning: implicit declaration of function 'HAL_SDRAM_DeInit'; did you mean 'BSP_SDRAM_DeInit'? [-Wimplicit-function-declaration]
+  186 |   if(HAL_SDRAM_DeInit(&sdramHandle) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~
+      |      BSP_SDRAM_DeInit
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3936:43: error: 'SAI_OUTPUTDRIVE_ENABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_ENABLED'?
+ 3936 | #define SAI_OUTPUTDRIVE_ENABLED           SAI_OUTPUTDRIVE_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:718:37: note: in expansion of macro 'SAI_OUTPUTDRIVE_ENABLED'
+  718 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:719:17: error: request for member 'Init' in something not a structure or union
+  719 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_WriteBlocks_DMA':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:311:6: warning: implicit declaration of function 'HAL_SD_WriteBlocks_DMA'; did you mean 'BSP_SD_WriteBlocks_DMA'? [-Wimplicit-function-declaration]
+  311 |   if(HAL_SD_WriteBlocks_DMA(&uSdHandle, (uint8_t *)pData, WriteAddr, NumOfBlocks) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+      |      BSP_SD_WriteBlocks_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_camera.c:612:29: error: unknown type name 'DCMI_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  612 | void HAL_DCMI_ErrorCallback(DCMI_HandleTypeDef *hdcmi)
+      |                             ^~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:196:3: warning: implicit declaration of function 'BSP_SDRAM_MspDeInit'; did you mean 'BSP_SDRAM_DeInit'? [-Wimplicit-function-declaration]
+  196 |   BSP_SDRAM_MspDeInit(&sdramHandle, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   BSP_SDRAM_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_Initialization_sequence':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:211:10: error: request for member 'CommandMode' in something not a structure or union
+  211 |   Command.CommandMode            = FMC_SDRAM_CMD_CLK_ENABLE;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_Erase':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:329:6: warning: implicit declaration of function 'HAL_SD_Erase'; did you mean 'BSP_SD_Erase'? [-Wimplicit-function-declaration]
+  329 |   if(HAL_SD_Erase(&uSdHandle, StartAddr, EndAddr) != HAL_OK)
+      |      ^~~~~~~~~~~~
+      |      BSP_SD_Erase
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:189:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  189 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:190:12: error: request for member 'DataMode' in something not a structure or union
+  190 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:719:39: error: 'SAI_FIFOTHRESHOLD_1QF' undeclared (first use in this function); did you mean 'DMA_FIFO_THRESHOLD_FULL'?
+  719 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                       DMA_FIFO_THRESHOLD_FULL
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:727:17: error: request for member 'FrameInit' in something not a structure or union
+  727 |   haudio_out_sai.FrameInit.FrameLength = 64;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:728:17: error: request for member 'FrameInit' in something not a structure or union
+  728 |   haudio_out_sai.FrameInit.ActiveFrameLength = 32;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:729:17: error: request for member 'FrameInit' in something not a structure or union
+  729 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:345:28: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  345 | __weak void BSP_SD_MspInit(SD_HandleTypeDef *hsd, void *Params)
+      |                            ^~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_camera.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:211:36: error: 'FMC_SDRAM_CMD_CLK_ENABLE' undeclared (first use in this function)
+  211 |   Command.CommandMode            = FMC_SDRAM_CMD_CLK_ENABLE;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:212:10: error: request for member 'CommandTarget' in something not a structure or union
+  212 |   Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:190:33: error: 'QSPI_DATA_4_LINES' undeclared (first use in this function)
+  190 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:191:12: error: request for member 'DummyCycles' in something not a structure or union
+  191 |   s_command.DummyCycles       = N25Q128A_DUMMY_CYCLES_READ_QUAD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:192:12: error: request for member 'NbData' in something not a structure or union
+  192 |   s_command.NbData            = Size;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:193:12: error: request for member 'DdrMode' in something not a structure or union
+  193 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:444:35: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  444 | __weak void BSP_SD_Detect_MspInit(SD_HandleTypeDef *hsd, void *Params)
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:729:43: error: 'SAI_FS_CHANNEL_IDENTIFICATION' undeclared (first use in this function)
+  729 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:730:17: error: request for member 'FrameInit' in something not a structure or union
+  730 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:464:30: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  464 | __weak void BSP_SD_MspDeInit(SD_HandleTypeDef *hsd, void *Params)
+      |                              ^~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:193:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  193 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:194:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  194 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:212:36: error: 'FMC_SDRAM_CMD_TARGET_BANK1' undeclared (first use in this function)
+  212 |   Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:213:10: error: request for member 'AutoRefreshNumber' in something not a structure or union
+  213 |   Command.AutoRefreshNumber      = 1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:214:10: error: request for member 'ModeRegisterDefinition' in something not a structure or union
+  214 |   Command.ModeRegisterDefinition = 0;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_GetCardState':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:503:11: warning: implicit declaration of function 'HAL_SD_GetCardState'; did you mean 'BSP_SD_GetCardState'? [-Wimplicit-function-declaration]
+  503 |   return((HAL_SD_GetCardState(&uSdHandle) == HAL_SD_CARD_TRANSFER ) ? SD_TRANSFER_OK : SD_TRANSFER_BUSY);
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           BSP_SD_GetCardState
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:730:41: error: 'SAI_FS_ACTIVE_LOW' undeclared (first use in this function)
+  730 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                                         ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:731:17: error: request for member 'FrameInit' in something not a structure or union
+  731 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:503:46: error: 'HAL_SD_CARD_TRANSFER' undeclared (first use in this function); did you mean 'HAL_DMA_HALF_TRANSFER'?
+  503 |   return((HAL_SD_GetCardState(&uSdHandle) == HAL_SD_CARD_TRANSFER ) ? SD_TRANSFER_OK : SD_TRANSFER_BUSY);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+      |                                              HAL_DMA_HALF_TRANSFER
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:194:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  194 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:195:12: error: request for member 'SIOOMode' in something not a structure or union
+  195 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:217:3: warning: implicit declaration of function 'HAL_SDRAM_SendCommand' [-Wimplicit-function-declaration]
+  217 |   HAL_SDRAM_SendCommand(&sdramHandle, &Command, SDRAM_TIMEOUT);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:224:10: error: request for member 'CommandMode' in something not a structure or union
+  224 |   Command.CommandMode            = FMC_SDRAM_CMD_PALL;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:731:39: error: 'SAI_FS_BEFOREFIRSTBIT' undeclared (first use in this function)
+  731 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:738:17: error: request for member 'SlotInit' in something not a structure or union
+  738 |   haudio_out_sai.SlotInit.FirstBitOffset = 0;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:739:17: error: request for member 'SlotInit' in something not a structure or union
+  739 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:512:25: error: unknown type name 'HAL_SD_CardInfoTypeDef'; did you mean 'HAL_SD_CardCIDTypedef'?
+  512 | void BSP_SD_GetCardInfo(HAL_SD_CardInfoTypeDef *CardInfo)
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+      |                         HAL_SD_CardCIDTypedef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:224:36: error: 'FMC_SDRAM_CMD_PALL' undeclared (first use in this function)
+  224 |   Command.CommandMode            = FMC_SDRAM_CMD_PALL;
+      |                                    ^~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:225:10: error: request for member 'CommandTarget' in something not a structure or union
+  225 |   Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:226:10: error: request for member 'AutoRefreshNumber' in something not a structure or union
+  226 |   Command.AutoRefreshNumber      = 1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:227:10: error: request for member 'ModeRegisterDefinition' in something not a structure or union
+  227 |   Command.ModeRegisterDefinition = 0;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:233:10: error: request for member 'CommandMode' in something not a structure or union
+  233 |   Command.CommandMode            = FMC_SDRAM_CMD_AUTOREFRESH_MODE;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:195:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  195 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:523:27: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  523 | void HAL_SD_AbortCallback(SD_HandleTypeDef *hsd)
+      |                           ^~~~~~~~~~~~~~~~
+      |                           I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:739:38: error: 'SAI_SLOTSIZE_DATASIZE' undeclared (first use in this function)
+  739 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:740:17: error: request for member 'SlotInit' in something not a structure or union
+  740 |   haudio_out_sai.SlotInit.SlotNumber = 4;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:741:17: error: request for member 'SlotInit' in something not a structure or union
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:533:28: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  533 | void HAL_SD_TxCpltCallback(SD_HandleTypeDef *hsd)
+      |                            ^~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:198:7: warning: implicit declaration of function 'HAL_QSPI_Command' [-Wimplicit-function-declaration]
+  198 |   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:67:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:543:28: error: unknown type name 'SD_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  543 | void HAL_SD_RxCpltCallback(SD_HandleTypeDef *hsd)
+      |                            ^~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c: In function 'BSP_SD_GetCardState':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sd.c:504:1: warning: control reaches end of non-void function [-Wreturn-type]
+  504 | }
+      | ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:233:36: error: 'FMC_SDRAM_CMD_AUTOREFRESH_MODE' undeclared (first use in this function)
+  233 |   Command.CommandMode            = FMC_SDRAM_CMD_AUTOREFRESH_MODE;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:234:10: error: request for member 'CommandTarget' in something not a structure or union
+  234 |   Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
+      |          ^
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:30,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.h:37:
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3984:40: error: 'HAL_QSPI_TIMEOUT_DEFAULT_VALUE' undeclared (first use in this function); did you mean 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'?
+ 3984 | #define HAL_QPSI_TIMEOUT_DEFAULT_VALUE HAL_QSPI_TIMEOUT_DEFAULT_VALUE
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:198:49: note: in expansion of macro 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'
+  198 |   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:235:10: error: request for member 'AutoRefreshNumber' in something not a structure or union
+  235 |   Command.AutoRefreshNumber      = 8;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:236:10: error: request for member 'ModeRegisterDefinition' in something not a structure or union
+  236 |   Command.ModeRegisterDefinition = 0;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:248:10: error: request for member 'CommandMode' in something not a structure or union
+  248 |   Command.CommandMode            = FMC_SDRAM_CMD_LOAD_MODE;
+      |          ^
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:24: error: request for member 'Instance' in something not a structure or union
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |                        ^
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:3: note: in expansion of macro 'MODIFY_REG'
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |   ^~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:67:65: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:24: error: request for member 'Instance' in something not a structure or union
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |                        ^
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:193:66: note: in expansion of macro 'READ_REG'
+  193 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:3: note: in expansion of macro 'MODIFY_REG'
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |   ^~~~~~~~~~
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_sd.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:248:36: error: 'FMC_SDRAM_CMD_LOAD_MODE' undeclared (first use in this function)
+  248 |   Command.CommandMode            = FMC_SDRAM_CMD_LOAD_MODE;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:249:10: error: request for member 'CommandTarget' in something not a structure or union
+  249 |   Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:250:10: error: request for member 'AutoRefreshNumber' in something not a structure or union
+  250 |   Command.AutoRefreshNumber      = 1;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:67:84: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                                    ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:251:10: error: request for member 'ModeRegisterDefinition' in something not a structure or union
+  251 |   Command.ModeRegisterDefinition = tmpmrd;
+      |          ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:58: error: 'QSPI_CS_HIGH_TIME_3_CYCLE' undeclared (first use in this function)
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:204:3: note: in expansion of macro 'MODIFY_REG'
+  204 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
+      |   ^~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:67:103: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                                                       ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_Out_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:758:17: error: request for member 'Instance' in something not a structure or union
+  758 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:258:3: warning: implicit declaration of function 'HAL_SDRAM_ProgramRefreshRate' [-Wimplicit-function-declaration]
+  258 |   HAL_SDRAM_ProgramRefreshRate(&sdramHandle, RefreshCount);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:763:3: warning: implicit declaration of function 'HAL_SAI_DeInit'; did you mean 'HAL_PWR_DeInit'? [-Wimplicit-function-declaration]
+  763 |   HAL_SAI_DeInit(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~
+      |   HAL_PWR_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_InitEx':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:815:18: error: request for member 'Instance' in something not a structure or union
+  815 |     haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                  ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:207:7: warning: implicit declaration of function 'HAL_QSPI_Receive' [-Wimplicit-function-declaration]
+  207 |   if (HAL_QSPI_Receive(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:24: error: request for member 'Instance' in something not a structure or union
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |                        ^
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:3: note: in expansion of macro 'MODIFY_REG'
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |   ^~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:24: error: request for member 'Instance' in something not a structure or union
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |                        ^
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:193:66: note: in expansion of macro 'READ_REG'
+  193 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:3: note: in expansion of macro 'MODIFY_REG'
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |   ^~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:816:44: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  816 |     if(HAL_SAI_GetState(&haudio_in_sai) == HAL_SAI_STATE_RESET)
+      |                                            ^~~~~~~~~~~~~~~~~~~
+      |                                            HAL_I2C_STATE_RESET
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_ReadData':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:270:6: warning: implicit declaration of function 'HAL_SDRAM_Read_32b' [-Wimplicit-function-declaration]
+  270 |   if(HAL_SDRAM_Read_32b(&sdramHandle, (uint32_t *)uwStartAddress, pData, uwDataSize) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:820:7: warning: implicit declaration of function 'BSP_AUDIO_IN_MspInit'; did you mean 'BSP_AUDIO_IN_DeInit'? [-Wimplicit-function-declaration]
+  820 |       BSP_AUDIO_IN_MspInit(&haudio_in_sai, NULL);
+      |       ^~~~~~~~~~~~~~~~~~~~
+      |       BSP_AUDIO_IN_DeInit
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_ReadData_DMA':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:289:6: warning: implicit declaration of function 'HAL_SDRAM_Read_DMA'; did you mean 'HAL_I2C_Mem_Read_DMA'? [-Wimplicit-function-declaration]
+  289 |   if(HAL_SDRAM_Read_DMA(&sdramHandle, (uint32_t *)uwStartAddress, pData, uwDataSize) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+      |      HAL_I2C_Mem_Read_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:58: error: 'QSPI_CS_HIGH_TIME_6_CYCLE' undeclared (first use in this function)
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:213:3: note: in expansion of macro 'MODIFY_REG'
+  213 |   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
+      |   ^~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:71:46: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:829:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  829 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_WriteData':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:308:6: warning: implicit declaration of function 'HAL_SDRAM_Write_32b' [-Wimplicit-function-declaration]
+  308 |   if(HAL_SDRAM_Write_32b(&sdramHandle, (uint32_t *)uwStartAddress, pData, uwDataSize) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_Write':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:227:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  227 |   QSPI_CommandTypeDef s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:244:12: error: request for member 'InstructionMode' in something not a structure or union
+  244 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:71:65: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:829:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  829 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: In function 'BSP_SDRAM_WriteData_DMA':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:327:6: warning: implicit declaration of function 'HAL_SDRAM_Write_DMA'; did you mean 'HAL_I2C_Mem_Write_DMA'? [-Wimplicit-function-declaration]
+  327 |   if(HAL_SDRAM_Write_DMA(&sdramHandle, (uint32_t *)uwStartAddress, pData, uwDataSize) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~~
+      |      HAL_I2C_Mem_Write_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:244:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  244 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:245:12: error: request for member 'Instruction' in something not a structure or union
+  245 |   s_command.Instruction       = EXT_QUAD_IN_FAST_PROG_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:246:12: error: request for member 'AddressMode' in something not a structure or union
+  246 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:69:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:833:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  833 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:342:27: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  342 | uint8_t BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd)
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:246:33: error: 'QSPI_ADDRESS_4_LINES' undeclared (first use in this function)
+  246 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:247:12: error: request for member 'AddressSize' in something not a structure or union
+  247 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:69:65: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:833:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  833 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:360:31: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  360 | __weak void BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params)
+      |                               ^~~~~~~~~~~~~~~~~~~
+      |                               DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:835:18: error: 'SAI_MODEMASTER_RX' undeclared (first use in this function)
+  835 |     SAIx_In_Init(SAI_MODEMASTER_RX, slot_active, AudioFreq);
+      |                  ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:247:33: error: 'QSPI_ADDRESS_24_BITS' undeclared (first use in this function)
+  247 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:248:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  248 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_OUT_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:893:18: error: request for member 'Instance' in something not a structure or union
+  893 |     haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                  ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.c:451:33: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  451 | __weak void BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params)
+      |                                 ^~~~~~~~~~~~~~~~~~~
+      |                                 DMA_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:894:44: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  894 |     if(HAL_SAI_GetState(&haudio_in_sai) == HAL_SAI_STATE_RESET)
+      |                                            ^~~~~~~~~~~~~~~~~~~
+      |                                            HAL_I2C_STATE_RESET
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:902:19: error: request for member 'Instance' in something not a structure or union
+  902 |     haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                   ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:248:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  248 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:249:12: error: request for member 'DataMode' in something not a structure or union
+  249 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |            ^
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_sdram.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:71:46: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:915:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  915 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:249:33: error: 'QSPI_DATA_4_LINES' undeclared (first use in this function)
+  249 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:250:12: error: request for member 'DummyCycles' in something not a structure or union
+  250 |   s_command.DummyCycles       = 0;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:251:12: error: request for member 'DdrMode' in something not a structure or union
+  251 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:71:65: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:915:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  915 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:251:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  251 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:252:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  252 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:69:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:919:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  919 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.h:69:65: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:919:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  919 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:252:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  252 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:253:12: error: request for member 'SIOOMode' in something not a structure or union
+  253 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:921:18: error: 'SAI_MODEMASTER_TX' undeclared (first use in this function)
+  921 |     SAIx_In_Init(SAI_MODEMASTER_TX, slot_active, AudioFreq);
+      |                  ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:253:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  253 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:258:14: error: request for member 'Address' in something not a structure or union
+  258 |     s_command.Address = current_addr;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:259:14: error: request for member 'NbData' in something not a structure or union
+  259 |     s_command.NbData  = current_size;
+      |              ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_Record':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:961:3: warning: implicit declaration of function 'HAL_SAI_Receive_DMA'; did you mean 'HAL_I2C_Slave_Receive_DMA'? [-Wimplicit-function-declaration]
+  961 |   HAL_SAI_Receive_DMA(&haudio_in_sai, (uint8_t*)pbuf, size);
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   HAL_I2C_Slave_Receive_DMA
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:262:9: warning: implicit declaration of function 'QSPI_WriteEnable' [-Wimplicit-function-declaration]
+  262 |     if (QSPI_WriteEnable(&QSPIHandle) != QSPI_OK)
+      |         ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1053:3: warning: implicit declaration of function 'BSP_AUDIO_IN_MspDeInit'; did you mean 'BSP_AUDIO_IN_DeInit'? [-Wimplicit-function-declaration]
+ 1053 |   BSP_AUDIO_IN_MspDeInit(&haudio_in_sai, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_IN_DeInit
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3984:40: error: 'HAL_QSPI_TIMEOUT_DEFAULT_VALUE' undeclared (first use in this function); did you mean 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'?
+ 3984 | #define HAL_QPSI_TIMEOUT_DEFAULT_VALUE HAL_QSPI_TIMEOUT_DEFAULT_VALUE
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:268:51: note: in expansion of macro 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'
+  268 |     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1061:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1061 | void HAL_SAI_RxCpltCallback(SAI_HandleTypeDef *hsai)
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:274:9: warning: implicit declaration of function 'HAL_QSPI_Transmit' [-Wimplicit-function-declaration]
+  274 |     if (HAL_QSPI_Transmit(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |         ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1072:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1072 | void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef *hsai)
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1117:34: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1117 | __weak void BSP_AUDIO_IN_MspInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                  ^~~~~~~~~~~~~~~~~
+      |                                  I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:280:9: warning: implicit declaration of function 'QSPI_AutoPollingMemReady' [-Wimplicit-function-declaration]
+  280 |     if (QSPI_AutoPollingMemReady(&QSPIHandle, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != QSPI_OK)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1190:36: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1190 | __weak void BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                    ^~~~~~~~~~~~~~~~~
+      |                                    I2C_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_In_Init':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1236:17: error: request for member 'Instance' in something not a structure or union
+ 1236 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1244:17: error: request for member 'Init' in something not a structure or union
+ 1244 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1245:17: error: request for member 'Init' in something not a structure or union
+ 1245 |   haudio_out_sai.Init.AudioMode = SaiOutMode;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1246:17: error: request for member 'Init' in something not a structure or union
+ 1246 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_Erase_Block':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:301:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  301 |   QSPI_CommandTypeDef s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:304:12: error: request for member 'InstructionMode' in something not a structure or union
+  304 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3937:43: error: 'SAI_MASTERDIVIDER_ENABLE' undeclared (first use in this function); did you mean 'SAI_MASTERDIVIDER_ENABLED'?
+ 3937 | #define SAI_MASTERDIVIDER_ENABLED         SAI_MASTERDIVIDER_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1246:35: note: in expansion of macro 'SAI_MASTERDIVIDER_ENABLED'
+ 1246 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1247:17: error: request for member 'Init' in something not a structure or union
+ 1247 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:304:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  304 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:305:12: error: request for member 'Instruction' in something not a structure or union
+  305 |   s_command.Instruction       = SUBSECTOR_ERASE_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:306:12: error: request for member 'AddressMode' in something not a structure or union
+  306 |   s_command.AddressMode       = QSPI_ADDRESS_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1247:34: error: 'SAI_FREE_PROTOCOL' undeclared (first use in this function)
+ 1247 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                                  ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1248:17: error: request for member 'Init' in something not a structure or union
+ 1248 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:306:33: error: 'QSPI_ADDRESS_1_LINE' undeclared (first use in this function)
+  306 |   s_command.AddressMode       = QSPI_ADDRESS_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:307:12: error: request for member 'AddressSize' in something not a structure or union
+  307 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1248:34: error: 'SAI_DATASIZE_16' undeclared (first use in this function)
+ 1248 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                                  ^~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1249:17: error: request for member 'Init' in something not a structure or union
+ 1249 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:307:33: error: 'QSPI_ADDRESS_24_BITS' undeclared (first use in this function)
+  307 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:308:12: error: request for member 'Address' in something not a structure or union
+  308 |   s_command.Address           = BlockAddress;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:309:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  309 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1249:34: error: 'SAI_FIRSTBIT_MSB' undeclared (first use in this function)
+ 1249 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1250:17: error: request for member 'Init' in something not a structure or union
+ 1250 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:309:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  309 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:310:12: error: request for member 'DataMode' in something not a structure or union
+  310 |   s_command.DataMode          = QSPI_DATA_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1250:39: error: 'SAI_CLOCKSTROBING_RISINGEDGE' undeclared (first use in this function)
+ 1250 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1251:17: error: request for member 'Init' in something not a structure or union
+ 1251 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:310:33: error: 'QSPI_DATA_NONE' undeclared (first use in this function)
+  310 |   s_command.DataMode          = QSPI_DATA_NONE;
+      |                                 ^~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:311:12: error: request for member 'DummyCycles' in something not a structure or union
+  311 |   s_command.DummyCycles       = 0;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:312:12: error: request for member 'DdrMode' in something not a structure or union
+  312 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1251:33: error: 'SAI_ASYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+ 1251 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 SAI_SYNCHRONOUS_EXT
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1252:17: error: request for member 'Init' in something not a structure or union
+ 1252 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:312:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  312 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:313:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  313 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3936:43: error: 'SAI_OUTPUTDRIVE_ENABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_ENABLED'?
+ 3936 | #define SAI_OUTPUTDRIVE_ENABLED           SAI_OUTPUTDRIVE_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1252:37: note: in expansion of macro 'SAI_OUTPUTDRIVE_ENABLED'
+ 1252 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1253:17: error: request for member 'Init' in something not a structure or union
+ 1253 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:313:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  313 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:314:12: error: request for member 'SIOOMode' in something not a structure or union
+  314 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1253:39: error: 'SAI_FIFOTHRESHOLD_1QF' undeclared (first use in this function); did you mean 'DMA_FIFO_THRESHOLD_FULL'?
+ 1253 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                       DMA_FIFO_THRESHOLD_FULL
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1261:17: error: request for member 'FrameInit' in something not a structure or union
+ 1261 |   haudio_out_sai.FrameInit.FrameLength = 64;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1262:17: error: request for member 'FrameInit' in something not a structure or union
+ 1262 |   haudio_out_sai.FrameInit.ActiveFrameLength = 32;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1263:17: error: request for member 'FrameInit' in something not a structure or union
+ 1263 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:314:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  314 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1263:43: error: 'SAI_FS_CHANNEL_IDENTIFICATION' undeclared (first use in this function)
+ 1263 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1264:17: error: request for member 'FrameInit' in something not a structure or union
+ 1264 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                 ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3984:40: error: 'HAL_QSPI_TIMEOUT_DEFAULT_VALUE' undeclared (first use in this function); did you mean 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'?
+ 3984 | #define HAL_QPSI_TIMEOUT_DEFAULT_VALUE HAL_QSPI_TIMEOUT_DEFAULT_VALUE
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:323:49: note: in expansion of macro 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'
+  323 |   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1264:41: error: 'SAI_FS_ACTIVE_LOW' undeclared (first use in this function)
+ 1264 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                                         ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1265:17: error: request for member 'FrameInit' in something not a structure or union
+ 1265 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_Erase_Chip':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:343:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  343 |   QSPI_CommandTypeDef s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:346:12: error: request for member 'InstructionMode' in something not a structure or union
+  346 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1265:39: error: 'SAI_FS_BEFOREFIRSTBIT' undeclared (first use in this function)
+ 1265 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1272:17: error: request for member 'SlotInit' in something not a structure or union
+ 1272 |   haudio_out_sai.SlotInit.FirstBitOffset = 0;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1273:17: error: request for member 'SlotInit' in something not a structure or union
+ 1273 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:346:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  346 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:347:12: error: request for member 'Instruction' in something not a structure or union
+  347 |   s_command.Instruction       = BULK_ERASE_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:348:12: error: request for member 'AddressMode' in something not a structure or union
+  348 |   s_command.AddressMode       = QSPI_ADDRESS_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1273:38: error: 'SAI_SLOTSIZE_DATASIZE' undeclared (first use in this function)
+ 1273 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1274:17: error: request for member 'SlotInit' in something not a structure or union
+ 1274 |   haudio_out_sai.SlotInit.SlotNumber = 4;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1275:17: error: request for member 'SlotInit' in something not a structure or union
+ 1275 |   haudio_out_sai.SlotInit.SlotActive = SlotActive;
+      |                 ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1281:16: error: request for member 'Instance' in something not a structure or union
+ 1281 |   haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1289:16: error: request for member 'Init' in something not a structure or union
+ 1289 |   haudio_in_sai.Init.AudioFrequency = AudioFreq;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1290:16: error: request for member 'Init' in something not a structure or union
+ 1290 |   haudio_in_sai.Init.AudioMode = SAI_MODESLAVE_RX;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:348:33: error: 'QSPI_ADDRESS_NONE' undeclared (first use in this function)
+  348 |   s_command.AddressMode       = QSPI_ADDRESS_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:349:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  349 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1290:34: error: 'SAI_MODESLAVE_RX' undeclared (first use in this function)
+ 1290 |   haudio_in_sai.Init.AudioMode = SAI_MODESLAVE_RX;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1291:16: error: request for member 'Init' in something not a structure or union
+ 1291 |   haudio_in_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1292:16: error: request for member 'Init' in something not a structure or union
+ 1292 |   haudio_in_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1293:16: error: request for member 'Init' in something not a structure or union
+ 1293 |   haudio_in_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1294:16: error: request for member 'Init' in something not a structure or union
+ 1294 |   haudio_in_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1295:16: error: request for member 'Init' in something not a structure or union
+ 1295 |   haudio_in_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1296:16: error: request for member 'Init' in something not a structure or union
+ 1296 |   haudio_in_sai.Init.Synchro = SAI_SYNCHRONOUS;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:349:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  349 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:350:12: error: request for member 'DataMode' in something not a structure or union
+  350 |   s_command.DataMode          = QSPI_DATA_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1296:32: error: 'SAI_SYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+ 1296 |   haudio_in_sai.Init.Synchro = SAI_SYNCHRONOUS;
+      |                                ^~~~~~~~~~~~~~~
+      |                                SAI_SYNCHRONOUS_EXT
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1297:16: error: request for member 'Init' in something not a structure or union
+ 1297 |   haudio_in_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_DISABLED;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:350:33: error: 'QSPI_DATA_NONE' undeclared (first use in this function)
+  350 |   s_command.DataMode          = QSPI_DATA_NONE;
+      |                                 ^~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:351:12: error: request for member 'DummyCycles' in something not a structure or union
+  351 |   s_command.DummyCycles       = 0;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:352:12: error: request for member 'DdrMode' in something not a structure or union
+  352 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3935:43: error: 'SAI_OUTPUTDRIVE_DISABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_DISABLED'?
+ 3935 | #define SAI_OUTPUTDRIVE_DISABLED          SAI_OUTPUTDRIVE_DISABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1297:36: note: in expansion of macro 'SAI_OUTPUTDRIVE_DISABLED'
+ 1297 |   haudio_in_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_DISABLED;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1298:16: error: request for member 'Init' in something not a structure or union
+ 1298 |   haudio_in_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1306:16: error: request for member 'FrameInit' in something not a structure or union
+ 1306 |   haudio_in_sai.FrameInit.FrameLength = 64;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1307:16: error: request for member 'FrameInit' in something not a structure or union
+ 1307 |   haudio_in_sai.FrameInit.ActiveFrameLength = 32;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:352:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  352 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:353:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  353 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1308:16: error: request for member 'FrameInit' in something not a structure or union
+ 1308 |   haudio_in_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1309:16: error: request for member 'FrameInit' in something not a structure or union
+ 1309 |   haudio_in_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1310:16: error: request for member 'FrameInit' in something not a structure or union
+ 1310 |   haudio_in_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1317:16: error: request for member 'SlotInit' in something not a structure or union
+ 1317 |   haudio_in_sai.SlotInit.FirstBitOffset = 0;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1318:16: error: request for member 'SlotInit' in something not a structure or union
+ 1318 |   haudio_in_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1319:16: error: request for member 'SlotInit' in something not a structure or union
+ 1319 |   haudio_in_sai.SlotInit.SlotNumber = 4;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1320:16: error: request for member 'SlotInit' in something not a structure or union
+ 1320 |   haudio_in_sai.SlotInit.SlotActive = SlotActive;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_In_DeInit':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_audio.c:1340:16: error: request for member 'Instance' in something not a structure or union
+ 1340 |   haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:353:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  353 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:354:12: error: request for member 'SIOOMode' in something not a structure or union
+  354 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_audio.o] Error 1
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:354:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  354 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3984:40: error: 'HAL_QSPI_TIMEOUT_DEFAULT_VALUE' undeclared (first use in this function); did you mean 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'?
+ 3984 | #define HAL_QPSI_TIMEOUT_DEFAULT_VALUE HAL_QSPI_TIMEOUT_DEFAULT_VALUE
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:363:49: note: in expansion of macro 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'
+  363 |   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_GetStatus':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:383:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  383 |   QSPI_CommandTypeDef s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:387:12: error: request for member 'InstructionMode' in something not a structure or union
+  387 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:387:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  387 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:388:12: error: request for member 'Instruction' in something not a structure or union
+  388 |   s_command.Instruction       = READ_FLAG_STATUS_REG_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:389:12: error: request for member 'AddressMode' in something not a structure or union
+  389 |   s_command.AddressMode       = QSPI_ADDRESS_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:389:33: error: 'QSPI_ADDRESS_NONE' undeclared (first use in this function)
+  389 |   s_command.AddressMode       = QSPI_ADDRESS_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:390:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  390 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:390:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  390 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:391:12: error: request for member 'DataMode' in something not a structure or union
+  391 |   s_command.DataMode          = QSPI_DATA_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:391:33: error: 'QSPI_DATA_1_LINE' undeclared (first use in this function); did you mean 'QSPI_D1_PIN'?
+  391 |   s_command.DataMode          = QSPI_DATA_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 QSPI_D1_PIN
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:392:12: error: request for member 'DummyCycles' in something not a structure or union
+  392 |   s_command.DummyCycles       = 0;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:393:12: error: request for member 'NbData' in something not a structure or union
+  393 |   s_command.NbData            = 1;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:394:12: error: request for member 'DdrMode' in something not a structure or union
+  394 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:394:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  394 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:395:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  395 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:395:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  395 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:396:12: error: request for member 'SIOOMode' in something not a structure or union
+  396 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:396:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  396 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3984:40: error: 'HAL_QSPI_TIMEOUT_DEFAULT_VALUE' undeclared (first use in this function); did you mean 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'?
+ 3984 | #define HAL_QPSI_TIMEOUT_DEFAULT_VALUE HAL_QSPI_TIMEOUT_DEFAULT_VALUE
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:399:49: note: in expansion of macro 'HAL_QPSI_TIMEOUT_DEFAULT_VALUE'
+  399 |   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: In function 'BSP_QSPI_EnableMemoryMappedMode':
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:452:3: error: unknown type name 'QSPI_CommandTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  452 |   QSPI_CommandTypeDef      s_command;
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:453:3: error: unknown type name 'QSPI_MemoryMappedTypeDef'
+  453 |   QSPI_MemoryMappedTypeDef s_mem_mapped_cfg;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:456:12: error: request for member 'InstructionMode' in something not a structure or union
+  456 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:456:33: error: 'QSPI_INSTRUCTION_1_LINE' undeclared (first use in this function)
+  456 |   s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:457:12: error: request for member 'Instruction' in something not a structure or union
+  457 |   s_command.Instruction       = QUAD_INOUT_FAST_READ_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:458:12: error: request for member 'AddressMode' in something not a structure or union
+  458 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:458:33: error: 'QSPI_ADDRESS_4_LINES' undeclared (first use in this function)
+  458 |   s_command.AddressMode       = QSPI_ADDRESS_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:459:12: error: request for member 'AddressSize' in something not a structure or union
+  459 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:459:33: error: 'QSPI_ADDRESS_24_BITS' undeclared (first use in this function)
+  459 |   s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:460:12: error: request for member 'AlternateByteMode' in something not a structure or union
+  460 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:460:33: error: 'QSPI_ALTERNATE_BYTES_NONE' undeclared (first use in this function)
+  460 |   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:461:12: error: request for member 'DataMode' in something not a structure or union
+  461 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:461:33: error: 'QSPI_DATA_4_LINES' undeclared (first use in this function)
+  461 |   s_command.DataMode          = QSPI_DATA_4_LINES;
+      |                                 ^~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:462:12: error: request for member 'DummyCycles' in something not a structure or union
+  462 |   s_command.DummyCycles       = N25Q128A_DUMMY_CYCLES_READ_QUAD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:463:12: error: request for member 'DdrMode' in something not a structure or union
+  463 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:463:33: error: 'QSPI_DDR_MODE_DISABLE' undeclared (first use in this function); did you mean 'SPI_TIMODE_DISABLED'?
+  463 |   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 SPI_TIMODE_DISABLED
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:464:12: error: request for member 'DdrHoldHalfCycle' in something not a structure or union
+  464 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:464:33: error: 'QSPI_DDR_HHC_ANALOG_DELAY' undeclared (first use in this function)
+  464 |   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:465:12: error: request for member 'SIOOMode' in something not a structure or union
+  465 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |            ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:465:33: error: 'QSPI_SIOO_INST_EVERY_CMD' undeclared (first use in this function)
+  465 |   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:468:19: error: request for member 'TimeOutActivation' in something not a structure or union
+  468 |   s_mem_mapped_cfg.TimeOutActivation = QSPI_TIMEOUT_COUNTER_DISABLE;
+      |                   ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:468:40: error: 'QSPI_TIMEOUT_COUNTER_DISABLE' undeclared (first use in this function)
+  468 |   s_mem_mapped_cfg.TimeOutActivation = QSPI_TIMEOUT_COUNTER_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:469:19: error: request for member 'TimeOutPeriod' in something not a structure or union
+  469 |   s_mem_mapped_cfg.TimeOutPeriod     = 0;
+      |                   ^
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:471:7: warning: implicit declaration of function 'HAL_QSPI_MemoryMapped'; did you mean 'BSP_QSPI_MemoryMappedMode'? [-Wimplicit-function-declaration]
+  471 |   if (HAL_QSPI_MemoryMapped(&QSPIHandle, &s_command, &s_mem_mapped_cfg) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~
+      |       BSP_QSPI_MemoryMappedMode
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c: At top level:
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:495:30: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  495 | __weak void BSP_QSPI_MspInit(QSPI_HandleTypeDef *hqspi, void *Params)
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:561:32: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  561 | __weak void BSP_QSPI_MspDeInit(QSPI_HandleTypeDef *hqspi, void *Params)
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:589:33: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  589 | static uint8_t QSPI_ResetMemory(QSPI_HandleTypeDef *hqspi)
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:631:36: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  631 | static uint8_t QSPI_DummyCyclesCfg(QSPI_HandleTypeDef *hqspi)
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:690:33: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  690 | static uint8_t QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi)
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 EXTI_HandleTypeDef
+../Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.c:736:41: error: unknown type name 'QSPI_HandleTypeDef'; did you mean 'EXTI_HandleTypeDef'?
+  736 | static uint8_t QSPI_AutoPollingMemReady(QSPI_HandleTypeDef *hqspi, uint32_t Timeout)
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         EXTI_HandleTypeDef
+make: *** [Drivers/STM32746G-Discovery/subdir.mk:43: Drivers/STM32746G-Discovery/stm32746g_discovery_qspi.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:02:53 Build Failed. 436 errors, 61 warnings. (took 11s.109ms)
+

@@ -10,15 +10,20 @@
 
 #include "stm32f7xx.h"
 #include "main.h"
+#include "stdbool.h"
 #include "math.h"
 
 /*
  * Defines
  */
 
+/*
+ * Estructuras
+ */
+
 typedef struct{
-	float RMS;//RMS current
 	float FRE;//fRECUENCIA
+	float rms;
 	uint8_t channel; //Canal del adc
 }ACS712;
 

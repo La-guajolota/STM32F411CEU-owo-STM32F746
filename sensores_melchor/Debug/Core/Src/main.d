@@ -34,7 +34,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../Core/Inc/uitls_stm32.h ../Core/Inc/MAX6675.h ../Core/Inc/main.h \
- ../Core/Inc/MLX90614.h ../Core/Inc/mpu6050.h ../Core/Inc/ACS712.h
+ ../Core/Inc/MLX90614.h ../Core/Inc/ACS712.h ../Core/Inc/LP_EMA.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -74,5 +74,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/MAX6675.h:
 ../Core/Inc/main.h:
 ../Core/Inc/MLX90614.h:
-../Core/Inc/mpu6050.h:
 ../Core/Inc/ACS712.h:
+../Core/Inc/LP_EMA.h:

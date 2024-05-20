@@ -1,10 +1,10 @@
-13:56:03 **** Build of configuration Debug for project medidor_metereologico ****
+11:06:35 **** Build of configuration Debug for project medidor_metereologico ****
 make -j12 all 
 arm-none-eabi-size  medidor_metereologico.elf 
    text	   data	    bss	    dec	    hex	filename
-  49048	    520	   5416	  54984	   d6c8	medidor_metereologico.elf
+  49020	    520	   5416	  54956	   d6ac	medidor_metereologico.elf
 Finished building: default.size.stdout
  
 
-13:56:04 Build Finished. 0 errors, 0 warnings. (took 465ms)
+11:06:35 Build Finished. 0 errors, 0 warnings. (took 385ms)
 

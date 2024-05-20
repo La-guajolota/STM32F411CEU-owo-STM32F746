@@ -1,6 +1,6 @@
 Project: BSP
 Converter: ST System Workbench for STM32 project converter
-Date: 20240428
+Date: 20240515
 
 Unknown value type "" for id gnu.c.link.option.libs on tool fr.ac6.managedbuild.tool.gnu.cross.c.linker
 Unknown value type "" for id gnu.c.link.option.paths on tool fr.ac6.managedbuild.tool.gnu.cross.c.linker

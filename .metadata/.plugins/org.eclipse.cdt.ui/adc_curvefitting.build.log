@@ -1,16 +1,10 @@
-13:53:27 **** Build of configuration Debug for project adc_curvefitting ****
+11:06:27 **** Build of configuration Debug for project adc_curvefitting ****
 make -j12 all 
-arm-none-eabi-gcc -o "adc_curvefitting.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Sexto_sem\MCU_avanzados\adc_curvefitting\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="adc_curvefitting.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: adc_curvefitting.elf
- 
 arm-none-eabi-size  adc_curvefitting.elf 
-arm-none-eabi-objdump -h -S adc_curvefitting.elf  > "adc_curvefitting.list"
    text	   data	    bss	    dec	    hex	filename
-  13428	    100	   2068	  15596	   3cec	adc_curvefitting.elf
+  13420	    100	   2068	  15588	   3ce4	adc_curvefitting.elf
 Finished building: default.size.stdout
  
-Finished building: adc_curvefitting.list
- 
 
-13:53:34 Build Finished. 0 errors, 0 warnings. (took 7s.348ms)
+11:06:27 Build Finished. 0 errors, 0 warnings. (took 216ms)
 

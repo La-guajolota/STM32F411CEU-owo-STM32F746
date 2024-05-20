@@ -1,10 +1,10 @@
-18:10:02 **** Incremental Build of configuration Debug for project AUDIO_Standalone ****
-make -j12 all 
+16:36:31 **** Build of configuration Debug for project AUDIO_Standalone ****
+make all 
 arm-none-eabi-size  STM32746G-DISCOVERY_USBD-FS.elf 
    text	   data	    bss	    dec	    hex	filename
   24364	    440	  28032	  52836	   ce64	STM32746G-DISCOVERY_USBD-FS.elf
 Finished building: default.size.stdout
  
 
-18:10:04 Build Finished. 0 errors, 0 warnings. (took 1s.932ms)
+16:36:31 Build Finished. 0 errors, 0 warnings. (took 313ms)
 

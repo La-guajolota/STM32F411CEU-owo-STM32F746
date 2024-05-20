@@ -1,0 +1,37 @@
+2024-05-20 00:00:26,740 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-20 00:00:34,032 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 715302424 Bytes (1073741824)
+2024-05-20 00:00:34,992 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 744662552 Bytes (1073741824)
+2024-05-20 00:00:35,579 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 775593496 Bytes (1073741824)
+2024-05-20 00:00:36,840 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-20 00:00:36,840 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-20 00:00:36,840 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-20 00:00:36,840 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-20 00:00:36,840 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-20 00:00:36,841 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-20 00:00:37,005 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-20 00:00:37,672 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\license.tmp_save
+2024-05-20 00:00:39,664 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\license.tmp
+2024-05-20 00:00:40,476 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\gpio.tmp_save
+2024-05-20 00:00:40,675 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\gpio.tmp
+2024-05-20 00:00:41,306 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\cortex.tmp_save
+2024-05-20 00:00:41,441 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\cortex.tmp
+2024-05-20 00:00:41,673 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\stm32f7xx_it.c_save
+2024-05-20 00:00:41,893 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\stm32f7xx_it.c
+2024-05-20 00:00:41,988 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\stm32f7xx_it.h_save
+2024-05-20 00:00:42,159 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\stm32f7xx_it.h
+2024-05-20 00:00:42,395 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\stm32f7xx_hal_msp.c_save
+2024-05-20 00:00:42,642 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\stm32f7xx_hal_msp.c
+2024-05-20 00:00:42,741 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\system.tmp_save
+2024-05-20 00:00:42,864 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\MXTmpFiles\system.tmp
+2024-05-20 00:00:43,068 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-05-20 00:00:43,443 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\stm32f7xx_hal_conf.h
+2024-05-20 00:00:43,816 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\main.h_save
+2024-05-20 00:00:44,030 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Inc\main.h
+2024-05-20 00:00:44,146 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\main.c_save
+2024-05-20 00:00:45,713 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\MCP2515\Core\Src\main.c
+2024-05-20 00:01:07,981 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 21947mS.
+2024-05-20 00:01:07,984 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-20 00:01:08,041 [INFO] ConfigFileManager:1503 - The Die is : DIE449
+2024-05-20 00:01:13,871 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 5887mS.
+2024-05-20 00:01:13,888 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 16mS.
+2024-05-20 00:01:13,891 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

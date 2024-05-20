@@ -1,10 +1,18 @@
-13:53:21 **** Build of configuration Debug for project CAN_transiver_ejemplo ****
+21:03:40 **** Incremental Build of configuration Debug for project CAN_transiver_ejemplo ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "CAN_transiver_ejemplo.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Sexto_sem\MCU_avanzados\CAN_transiver_ejemplo\STM32F103C8TX_FLASH.ld" -Wl,-Map="CAN_transiver_ejemplo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: CAN_transiver_ejemplo.elf has a LOAD segment with RWX permissions
+Finished building target: CAN_transiver_ejemplo.elf
+ 
 arm-none-eabi-size  CAN_transiver_ejemplo.elf 
+arm-none-eabi-objdump -h -S CAN_transiver_ejemplo.elf  > "CAN_transiver_ejemplo.list"
    text	   data	    bss	    dec	    hex	filename
-  11668	     28	   1748	  13444	   3484	CAN_transiver_ejemplo.elf
+  12852	     20	   1764	  14636	   392c	CAN_transiver_ejemplo.elf
 Finished building: default.size.stdout
  
+Finished building: CAN_transiver_ejemplo.list
+ 
 
-13:53:21 Build Finished. 0 errors, 0 warnings. (took 361ms)
+21:03:46 Build Finished. 0 errors, 1 warnings. (took 5s.962ms)
 

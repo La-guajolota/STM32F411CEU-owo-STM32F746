@@ -1,10 +1,10 @@
-13:56:09 **** Build of configuration Debug for project senos_triangulos_neuronal_net ****
+11:06:38 **** Build of configuration Debug for project senos_triangulos_neuronal_net ****
 make -j12 all 
 arm-none-eabi-size  senos_triangulos_neuronal_net.elf 
    text	   data	    bss	    dec	    hex	filename
- 170660	  21412	   2664	 194736	  2f8b0	senos_triangulos_neuronal_net.elf
+ 170488	  21412	   2664	 194564	  2f804	senos_triangulos_neuronal_net.elf
 Finished building: default.size.stdout
  
 
-13:56:18 Build Finished. 0 errors, 0 warnings. (took 9s.155ms)
+11:06:42 Build Finished. 0 errors, 0 warnings. (took 4s.47ms)
 

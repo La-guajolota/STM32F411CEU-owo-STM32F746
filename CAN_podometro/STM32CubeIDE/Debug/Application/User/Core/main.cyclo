@@ -1,0 +1,7 @@
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:840:6:StartDefaultTask	1
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:150:6:HAL_UARTEx_RxEventCallback	2
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:176:6:HAL_CAN_RxFifo0MsgPendingCallback	2
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:315:6:SystemClock_Config	1
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:193:5:main	3
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:899:6:HAL_TIM_PeriodElapsedCallback	2
+E:/Sexto_sem/MCU_avanzados/CAN_podometro/Core/Src/main.c:916:6:Error_Handler	1

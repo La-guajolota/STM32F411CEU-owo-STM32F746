@@ -46,6 +46,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 CAN_HandleTypeDef hcan;
 
 UART_HandleTypeDef huart2;
@@ -57,7 +59,7 @@ CAN_TxHeaderTypeDef   TxHeader;
 CAN_RxHeaderTypeDef   RxHeader;
 CAN_FilterTypeDef canfilterconfig;
 //buffers del CAN tx
-uint8_t TxData[] = {'H','o','l','a',' ','?','?','?'};
+uint8_t TxData[8] = {0};
 uint8_t RxData[8] = {0};
 uint32_t TxMailbox;
 
@@ -68,6 +70,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_CAN_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -77,10 +80,6 @@ static void MX_USART2_UART_Init(void);
 
 //BANDERAS
 bool datacheck = false;
-
-//MSG Fijos para uart
-uint8_t msg_ok[] = "OK_IN\r\n";
-
 /* USER CODE END 0 */
 
 /**
@@ -89,8 +88,9 @@ uint8_t msg_ok[] = "OK_IN\r\n";
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
 
+  /* USER CODE BEGIN 1 */
+  uint16_t adc_lec;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -113,11 +113,17 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN_Init();
   MX_USART2_UART_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_CAN_Start(&hcan);
-  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING);
+  TxHeader.IDE = CAN_ID_STD;
+  TxHeader.StdId = ID_transferee;
+  TxHeader.RTR = CAN_RTR_DATA; //eSTAMOS MANDAMOS DATAFRAMES
+  TxHeader.DLC = 2; // Estamos mandando 2 bytes
 
+  TxData[0] = 0; //low bits del adc
+  TxData[1] = 0; //high bits del adc
 
   /* USER CODE END 2 */
 
@@ -129,19 +135,24 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+	  //Inicia conversion
+	  HAL_ADC_Start(&hadc1);
+	  //Polleamos el resultado
+	  HAL_ADC_PollForConversion(&hadc1, 1);
+	  //recivimos la lectura
+	  adc_lec = HAL_ADC_GetValue(&hadc1);
+	  TxData[0] = adc_lec & 0x00FF;
+	  TxData[1] = (adc_lec & 0xFF00)>>8;
+
 	  /*
 	   * MANDAMOS INFO AL BUS
 	   */
-	if (HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox) != HAL_OK) {
-		Error_Handler();
-	}else { //No hubo problema en lanzar la informacion
-		for (int i = 0; i < 4; i++)
-		{
-			HAL_GPIO_TogglePin(TX_led_GPIO_Port, TX_led_Pin);
-			HAL_Delay(50);
-		}
-		HAL_Delay(5000);
-	}
+	  if (HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox) != HAL_OK) {
+		  Error_Handler();
+	  }else { //No hubo problema en lanzar la informacion
+		HAL_GPIO_TogglePin(TX_led_GPIO_Port, TX_led_Pin);
+		HAL_Delay(100);
+	  }
 
 	/*
 	 * REVIMOS INFO
@@ -158,6 +169,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -187,6 +199,59 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+
+  /** Common config
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.NbrOfConversion = 1;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -205,11 +270,11 @@ static void MX_CAN_Init(void)
 
   /* USER CODE END CAN_Init 1 */
   hcan.Instance = CAN1;
-  hcan.Init.Prescaler = 80;
+  hcan.Init.Prescaler = 18;
   hcan.Init.Mode = CAN_MODE_NORMAL;
   hcan.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan.Init.TimeSeg1 = CAN_BS1_4TQ;
-  hcan.Init.TimeSeg2 = CAN_BS2_4TQ;
+  hcan.Init.TimeSeg1 = CAN_BS1_2TQ;
+  hcan.Init.TimeSeg2 = CAN_BS2_1TQ;
   hcan.Init.TimeTriggeredMode = DISABLE;
   hcan.Init.AutoBusOff = DISABLE;
   hcan.Init.AutoWakeUp = DISABLE;
@@ -221,12 +286,6 @@ static void MX_CAN_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN_Init 2 */
-
-  //Rellenamos el TXheader
-  TxHeader.IDE = CAN_ID_STD; //Estamos usando el standa
-  TxHeader.StdId = ID_transferee; //ID del trnasmisor
-  TxHeader.RTR = CAN_RTR_DATA; //Vamos a mandar dataframes
-  TxHeader.DLC = sizeof(TxData); //Cantidad de bytes que vamos a mandar
 
   /* USER CODE END CAN_Init 2 */
 
@@ -301,18 +360,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(RX_led_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configures the port and pin on which the EVENTOUT Cortex signal will be connected */
-  HAL_GPIOEx_ConfigEventout(AFIO_EVENTOUT_PORT_B, AFIO_EVENTOUT_PIN_13);
-
-  /*Enables the Event Output */
-  HAL_GPIOEx_EnableEventout();
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

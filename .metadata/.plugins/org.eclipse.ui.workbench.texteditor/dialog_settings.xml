@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="micros"/>
+		<item key="selection" value="HAL_UARTEx_RxEventCallback"/>
 		<list key="findhistory">
-			<item value="timer"/>
-			<item value="_analogRead(_pin)"/>
-			<item value="micros()"/>
-			<item value="DHT22_PIN"/>
-			<item value="DHT22_PORT"/>
-			<item value="DTH22_PORT"/>
-			<item value="LCD_Write("/>
-			<item value="LCD_Write"/>
-			<item value="LCD_Wr"/>
-			<item value="LCD_WRITE"/>
-			<item value="LCD_W"/>
-			<item value="CyDelay"/>
-			<item value="led"/>
-			<item value="DMA"/>
-			<item value="private "/>
+			<item value="HAL_UARTEx_RxEventCallback"/>
+			<item value="HAL_UARTEx_ReceiveToIdle_IT"/>
+			<item value="HAL_CAN_ActivateNotification"/>
+			<item value="  HAL_CAN_ActivateNotification"/>
+			<item value="  HAL_CAN_ActivateNotification(&amp;hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);"/>
+			<item value="CAN_IT_RX_FIFO1_MSG_PENDING"/>
+			<item value="HAL_CAN_RxFifo0Msg"/>
+			<item value="HAL_CAN_RxFifo0MsgE"/>
+			<item value="HAL_CAN_RxFifo0MsgPendingCallback"/>
+			<item value="HAL_CAN"/>
+			<item value="HAL_CANE"/>
+			<item value="HAL_CANEx"/>
+			<item value="HAL_CAN_GetRxMessage"/>
+			<item value="receive"/>
+			<item value="receivecall"/>
 		</list>
 		<list key="replacehistory">
 			<item value="micros"/>
@@ -34,8 +34,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="584"/>
-		<item key="DIALOG_Y_ORIGIN" value="133"/>
+		<item key="DIALOG_X_ORIGIN" value="504"/>
+		<item key="DIALOG_Y_ORIGIN" value="521"/>
 		<item key="DIALOG_WIDTH" value="318"/>
 		<item key="DIALOG_HEIGHT" value="354"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

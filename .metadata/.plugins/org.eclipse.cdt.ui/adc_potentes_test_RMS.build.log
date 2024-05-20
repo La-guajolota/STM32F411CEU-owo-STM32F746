@@ -1,0 +1,10 @@
+11:06:28 **** Build of configuration Debug for project adc_potentes_test_RMS ****
+make -j12 all 
+arm-none-eabi-size  adc_potentes_test_RMS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20600	     12	   2140	  22752	   58e0	adc_potentes_test_RMS.elf
+Finished building: default.size.stdout
+ 
+
+11:06:28 Build Finished. 0 errors, 0 warnings. (took 212ms)
+

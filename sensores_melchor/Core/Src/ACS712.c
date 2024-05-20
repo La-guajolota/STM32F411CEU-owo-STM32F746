@@ -6,17 +6,26 @@
  */
 
 #include "ACS712.h"
+#include "LP_EMA.h"
 
 /*
  * Defines del periferico en uso
  */
-extern ADC_HandleTypeDef hadc3;
-extern TIM_HandleTypeDef htim2;
+//extern ADC_HandleTypeDef hadc3;
+extern DMA_HandleTypeDef hdma_adc3;
 extern TIM_HandleTypeDef htim5;
+extern TIM_HandleTypeDef htim8;
+
 
 #define micros &htim5 //uS
-#define millis &htim2//mS
 #define adc &hadc3
+
+extern bool flag_dma;
+extern uint32_t adc_lec[3];
+
+extern FILTRO_EMA filter_F1;
+extern FILTRO_EMA filter_F2;
+extern FILTRO_EMA filter_F3;
 
 /*
  * Defines para los calculos
@@ -24,19 +33,13 @@ extern TIM_HandleTypeDef htim5;
 
 //FORM FACTOR
 #define ACS712_FF_SINUS           0.707 //(1.0/sqrt(2))
-#define ACS712_FF_SQUARE          (1.0)
-#define ACS712_FF_TRIANGLE        (1.0/sqrt(3))
-#define ACS712_FF_SAWTOOTH        (1.0/sqrt(3))
 
 #define ACS712_DEFAULT_FREQ       60 //hz
 #define ACS712_DEFAULT_NOISE      21 //hz
 
-#define sensibilidad 1
-#define mV_amps 66.0 //mV PARA UN 0V-3.3V
+#define mV_amps 0.066 //
 
 #define midpoimt_0v 2.5 //volts
-#define offset 0.066 //Buscamos que sea un valor aproximado a la amplitud del ruido
-
 #define _microsAdjust 0.9986
 
 /*
@@ -57,60 +60,14 @@ extern TIM_HandleTypeDef htim5;
 	30A		66		74.1 mA		18.5 mA		1.16 mA
 */
 
-//ADC reading por cana
+//ADC reading por cana/
 uint16_t analogRead(uint8_t channel){
 
-	static uint8_t canal_anterior = 3;
-	uint16_t val = 0;
-
-	//Si es el mismo canal entonces no reconfiguramos de nuevo los pines
-	if (canal_anterior == channel) {
-
-		HAL_ADC_Start(adc);
-		HAL_ADC_PollForConversion(adc,10);
-		val = HAL_ADC_GetValue(adc);
-		HAL_ADC_Stop(adc);
-
-	}else{ //Configuramos el canal
-
-		//Paramos el adc
-
-		ADC_ChannelConfTypeDef sConfig = {0};
-
-		//SELECCIONAMOS CANAL
-		switch (channel) {
-			case 0:
-				 sConfig.Channel = ADC_CHANNEL_4;
-				break;
-			case 1:
-				 sConfig.Channel = ADC_CHANNEL_5;
-				break;
-			case 2:
-				 sConfig.Channel = ADC_CHANNEL_6;
-				break;
-			default:
-				break;
-		}
-
-		sConfig.Rank = 1;
-		sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-		if (HAL_ADC_ConfigChannel(adc, &sConfig) != HAL_OK)
-		{
-			Error_Handler();
-		}
-
-		//INICALIZAMOS LA CONVERSION
-		HAL_ADC_Start(adc);
-		HAL_ADC_PollForConversion(adc,0);
-		//Tomamos la medida
-		val = HAL_ADC_GetValue(adc);
-		HAL_ADC_Stop(adc);
+	while(flag_dma == false){
+		//esperamos a que se capturen los datos
 	}
-
-	//Almacenamos el canal anterior
-	canal_anterior = channel;
-
-	return val;
+	flag_dma = false;
+	return adc_lec[channel];
 }
 
 //  FREQUENCY DETECTION
@@ -118,8 +75,8 @@ uint16_t analogRead(uint8_t channel){
 //  blocks for substantial amount of time, depending on minimalFrequency
 void ACS712_Frequency(ACS712* modulo,float minimalFrequency)
 {
-  int maximum = 0;
-  int minimum = 0;
+  uint16_t maximum = 0;
+  uint16_t minimum = 0;
   maximum = minimum = analogRead(modulo->channel);
 
   //  determine maxima
@@ -127,15 +84,15 @@ void ACS712_Frequency(ACS712* modulo,float minimalFrequency)
   __HAL_TIM_SET_COUNTER(micros,0);
   while (__HAL_TIM_GET_COUNTER(micros)< timeOut)
   {
-    int value = analogRead(modulo->channel);
+	 uint16_t value = analogRead(modulo->channel);
     if (value > maximum) maximum = value;
     if (value < minimum) minimum = value;
   }
 
   //  calculate quarter points
   //  using quarter points is less noise prone than using one single midpoint
-  int Q1 = (3 * minimum + maximum ) / 4;
-  int Q3 = (minimum + 3 * maximum ) / 4;
+  uint16_t Q1 = (3 * minimum + maximum ) / 4;
+  uint16_t Q3 = (minimum + 3 * maximum ) / 4;
 
   //  10x passing Quantile points
   //  wait for the right moment to start
@@ -161,33 +118,49 @@ void ACS712_Frequency(ACS712* modulo,float minimalFrequency)
   modulo->FRE = frequency;
 }
 
+
 void ACS712_RMS(ACS712* modulo){
-	float voltajeSensor;
-	float corriente=0;
-	float Imax=0;
-	float Imin=0;
 
-	__HAL_TIM_SET_COUNTER(millis,0);;
+	FILTRO_EMA* filt;
+	switch (modulo->channel) {
+		case 0:
+			filt = &filter_F1;
+			break;
+		case 1:
+			filt = &filter_F2;
+			break;
+		case 2:
+			filt = &filter_F3;
+			break;
+		default:
+			break;
+	}
 
-	while(__HAL_TIM_GET_COUNTER(millis)<500) //realizamos mediciones durante 0.5 segundos
-	  {
-		voltajeSensor = (analogRead(modulo->channel)/4095.0) *3.3; //lectura del sensor
+	uint16_t samples = 500;
+	float adc_value, acc_load_current = 0, insts_current;
+	double rms;
 
-		/* para disminuir un poco el ruido aplicamos un filtro pasa bajos, que es similar a realizar un promedio de 10 muestras*/
-		corriente=0.9*corriente+0.1*((voltajeSensor-midpoimt_0v)/mV_amps); //Ecuación para obtener la corriente
+	HAL_TIM_Base_Start(&htim8); //INTERRUPCIONES PARA EL ADC
+	for(int i=0;i<samples;i++){
+		adc_value = EMA_update(filt,3.3*((analogRead(modulo->channel)-3102)/4095.0));
+		insts_current = adc_value;// /mV_amps
 
-		if(corriente>Imax)Imax=corriente;
-		if(corriente<Imin)Imin=corriente;
-	  }
+		//RMS calculation
+		acc_load_current -= (acc_load_current/samples);//Eliminamos un sample
+		insts_current *= insts_current; //Cuadrado de corriente instante
+		acc_load_current += insts_current; //sumatoria
+	}
+	HAL_TIM_Base_Stop(&htim8); //INTERRUPCIONES PARA EL ADC
+	rms = (acc_load_current/samples); //Media cuadrada del valor
+	rms = sqrt(rms); //cuadrado del promedio
 
-	modulo->RMS = (((Imax-Imin)/2)-offset)*ACS712_FF_SINUS;
-	//modulo->RMS = Imax*ACS712_FF_SINUS;
+	modulo->rms = rms;//Coregimos el error
 }
 
 void ACS712_sense(ACS712* modulo){
 
 	//FRECUENCIA
-	ACS712_Frequency(modulo,1);
+	//ACS712_Frequency(modulo,1);
 
 	//RMS
 	ACS712_RMS(modulo);

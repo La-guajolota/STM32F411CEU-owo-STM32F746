@@ -1,0 +1,1281 @@
+11:31:28 **** Build of configuration Debug for project BSP_tests ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.d" -MT"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.d" -MT"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.d" -MT"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.d" -MT"Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.o"
+arm-none-eabi-gcc "../Drivers/BSP/Components/wm8994/wm8994.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/Components/wm8994/wm8994.d" -MT"Drivers/BSP/Components/wm8994/wm8994.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/Components/wm8994/wm8994.o"
+arm-none-eabi-gcc "../Drivers/BSP/Components/ft5336/ft5336.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/Components/ft5336/ft5336.d" -MT"Drivers/BSP/Components/ft5336/ft5336.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/Components/ft5336/ft5336.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f746nghx.d" -MT"Core/Startup/startup_stm32f746nghx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f746nghx.o" "../Core/Startup/startup_stm32f746nghx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+In file included from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c:29:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c:383:36: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  383 | void BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c:423:38: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  423 | void BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart)
+      |                                      ^~~~~~~~~~~~~~~~~~
+      |                                      I2C_HandleTypeDef
+In file included from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:31,
+                 from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:89:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:218:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  218 | void  BSP_AUDIO_OUT_ClockConfig(SAI_HandleTypeDef *hsai, uint32_t AudioFreq, void *Params);
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:219:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  219 | void  BSP_AUDIO_OUT_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:220:31: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  220 | void  BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:251:28: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  251 | void  BSP_AUDIO_IN_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:252:30: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  252 | void  BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:130:1: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  130 | SAI_HandleTypeDef         haudio_out_sai={0};
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:131:1: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  131 | SAI_HandleTypeDef         haudio_in_sai={0};
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:132:1: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  132 | TIM_HandleTypeDef         haudio_tim;
+      | ^~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:173:3: warning: implicit declaration of function 'BSP_AUDIO_OUT_ClockConfig'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  173 |   BSP_AUDIO_OUT_ClockConfig(&haudio_out_sai, AudioFreq, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_OUT_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:177:17: error: request for member 'Instance' in something not a structure or union
+  177 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+In file included from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:34,
+                 from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:73:
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:115:27: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  115 | uint8_t BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:178:6: warning: implicit declaration of function 'HAL_SAI_GetState'; did you mean 'HAL_I2C_GetState'? [-Wimplicit-function-declaration]
+  178 |   if(HAL_SAI_GetState(&haudio_out_sai) == HAL_SAI_STATE_RESET)
+      |      ^~~~~~~~~~~~~~~~
+      |      HAL_I2C_GetState
+In file included from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.h:29,
+                 from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c:60:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:119:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  119 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:178:43: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  178 |   if(HAL_SAI_GetState(&haudio_out_sai) == HAL_SAI_STATE_RESET)
+      |                                           ^~~~~~~~~~~~~~~~~~~
+      |                                           HAL_I2C_STATE_RESET
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:178:43: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:120:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  120 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:181:5: warning: implicit declaration of function 'BSP_AUDIO_OUT_MspInit'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  181 |     BSP_AUDIO_OUT_MspInit(&haudio_out_sai, NULL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     BSP_AUDIO_OUT_DeInit
+In file included from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:36:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Play':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:227:5: warning: implicit declaration of function 'HAL_SAI_Transmit_DMA'; did you mean 'HAL_I2C_Slave_Transmit_DMA'? [-Wimplicit-function-declaration]
+  227 |     HAL_SAI_Transmit_DMA(&haudio_out_sai, (uint8_t*) pBuffer, DMA_MAX(Size / AUDIODATA_SIZE));
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     HAL_I2C_Slave_Transmit_DMA
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Pause':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:262:5: warning: implicit declaration of function 'HAL_SAI_DMAPause' [-Wimplicit-function-declaration]
+  262 |     HAL_SAI_DMAPause(&haudio_out_sai);
+      |     ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Resume':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:286:5: warning: implicit declaration of function 'HAL_SAI_DMAResume' [-Wimplicit-function-declaration]
+  286 |     HAL_SAI_DMAResume(&haudio_out_sai);
+      |     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:224:26: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  224 | void     BSP_LCD_MspInit(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                          ^~~~~~~~~~~~~~~~~~
+      |                          I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:225:28: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  225 | void     BSP_LCD_MspDeInit(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                            ^~~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_Stop':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:305:3: warning: implicit declaration of function 'HAL_SAI_DMAStop' [-Wimplicit-function-declaration]
+  305 |   HAL_SAI_DMAStop(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:226:30: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  226 | void     BSP_LCD_ClockConfig(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_SetFrequency':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:398:3: warning: implicit declaration of function '__HAL_SAI_DISABLE' [-Wimplicit-function-declaration]
+  398 |   __HAL_SAI_DISABLE(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:401:17: error: request for member 'Init' in something not a structure or union
+  401 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:402:3: warning: implicit declaration of function 'HAL_SAI_Init'; did you mean 'HAL_I2C_Init'? [-Wimplicit-function-declaration]
+  402 |   HAL_SAI_Init(&haudio_out_sai);
+      |   ^~~~~~~~~~~~
+      |   HAL_I2C_Init
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:405:3: warning: implicit declaration of function '__HAL_SAI_ENABLE' [-Wimplicit-function-declaration]
+  405 |   __HAL_SAI_ENABLE(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_SetAudioFrameSlot':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:425:17: error: request for member 'SlotInit' in something not a structure or union
+  425 |   haudio_out_sai.SlotInit.SlotActive = AudioFrameSlot;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:120:1: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  120 | LTDC_HandleTypeDef  hLtdcHandler;
+      | ^~~~~~~~~~~~~~~~~~
+      | I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:121:8: error: unknown type name 'DMA2D_HandleTypeDef'
+  121 | static DMA2D_HandleTypeDef hDma2dHandler;
+      |        ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:155:15: error: request for member 'Init' in something not a structure or union
+  155 |   hLtdcHandler.Init.HorizontalSync = (RK043FN48H_HSYNC - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_OUT_DeInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:156:15: error: request for member 'Init' in something not a structure or union
+  156 |   hLtdcHandler.Init.VerticalSync = (RK043FN48H_VSYNC - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:157:15: error: request for member 'Init' in something not a structure or union
+  157 |   hLtdcHandler.Init.AccumulatedHBP = (RK043FN48H_HSYNC + RK043FN48H_HBP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:440:3: warning: implicit declaration of function 'BSP_AUDIO_OUT_MspDeInit'; did you mean 'BSP_AUDIO_OUT_DeInit'? [-Wimplicit-function-declaration]
+  440 |   BSP_AUDIO_OUT_MspDeInit(&haudio_out_sai, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_OUT_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:158:15: error: request for member 'Init' in something not a structure or union
+  158 |   hLtdcHandler.Init.AccumulatedVBP = (RK043FN48H_VSYNC + RK043FN48H_VBP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:159:15: error: request for member 'Init' in something not a structure or union
+  159 |   hLtdcHandler.Init.AccumulatedActiveH = (RK043FN48H_HEIGHT + RK043FN48H_VSYNC + RK043FN48H_VBP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:160:15: error: request for member 'Init' in something not a structure or union
+  160 |   hLtdcHandler.Init.AccumulatedActiveW = (RK043FN48H_WIDTH + RK043FN48H_HSYNC + RK043FN48H_HBP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:161:15: error: request for member 'Init' in something not a structure or union
+  161 |   hLtdcHandler.Init.TotalHeigh = (RK043FN48H_HEIGHT + RK043FN48H_VSYNC + RK043FN48H_VBP + RK043FN48H_VFP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: At top level:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:162:15: error: request for member 'Init' in something not a structure or union
+  162 |   hLtdcHandler.Init.TotalWidth = (RK043FN48H_WIDTH + RK043FN48H_HSYNC + RK043FN48H_HBP + RK043FN48H_HFP - 1);
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:448:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  448 | void HAL_SAI_TxCpltCallback(SAI_HandleTypeDef *hsai)
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:460:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  460 | void HAL_SAI_TxHalfCpltCallback(SAI_HandleTypeDef *hsai)
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:165:3: warning: implicit declaration of function 'BSP_LCD_ClockConfig'; did you mean 'HAL_RCC_ClockConfig'? [-Wimplicit-function-declaration]
+  165 |   BSP_LCD_ClockConfig(&hLtdcHandler, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   HAL_RCC_ClockConfig
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:168:15: error: request for member 'LayerCfg' in something not a structure or union
+  168 |   hLtdcHandler.LayerCfg->ImageWidth  = RK043FN48H_WIDTH;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:169:15: error: request for member 'LayerCfg' in something not a structure or union
+  169 |   hLtdcHandler.LayerCfg->ImageHeight = RK043FN48H_HEIGHT;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:172:15: error: request for member 'Init' in something not a structure or union
+  172 |   hLtdcHandler.Init.Backcolor.Blue = 0;
+      |               ^
+In file included from ../Core/Src/main.c:24:
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:297:41: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  297 | void      BSP_COM_Init(COM_TypeDef COM, UART_HandleTypeDef *husart);
+      |                                         ^~~~~~~~~~~~~~~~~~
+      |                                         I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:173:15: error: request for member 'Init' in something not a structure or union
+  173 |   hLtdcHandler.Init.Backcolor.Green = 0;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:174:15: error: request for member 'Init' in something not a structure or union
+  174 |   hLtdcHandler.Init.Backcolor.Red = 0;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:177:15: error: request for member 'Init' in something not a structure or union
+  177 |   hLtdcHandler.Init.HSPolarity = LTDC_HSPOLARITY_AL;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:472:28: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  472 | void HAL_SAI_ErrorCallback(SAI_HandleTypeDef *hsai)
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:298:43: error: unknown type name 'UART_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  298 | void      BSP_COM_DeInit(COM_TypeDef COM, UART_HandleTypeDef *huart);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:522:35: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  522 | __weak void BSP_AUDIO_OUT_MspInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                   ^~~~~~~~~~~~~~~~~
+      |                                   I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:177:34: error: 'LTDC_HSPOLARITY_AL' undeclared (first use in this function)
+  177 |   hLtdcHandler.Init.HSPolarity = LTDC_HSPOLARITY_AL;
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:177:34: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:178:15: error: request for member 'Init' in something not a structure or union
+  178 |   hLtdcHandler.Init.VSPolarity = LTDC_VSPOLARITY_AL;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:605:37: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  605 | __weak void BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                     ^~~~~~~~~~~~~~~~~
+      |                                     I2C_HandleTypeDef
+In file included from E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:34,
+                 from ../Core/Src/main.c:25:
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:115:27: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  115 | uint8_t BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Drivers/BSP/STM32746G-Discovery/subdir.mk:28: Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Drivers/BSP/STM32746G-Discovery/subdir.mk:28: Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.o] Error 1
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:178:34: error: 'LTDC_VSPOLARITY_AL' undeclared (first use in this function)
+  178 |   hLtdcHandler.Init.VSPolarity = LTDC_VSPOLARITY_AL;
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:179:15: error: request for member 'Init' in something not a structure or union
+  179 |   hLtdcHandler.Init.DEPolarity = LTDC_DEPOLARITY_AL;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:650:39: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  650 | __weak void BSP_AUDIO_OUT_ClockConfig(SAI_HandleTypeDef *hsai, uint32_t AudioFreq, void *Params)
+      |                                       ^~~~~~~~~~~~~~~~~
+      |                                       I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_Out_Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:702:17: error: request for member 'Instance' in something not a structure or union
+  702 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:710:17: error: request for member 'Init' in something not a structure or union
+  710 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:711:17: error: request for member 'Init' in something not a structure or union
+  711 |   haudio_out_sai.Init.AudioMode = SAI_MODEMASTER_TX;
+      |                 ^
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:119:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  119 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:179:34: error: 'LTDC_DEPOLARITY_AL' undeclared (first use in this function)
+  179 |   hLtdcHandler.Init.DEPolarity = LTDC_DEPOLARITY_AL;
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:180:15: error: request for member 'Init' in something not a structure or union
+  180 |   hLtdcHandler.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
+      |               ^
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:120:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  120 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:711:35: error: 'SAI_MODEMASTER_TX' undeclared (first use in this function)
+  711 |   haudio_out_sai.Init.AudioMode = SAI_MODEMASTER_TX;
+      |                                   ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:180:34: error: 'LTDC_PCPOLARITY_IPC' undeclared (first use in this function)
+  180 |   hLtdcHandler.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:712:17: error: request for member 'Init' in something not a structure or union
+  712 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:181:15: error: request for member 'Instance' in something not a structure or union
+  181 |   hLtdcHandler.Instance = LTDC;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:183:6: warning: implicit declaration of function 'HAL_LTDC_GetState'; did you mean 'HAL_I2C_GetState'? [-Wimplicit-function-declaration]
+  183 |   if(HAL_LTDC_GetState(&hLtdcHandler) == HAL_LTDC_STATE_RESET)
+      |      ^~~~~~~~~~~~~~~~~
+      |      HAL_I2C_GetState
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:224:26: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  224 | void     BSP_LCD_MspInit(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                          ^~~~~~~~~~~~~~~~~~
+      |                          I2C_HandleTypeDef
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:30,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:29:
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3937:43: error: 'SAI_MASTERDIVIDER_ENABLE' undeclared (first use in this function); did you mean 'SAI_MASTERDIVIDER_ENABLED'?
+ 3937 | #define SAI_MASTERDIVIDER_ENABLED         SAI_MASTERDIVIDER_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:712:35: note: in expansion of macro 'SAI_MASTERDIVIDER_ENABLED'
+  712 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:713:17: error: request for member 'Init' in something not a structure or union
+  713 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                 ^
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:225:28: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  225 | void     BSP_LCD_MspDeInit(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                            ^~~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:183:42: error: 'HAL_LTDC_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  183 |   if(HAL_LTDC_GetState(&hLtdcHandler) == HAL_LTDC_STATE_RESET)
+      |                                          ^~~~~~~~~~~~~~~~~~~~
+      |                                          HAL_I2C_STATE_RESET
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:713:34: error: 'SAI_FREE_PROTOCOL' undeclared (first use in this function)
+  713 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                                  ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:714:17: error: request for member 'Init' in something not a structure or union
+  714 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:186:5: warning: implicit declaration of function 'BSP_LCD_MspInit'; did you mean 'BSP_LCD_DeInit'? [-Wimplicit-function-declaration]
+  186 |     BSP_LCD_MspInit(&hLtdcHandler, NULL);
+      |     ^~~~~~~~~~~~~~~
+      |     BSP_LCD_DeInit
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:226:30: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  226 | void     BSP_LCD_ClockConfig(LTDC_HandleTypeDef *hltdc, void *Params);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:714:34: error: 'SAI_DATASIZE_16' undeclared (first use in this function)
+  714 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                                  ^~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:715:17: error: request for member 'Init' in something not a structure or union
+  715 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:188:3: warning: implicit declaration of function 'HAL_LTDC_Init'; did you mean 'HAL_I2C_Init'? [-Wimplicit-function-declaration]
+  188 |   HAL_LTDC_Init(&hLtdcHandler);
+      |   ^~~~~~~~~~~~~
+      |   HAL_I2C_Init
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DeInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:214:15: error: request for member 'Instance' in something not a structure or union
+  214 |   hLtdcHandler.Instance = LTDC;
+      |               ^
+In file included from ../Core/Src/main.c:26:
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:218:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  218 | void  BSP_AUDIO_OUT_ClockConfig(SAI_HandleTypeDef *hsai, uint32_t AudioFreq, void *Params);
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:715:34: error: 'SAI_FIRSTBIT_MSB' undeclared (first use in this function)
+  715 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:716:17: error: request for member 'Init' in something not a structure or union
+  716 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:217:3: warning: implicit declaration of function '__HAL_LTDC_DISABLE' [-Wimplicit-function-declaration]
+  217 |   __HAL_LTDC_DISABLE(&hLtdcHandler);
+      |   ^~~~~~~~~~~~~~~~~~
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:219:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  219 | void  BSP_AUDIO_OUT_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:716:39: error: 'SAI_CLOCKSTROBING_RISINGEDGE' undeclared (first use in this function)
+  716 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:717:17: error: request for member 'Init' in something not a structure or union
+  717 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:220:3: warning: implicit declaration of function 'HAL_LTDC_DeInit'; did you mean 'HAL_I2C_DeInit'? [-Wimplicit-function-declaration]
+  220 |   HAL_LTDC_DeInit(&hLtdcHandler);
+      |   ^~~~~~~~~~~~~~~
+      |   HAL_I2C_DeInit
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:220:31: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  220 | void  BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:717:33: error: 'SAI_ASYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+  717 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 SAI_SYNCHRONOUS_EXT
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:718:17: error: request for member 'Init' in something not a structure or union
+  718 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:223:3: warning: implicit declaration of function 'BSP_LCD_MspDeInit'; did you mean 'BSP_LCD_DeInit'? [-Wimplicit-function-declaration]
+  223 |   BSP_LCD_MspDeInit(&hLtdcHandler, NULL);
+      |   ^~~~~~~~~~~~~~~~~
+      |   BSP_LCD_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_GetXSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:234:22: error: request for member 'LayerCfg' in something not a structure or union
+  234 |   return hLtdcHandler.LayerCfg[ActiveLayer].ImageWidth;
+      |                      ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_GetYSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:243:22: error: request for member 'LayerCfg' in something not a structure or union
+  243 |   return hLtdcHandler.LayerCfg[ActiveLayer].ImageHeight;
+      |                      ^
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:251:28: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  251 | void  BSP_AUDIO_IN_MspInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                            ^~~~~~~~~~~~~~~~~
+      |                            I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetXSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:253:15: error: request for member 'LayerCfg' in something not a structure or union
+  253 |   hLtdcHandler.LayerCfg[ActiveLayer].ImageWidth = imageWidthPixels;
+      |               ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetYSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:263:15: error: request for member 'LayerCfg' in something not a structure or union
+  263 |   hLtdcHandler.LayerCfg[ActiveLayer].ImageHeight = imageHeightPixels;
+      |               ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3936:43: error: 'SAI_OUTPUTDRIVE_ENABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_ENABLED'?
+ 3936 | #define SAI_OUTPUTDRIVE_ENABLED           SAI_OUTPUTDRIVE_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:718:37: note: in expansion of macro 'SAI_OUTPUTDRIVE_ENABLED'
+  718 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:719:17: error: request for member 'Init' in something not a structure or union
+  719 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_LayerDefaultInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:86:32: error: unknown type name 'LTDC_LayerCfgTypeDef'; did you mean 'LCD_LayerCfgTypeDef'?
+   86 | #define LCD_LayerCfgTypeDef    LTDC_LayerCfgTypeDef
+      |                                ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:274:3: note: in expansion of macro 'LCD_LayerCfgTypeDef'
+  274 |   LCD_LayerCfgTypeDef  layer_cfg;
+      |   ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:277:12: error: request for member 'WindowX0' in something not a structure or union
+  277 |   layer_cfg.WindowX0 = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:278:12: error: request for member 'WindowX1' in something not a structure or union
+  278 |   layer_cfg.WindowX1 = BSP_LCD_GetXSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:279:12: error: request for member 'WindowY0' in something not a structure or union
+  279 |   layer_cfg.WindowY0 = 0;
+      |            ^
+E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:252:30: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+  252 | void  BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:280:12: error: request for member 'WindowY1' in something not a structure or union
+  280 |   layer_cfg.WindowY1 = BSP_LCD_GetYSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:281:12: error: request for member 'PixelFormat' in something not a structure or union
+  281 |   layer_cfg.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:719:39: error: 'SAI_FIFOTHRESHOLD_1QF' undeclared (first use in this function); did you mean 'DMA_FIFO_THRESHOLD_FULL'?
+  719 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                       DMA_FIFO_THRESHOLD_FULL
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:727:17: error: request for member 'FrameInit' in something not a structure or union
+  727 |   haudio_out_sai.FrameInit.FrameLength = 64;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:728:17: error: request for member 'FrameInit' in something not a structure or union
+  728 |   haudio_out_sai.FrameInit.ActiveFrameLength = 32;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:729:17: error: request for member 'FrameInit' in something not a structure or union
+  729 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:281:27: error: 'LTDC_PIXEL_FORMAT_ARGB8888' undeclared (first use in this function)
+  281 |   layer_cfg.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:282:12: error: request for member 'FBStartAdress' in something not a structure or union
+  282 |   layer_cfg.FBStartAdress = FB_Address;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:283:12: error: request for member 'Alpha' in something not a structure or union
+  283 |   layer_cfg.Alpha = 255;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:284:12: error: request for member 'Alpha0' in something not a structure or union
+  284 |   layer_cfg.Alpha0 = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:285:12: error: request for member 'Backcolor' in something not a structure or union
+  285 |   layer_cfg.Backcolor.Blue = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:286:12: error: request for member 'Backcolor' in something not a structure or union
+  286 |   layer_cfg.Backcolor.Green = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:287:12: error: request for member 'Backcolor' in something not a structure or union
+  287 |   layer_cfg.Backcolor.Red = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:288:12: error: request for member 'BlendingFactor1' in something not a structure or union
+  288 |   layer_cfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:729:43: error: 'SAI_FS_CHANNEL_IDENTIFICATION' undeclared (first use in this function)
+  729 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:730:17: error: request for member 'FrameInit' in something not a structure or union
+  730 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:288:31: error: 'LTDC_BLENDING_FACTOR1_PAxCA' undeclared (first use in this function)
+  288 |   layer_cfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:289:12: error: request for member 'BlendingFactor2' in something not a structure or union
+  289 |   layer_cfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:730:41: error: 'SAI_FS_ACTIVE_LOW' undeclared (first use in this function)
+  730 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                                         ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:731:17: error: request for member 'FrameInit' in something not a structure or union
+  731 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:289:31: error: 'LTDC_BLENDING_FACTOR2_PAxCA' undeclared (first use in this function)
+  289 |   layer_cfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:290:12: error: request for member 'ImageWidth' in something not a structure or union
+  290 |   layer_cfg.ImageWidth = BSP_LCD_GetXSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:291:12: error: request for member 'ImageHeight' in something not a structure or union
+  291 |   layer_cfg.ImageHeight = BSP_LCD_GetYSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:731:39: error: 'SAI_FS_BEFOREFIRSTBIT' undeclared (first use in this function)
+  731 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:738:17: error: request for member 'SlotInit' in something not a structure or union
+  738 |   haudio_out_sai.SlotInit.FirstBitOffset = 0;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:739:17: error: request for member 'SlotInit' in something not a structure or union
+  739 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:293:3: warning: implicit declaration of function 'HAL_LTDC_ConfigLayer' [-Wimplicit-function-declaration]
+  293 |   HAL_LTDC_ConfigLayer(&hLtdcHandler, &layer_cfg, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_LayerRgb565Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:86:32: error: unknown type name 'LTDC_LayerCfgTypeDef'; did you mean 'LCD_LayerCfgTypeDef'?
+   86 | #define LCD_LayerCfgTypeDef    LTDC_LayerCfgTypeDef
+      |                                ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:308:3: note: in expansion of macro 'LCD_LayerCfgTypeDef'
+  308 |   LCD_LayerCfgTypeDef  layer_cfg;
+      |   ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:311:12: error: request for member 'WindowX0' in something not a structure or union
+  311 |   layer_cfg.WindowX0 = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:312:12: error: request for member 'WindowX1' in something not a structure or union
+  312 |   layer_cfg.WindowX1 = BSP_LCD_GetXSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:313:12: error: request for member 'WindowY0' in something not a structure or union
+  313 |   layer_cfg.WindowY0 = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:314:12: error: request for member 'WindowY1' in something not a structure or union
+  314 |   layer_cfg.WindowY1 = BSP_LCD_GetYSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:315:12: error: request for member 'PixelFormat' in something not a structure or union
+  315 |   layer_cfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:739:38: error: 'SAI_SLOTSIZE_DATASIZE' undeclared (first use in this function)
+  739 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:740:17: error: request for member 'SlotInit' in something not a structure or union
+  740 |   haudio_out_sai.SlotInit.SlotNumber = 4;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:741:17: error: request for member 'SlotInit' in something not a structure or union
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:67:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:315:27: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+  315 |   layer_cfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:316:12: error: request for member 'FBStartAdress' in something not a structure or union
+  316 |   layer_cfg.FBStartAdress = FB_Address;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:317:12: error: request for member 'Alpha' in something not a structure or union
+  317 |   layer_cfg.Alpha = 255;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:318:12: error: request for member 'Alpha0' in something not a structure or union
+  318 |   layer_cfg.Alpha0 = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:319:12: error: request for member 'Backcolor' in something not a structure or union
+  319 |   layer_cfg.Backcolor.Blue = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:320:12: error: request for member 'Backcolor' in something not a structure or union
+  320 |   layer_cfg.Backcolor.Green = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:321:12: error: request for member 'Backcolor' in something not a structure or union
+  321 |   layer_cfg.Backcolor.Red = 0;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:322:12: error: request for member 'BlendingFactor1' in something not a structure or union
+  322 |   layer_cfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:67:65: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:322:31: error: 'LTDC_BLENDING_FACTOR1_PAxCA' undeclared (first use in this function)
+  322 |   layer_cfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:323:12: error: request for member 'BlendingFactor2' in something not a structure or union
+  323 |   layer_cfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:67:84: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                                    ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:67:103: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   67 | #define CODEC_AUDIOFRAME_SLOT_0123           SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_2 | SAI_SLOTACTIVE_3
+      |                                                                                                       ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:741:40: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_0123'
+  741 |   haudio_out_sai.SlotInit.SlotActive = CODEC_AUDIOFRAME_SLOT_0123;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_Out_DeInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:758:17: error: request for member 'Instance' in something not a structure or union
+  758 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:323:31: error: 'LTDC_BLENDING_FACTOR2_PAxCA' undeclared (first use in this function)
+  323 |   layer_cfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:763:3: warning: implicit declaration of function 'HAL_SAI_DeInit'; did you mean 'HAL_PWR_DeInit'? [-Wimplicit-function-declaration]
+  763 |   HAL_SAI_DeInit(&haudio_out_sai);
+      |   ^~~~~~~~~~~~~~
+      |   HAL_PWR_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:324:12: error: request for member 'ImageWidth' in something not a structure or union
+  324 |   layer_cfg.ImageWidth = BSP_LCD_GetXSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:325:12: error: request for member 'ImageHeight' in something not a structure or union
+  325 |   layer_cfg.ImageHeight = BSP_LCD_GetYSize();
+      |            ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_InitEx':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:815:18: error: request for member 'Instance' in something not a structure or union
+  815 |     haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:816:44: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  816 |     if(HAL_SAI_GetState(&haudio_in_sai) == HAL_SAI_STATE_RESET)
+      |                                            ^~~~~~~~~~~~~~~~~~~
+      |                                            HAL_I2C_STATE_RESET
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetLayerVisible':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:357:5: warning: implicit declaration of function '__HAL_LTDC_LAYER_ENABLE' [-Wimplicit-function-declaration]
+  357 |     __HAL_LTDC_LAYER_ENABLE(&hLtdcHandler, LayerIndex);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:820:7: warning: implicit declaration of function 'BSP_AUDIO_IN_MspInit'; did you mean 'BSP_AUDIO_IN_DeInit'? [-Wimplicit-function-declaration]
+  820 |       BSP_AUDIO_IN_MspInit(&haudio_in_sai, NULL);
+      |       ^~~~~~~~~~~~~~~~~~~~
+      |       BSP_AUDIO_IN_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:361:5: warning: implicit declaration of function '__HAL_LTDC_LAYER_DISABLE' [-Wimplicit-function-declaration]
+  361 |     __HAL_LTDC_LAYER_DISABLE(&hLtdcHandler, LayerIndex);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:71:46: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:829:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  829 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:71:65: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:829:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  829 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:30,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_sdram.h:29:
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3927:35: warning: implicit declaration of function '__HAL_LTDC_RELOAD_IMMEDIATE_CONFIG' [-Wimplicit-function-declaration]
+ 3927 | #define __HAL_LTDC_RELOAD_CONFIG  __HAL_LTDC_RELOAD_IMMEDIATE_CONFIG
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3927:35: note: in definition of macro '__HAL_LTDC_RELOAD_CONFIG'
+ 3927 | #define __HAL_LTDC_RELOAD_CONFIG  __HAL_LTDC_RELOAD_IMMEDIATE_CONFIG
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:69:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:833:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  833 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetTransparency':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:397:3: warning: implicit declaration of function 'HAL_LTDC_SetAlpha'; did you mean 'HAL_LTDC_Relaod'? [-Wimplicit-function-declaration]
+  397 |   HAL_LTDC_SetAlpha(&hLtdcHandler, Transparency, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_LTDC_Relaod
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:69:65: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:833:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  833 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetTransparency_NoReload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:409:3: warning: implicit declaration of function 'HAL_LTDC_SetAlpha_NoReload' [-Wimplicit-function-declaration]
+  409 |   HAL_LTDC_SetAlpha_NoReload(&hLtdcHandler, Transparency, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:835:18: error: 'SAI_MODEMASTER_RX' undeclared (first use in this function)
+  835 |     SAIx_In_Init(SAI_MODEMASTER_RX, slot_active, AudioFreq);
+      |                  ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_OUT_Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:893:18: error: request for member 'Instance' in something not a structure or union
+  893 |     haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetLayerAddress':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:420:3: warning: implicit declaration of function 'HAL_LTDC_SetAddress' [-Wimplicit-function-declaration]
+  420 |   HAL_LTDC_SetAddress(&hLtdcHandler, Address, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:894:44: error: 'HAL_SAI_STATE_RESET' undeclared (first use in this function); did you mean 'HAL_I2C_STATE_RESET'?
+  894 |     if(HAL_SAI_GetState(&haudio_in_sai) == HAL_SAI_STATE_RESET)
+      |                                            ^~~~~~~~~~~~~~~~~~~
+      |                                            HAL_I2C_STATE_RESET
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:902:19: error: request for member 'Instance' in something not a structure or union
+  902 |     haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                   ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:71:46: error: 'SAI_SLOTACTIVE_1' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:915:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  915 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetLayerAddress_NoReload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:431:3: warning: implicit declaration of function 'HAL_LTDC_SetAddress_NoReload'; did you mean 'BSP_LCD_SetLayerAddress_NoReload'? [-Wimplicit-function-declaration]
+  431 |   HAL_LTDC_SetAddress_NoReload(&hLtdcHandler, Address, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_SetLayerAddress_NoReload
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:71:65: error: 'SAI_SLOTACTIVE_3' undeclared (first use in this function)
+   71 | #define CODEC_AUDIOFRAME_SLOT_13             SAI_SLOTACTIVE_1 | SAI_SLOTACTIVE_3
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:915:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_13'
+  915 |       slot_active = CODEC_AUDIOFRAME_SLOT_13;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetLayerWindow':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:446:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowSize' [-Wimplicit-function-declaration]
+  446 |   HAL_LTDC_SetWindowSize(&hLtdcHandler, Width, Height, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:69:46: error: 'SAI_SLOTACTIVE_0' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                              ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:919:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  919 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.h:69:65: error: 'SAI_SLOTACTIVE_2' undeclared (first use in this function)
+   69 | #define CODEC_AUDIOFRAME_SLOT_02             SAI_SLOTACTIVE_0 | SAI_SLOTACTIVE_2
+      |                                                                 ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:919:21: note: in expansion of macro 'CODEC_AUDIOFRAME_SLOT_02'
+  919 |       slot_active = CODEC_AUDIOFRAME_SLOT_02;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:449:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowPosition' [-Wimplicit-function-declaration]
+  449 |   HAL_LTDC_SetWindowPosition(&hLtdcHandler, Xpos, Ypos, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:921:18: error: 'SAI_MODEMASTER_TX' undeclared (first use in this function)
+  921 |     SAIx_In_Init(SAI_MODEMASTER_TX, slot_active, AudioFreq);
+      |                  ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetLayerWindow_NoReload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:464:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowSize_NoReload' [-Wimplicit-function-declaration]
+  464 |   HAL_LTDC_SetWindowSize_NoReload(&hLtdcHandler, Width, Height, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_Record':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:961:3: warning: implicit declaration of function 'HAL_SAI_Receive_DMA'; did you mean 'HAL_I2C_Slave_Receive_DMA'? [-Wimplicit-function-declaration]
+  961 |   HAL_SAI_Receive_DMA(&haudio_in_sai, (uint8_t*)pbuf, size);
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   HAL_I2C_Slave_Receive_DMA
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'BSP_AUDIO_IN_DeInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1053:3: warning: implicit declaration of function 'BSP_AUDIO_IN_MspDeInit'; did you mean 'BSP_AUDIO_IN_DeInit'? [-Wimplicit-function-declaration]
+ 1053 |   BSP_AUDIO_IN_MspDeInit(&haudio_in_sai, NULL);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_AUDIO_IN_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:467:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowPosition_NoReload' [-Wimplicit-function-declaration]
+  467 |   HAL_LTDC_SetWindowPosition_NoReload(&hLtdcHandler, Xpos, Ypos, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: At top level:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1061:29: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1061 | void HAL_SAI_RxCpltCallback(SAI_HandleTypeDef *hsai)
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1072:33: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1072 | void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef *hsai)
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetColorKeying':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:479:3: warning: implicit declaration of function 'HAL_LTDC_ConfigColorKeying' [-Wimplicit-function-declaration]
+  479 |   HAL_LTDC_ConfigColorKeying(&hLtdcHandler, RGBValue, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1117:34: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1117 | __weak void BSP_AUDIO_IN_MspInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                  ^~~~~~~~~~~~~~~~~
+      |                                  I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1190:36: error: unknown type name 'SAI_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1190 | __weak void BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params)
+      |                                    ^~~~~~~~~~~~~~~~~
+      |                                    I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_In_Init':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1236:17: error: request for member 'Instance' in something not a structure or union
+ 1236 |   haudio_out_sai.Instance = AUDIO_OUT_SAIx;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1244:17: error: request for member 'Init' in something not a structure or union
+ 1244 |   haudio_out_sai.Init.AudioFrequency = AudioFreq;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1245:17: error: request for member 'Init' in something not a structure or union
+ 1245 |   haudio_out_sai.Init.AudioMode = SaiOutMode;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1246:17: error: request for member 'Init' in something not a structure or union
+ 1246 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:480:3: warning: implicit declaration of function 'HAL_LTDC_EnableColorKeying' [-Wimplicit-function-declaration]
+  480 |   HAL_LTDC_EnableColorKeying(&hLtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3937:43: error: 'SAI_MASTERDIVIDER_ENABLE' undeclared (first use in this function); did you mean 'SAI_MASTERDIVIDER_ENABLED'?
+ 3937 | #define SAI_MASTERDIVIDER_ENABLED         SAI_MASTERDIVIDER_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1246:35: note: in expansion of macro 'SAI_MASTERDIVIDER_ENABLED'
+ 1246 |   haudio_out_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1247:17: error: request for member 'Init' in something not a structure or union
+ 1247 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_SetColorKeying_NoReload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:492:3: warning: implicit declaration of function 'HAL_LTDC_ConfigColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  492 |   HAL_LTDC_ConfigColorKeying_NoReload(&hLtdcHandler, RGBValue, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1247:34: error: 'SAI_FREE_PROTOCOL' undeclared (first use in this function)
+ 1247 |   haudio_out_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                                  ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1248:17: error: request for member 'Init' in something not a structure or union
+ 1248 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1248:34: error: 'SAI_DATASIZE_16' undeclared (first use in this function)
+ 1248 |   haudio_out_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                                  ^~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1249:17: error: request for member 'Init' in something not a structure or union
+ 1249 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:493:3: warning: implicit declaration of function 'HAL_LTDC_EnableColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  493 |   HAL_LTDC_EnableColorKeying_NoReload(&hLtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1249:34: error: 'SAI_FIRSTBIT_MSB' undeclared (first use in this function)
+ 1249 |   haudio_out_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1250:17: error: request for member 'Init' in something not a structure or union
+ 1250 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_ResetColorKeying':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:504:3: warning: implicit declaration of function 'HAL_LTDC_DisableColorKeying' [-Wimplicit-function-declaration]
+  504 |   HAL_LTDC_DisableColorKeying(&hLtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1250:39: error: 'SAI_CLOCKSTROBING_RISINGEDGE' undeclared (first use in this function)
+ 1250 |   haudio_out_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1251:17: error: request for member 'Init' in something not a structure or union
+ 1251 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1251:33: error: 'SAI_ASYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+ 1251 |   haudio_out_sai.Init.Synchro = SAI_ASYNCHRONOUS;
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 SAI_SYNCHRONOUS_EXT
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1252:17: error: request for member 'Init' in something not a structure or union
+ 1252 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_ResetColorKeying_NoReload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:515:3: warning: implicit declaration of function 'HAL_LTDC_DisableColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  515 |   HAL_LTDC_DisableColorKeying_NoReload(&hLtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_Reload':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:527:3: warning: implicit declaration of function 'HAL_LTDC_Reload'; did you mean 'HAL_LTDC_Relaod'? [-Wimplicit-function-declaration]
+  527 |   HAL_LTDC_Reload (&hLtdcHandler, ReloadType);
+      |   ^~~~~~~~~~~~~~~
+      |   HAL_LTDC_Relaod
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_ReadPixel':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:597:18: error: request for member 'LayerCfg' in something not a structure or union
+  597 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB8888)
+      |                  ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3936:43: error: 'SAI_OUTPUTDRIVE_ENABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_ENABLED'?
+ 3936 | #define SAI_OUTPUTDRIVE_ENABLED           SAI_OUTPUTDRIVE_ENABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1252:37: note: in expansion of macro 'SAI_OUTPUTDRIVE_ENABLED'
+ 1252 |   haudio_out_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_ENABLED;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1253:17: error: request for member 'Init' in something not a structure or union
+ 1253 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:597:56: error: 'LTDC_PIXEL_FORMAT_ARGB8888' undeclared (first use in this function)
+  597 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB8888)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:600:42: error: request for member 'LayerCfg' in something not a structure or union
+  600 |     ret = *(__IO uint32_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                          ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:602:23: error: request for member 'LayerCfg' in something not a structure or union
+  602 |   else if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB888)
+      |                       ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1253:39: error: 'SAI_FIFOTHRESHOLD_1QF' undeclared (first use in this function); did you mean 'DMA_FIFO_THRESHOLD_FULL'?
+ 1253 |   haudio_out_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                       DMA_FIFO_THRESHOLD_FULL
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1261:17: error: request for member 'FrameInit' in something not a structure or union
+ 1261 |   haudio_out_sai.FrameInit.FrameLength = 64;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1262:17: error: request for member 'FrameInit' in something not a structure or union
+ 1262 |   haudio_out_sai.FrameInit.ActiveFrameLength = 32;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1263:17: error: request for member 'FrameInit' in something not a structure or union
+ 1263 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:602:61: error: 'LTDC_PIXEL_FORMAT_RGB888' undeclared (first use in this function)
+  602 |   else if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB888)
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:605:43: error: request for member 'LayerCfg' in something not a structure or union
+  605 |     ret = (*(__IO uint32_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos))) & 0x00FFFFFF);
+      |                                           ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:607:24: error: request for member 'LayerCfg' in something not a structure or union
+  607 |   else if((hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565) || \
+      |                        ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1263:43: error: 'SAI_FS_CHANNEL_IDENTIFICATION' undeclared (first use in this function)
+ 1263 |   haudio_out_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1264:17: error: request for member 'FrameInit' in something not a structure or union
+ 1264 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1264:41: error: 'SAI_FS_ACTIVE_LOW' undeclared (first use in this function)
+ 1264 |   haudio_out_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                                         ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1265:17: error: request for member 'FrameInit' in something not a structure or union
+ 1265 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:607:62: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+  607 |   else if((hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565) || \
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:608:24: error: request for member 'LayerCfg' in something not a structure or union
+  608 |           (hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB4444) || \
+      |                        ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1265:39: error: 'SAI_FS_BEFOREFIRSTBIT' undeclared (first use in this function)
+ 1265 |   haudio_out_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1272:17: error: request for member 'SlotInit' in something not a structure or union
+ 1272 |   haudio_out_sai.SlotInit.FirstBitOffset = 0;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1273:17: error: request for member 'SlotInit' in something not a structure or union
+ 1273 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:608:62: error: 'LTDC_PIXEL_FORMAT_ARGB4444' undeclared (first use in this function)
+  608 |           (hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB4444) || \
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:609:24: error: request for member 'LayerCfg' in something not a structure or union
+  609 |           (hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_AL88))
+      |                        ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1273:38: error: 'SAI_SLOTSIZE_DATASIZE' undeclared (first use in this function)
+ 1273 |   haudio_out_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1274:17: error: request for member 'SlotInit' in something not a structure or union
+ 1274 |   haudio_out_sai.SlotInit.SlotNumber = 4;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1275:17: error: request for member 'SlotInit' in something not a structure or union
+ 1275 |   haudio_out_sai.SlotInit.SlotActive = SlotActive;
+      |                 ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1281:16: error: request for member 'Instance' in something not a structure or union
+ 1281 |   haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1289:16: error: request for member 'Init' in something not a structure or union
+ 1289 |   haudio_in_sai.Init.AudioFrequency = AudioFreq;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1290:16: error: request for member 'Init' in something not a structure or union
+ 1290 |   haudio_in_sai.Init.AudioMode = SAI_MODESLAVE_RX;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:609:62: error: 'LTDC_PIXEL_FORMAT_AL88' undeclared (first use in this function)
+  609 |           (hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_AL88))
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:612:42: error: request for member 'LayerCfg' in something not a structure or union
+  612 |     ret = *(__IO uint16_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (2*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                          ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:617:41: error: request for member 'LayerCfg' in something not a structure or union
+  617 |     ret = *(__IO uint8_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (2*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                         ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_Clear':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:631:55: error: request for member 'LayerCfg' in something not a structure or union
+  631 |   LL_FillBuffer(ActiveLayer, (uint32_t *)(hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress), BSP_LCD_GetXSize(), BSP_LCD_GetYSize(), 0, Color);
+      |                                                       ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DrawHLine':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:755:18: error: request for member 'LayerCfg' in something not a structure or union
+  755 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1290:34: error: 'SAI_MODESLAVE_RX' undeclared (first use in this function)
+ 1290 |   haudio_in_sai.Init.AudioMode = SAI_MODESLAVE_RX;
+      |                                  ^~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1291:16: error: request for member 'Init' in something not a structure or union
+ 1291 |   haudio_in_sai.Init.NoDivider = SAI_MASTERDIVIDER_ENABLED;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1292:16: error: request for member 'Init' in something not a structure or union
+ 1292 |   haudio_in_sai.Init.Protocol = SAI_FREE_PROTOCOL;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1293:16: error: request for member 'Init' in something not a structure or union
+ 1293 |   haudio_in_sai.Init.DataSize = SAI_DATASIZE_16;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1294:16: error: request for member 'Init' in something not a structure or union
+ 1294 |   haudio_in_sai.Init.FirstBit = SAI_FIRSTBIT_MSB;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1295:16: error: request for member 'Init' in something not a structure or union
+ 1295 |   haudio_in_sai.Init.ClockStrobing = SAI_CLOCKSTROBING_RISINGEDGE;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1296:16: error: request for member 'Init' in something not a structure or union
+ 1296 |   haudio_in_sai.Init.Synchro = SAI_SYNCHRONOUS;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:755:56: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+  755 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:757:29: error: request for member 'LayerCfg' in something not a structure or union
+  757 |     Xaddress = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 2*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                             ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:761:29: error: request for member 'LayerCfg' in something not a structure or union
+  761 |     Xaddress = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                             ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1296:32: error: 'SAI_SYNCHRONOUS' undeclared (first use in this function); did you mean 'SAI_SYNCHRONOUS_EXT'?
+ 1296 |   haudio_in_sai.Init.Synchro = SAI_SYNCHRONOUS;
+      |                                ^~~~~~~~~~~~~~~
+      |                                SAI_SYNCHRONOUS_EXT
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DrawVLine':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:780:18: error: request for member 'LayerCfg' in something not a structure or union
+  780 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1297:16: error: request for member 'Init' in something not a structure or union
+ 1297 |   haudio_in_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_DISABLED;
+      |                ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3935:43: error: 'SAI_OUTPUTDRIVE_DISABLE' undeclared (first use in this function); did you mean 'SAI_OUTPUTDRIVE_DISABLED'?
+ 3935 | #define SAI_OUTPUTDRIVE_DISABLED          SAI_OUTPUTDRIVE_DISABLE
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1297:36: note: in expansion of macro 'SAI_OUTPUTDRIVE_DISABLED'
+ 1297 |   haudio_in_sai.Init.OutputDrive = SAI_OUTPUTDRIVE_DISABLED;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1298:16: error: request for member 'Init' in something not a structure or union
+ 1298 |   haudio_in_sai.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_1QF;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1306:16: error: request for member 'FrameInit' in something not a structure or union
+ 1306 |   haudio_in_sai.FrameInit.FrameLength = 64;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1307:16: error: request for member 'FrameInit' in something not a structure or union
+ 1307 |   haudio_in_sai.FrameInit.ActiveFrameLength = 32;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1308:16: error: request for member 'FrameInit' in something not a structure or union
+ 1308 |   haudio_in_sai.FrameInit.FSDefinition = SAI_FS_CHANNEL_IDENTIFICATION;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1309:16: error: request for member 'FrameInit' in something not a structure or union
+ 1309 |   haudio_in_sai.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1310:16: error: request for member 'FrameInit' in something not a structure or union
+ 1310 |   haudio_in_sai.FrameInit.FSOffset = SAI_FS_BEFOREFIRSTBIT;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1317:16: error: request for member 'SlotInit' in something not a structure or union
+ 1317 |   haudio_in_sai.SlotInit.FirstBitOffset = 0;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1318:16: error: request for member 'SlotInit' in something not a structure or union
+ 1318 |   haudio_in_sai.SlotInit.SlotSize = SAI_SLOTSIZE_DATASIZE;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1319:16: error: request for member 'SlotInit' in something not a structure or union
+ 1319 |   haudio_in_sai.SlotInit.SlotNumber = 4;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:780:56: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+  780 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:782:29: error: request for member 'LayerCfg' in something not a structure or union
+  782 |     Xaddress = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 2*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                             ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1320:16: error: request for member 'SlotInit' in something not a structure or union
+ 1320 |   haudio_in_sai.SlotInit.SlotActive = SlotActive;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c: In function 'SAIx_In_DeInit':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:786:29: error: request for member 'LayerCfg' in something not a structure or union
+  786 |     Xaddress = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                             ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.c:1340:16: error: request for member 'Instance' in something not a structure or union
+ 1340 |   haudio_in_sai.Instance = AUDIO_IN_SAIx;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DrawPixel':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1005:18: error: request for member 'LayerCfg' in something not a structure or union
+ 1005 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                  ^
+make: *** [Drivers/BSP/STM32746G-Discovery/subdir.mk:28: Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_audio.o] Error 1
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1005:56: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+ 1005 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1007:36: error: request for member 'LayerCfg' in something not a structure or union
+ 1007 |     *(__IO uint16_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (2*(Ypos*BSP_LCD_GetXSize() + Xpos))) = (uint16_t)RGB_Code;
+      |                                    ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1011:36: error: request for member 'LayerCfg' in something not a structure or union
+ 1011 |     *(__IO uint32_t*) (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos))) = RGB_Code;
+      |                                    ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DrawBitmap':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1041:25: error: request for member 'LayerCfg' in something not a structure or union
+ 1041 |   address = hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (((BSP_LCD_GetXSize()*Ypos) + Xpos)*(4));
+      |                         ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1462:33: error: 'DMA2D_INPUT_ARGB8888' undeclared (first use in this function); did you mean 'DMA2D_ARGB8888'?
+ 1462 | #define CM_ARGB8888             DMA2D_INPUT_ARGB8888
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1046:24: note: in expansion of macro 'CM_ARGB8888'
+ 1046 |     input_color_mode = CM_ARGB8888;
+      |                        ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1464:33: error: 'DMA2D_INPUT_RGB565' undeclared (first use in this function); did you mean 'DMA2D_RGB565'?
+ 1464 | #define CM_RGB565               DMA2D_INPUT_RGB565
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1050:24: note: in expansion of macro 'CM_RGB565'
+ 1050 |     input_color_mode = CM_RGB565;
+      |                        ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1463:33: error: 'DMA2D_INPUT_RGB888' undeclared (first use in this function); did you mean 'DMA2D_RGB888'?
+ 1463 | #define CM_RGB888               DMA2D_INPUT_RGB888
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1054:24: note: in expansion of macro 'CM_RGB888'
+ 1054 |     input_color_mode = CM_RGB888;
+      |                        ^~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_FillRect':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1088:18: error: request for member 'LayerCfg' in something not a structure or union
+ 1088 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1088:56: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+ 1088 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1090:30: error: request for member 'LayerCfg' in something not a structure or union
+ 1090 |     x_address = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 2*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                              ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1094:30: error: request for member 'LayerCfg' in something not a structure or union
+ 1094 |     x_address = (hLtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                              ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_DisplayOn':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1256:3: warning: implicit declaration of function '__HAL_LTDC_ENABLE' [-Wimplicit-function-declaration]
+ 1256 |   __HAL_LTDC_ENABLE(&hLtdcHandler);
+      |   ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: At top level:
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1279:29: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1279 | __weak void BSP_LCD_MspInit(LTDC_HandleTypeDef *hltdc, void *Params)
+      |                             ^~~~~~~~~~~~~~~~~~
+      |                             I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1351:31: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1351 | __weak void BSP_LCD_MspDeInit(LTDC_HandleTypeDef *hltdc, void *Params)
+      |                               ^~~~~~~~~~~~~~~~~~
+      |                               I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1400:33: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'I2C_HandleTypeDef'?
+ 1400 | __weak void BSP_LCD_ClockConfig(LTDC_HandleTypeDef *hltdc, void *Params)
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 I2C_HandleTypeDef
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'LL_FillBuffer':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1568:16: error: request for member 'Init' in something not a structure or union
+ 1568 |   hDma2dHandler.Init.Mode         = DMA2D_R2M;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1568:37: error: 'DMA2D_R2M' undeclared (first use in this function); did you mean 'DMA2D_IRQn'?
+ 1568 |   hDma2dHandler.Init.Mode         = DMA2D_R2M;
+      |                                     ^~~~~~~~~
+      |                                     DMA2D_IRQn
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1569:18: error: request for member 'LayerCfg' in something not a structure or union
+ 1569 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                  ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1569:56: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function)
+ 1569 |   if(hLtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1571:18: error: request for member 'Init' in something not a structure or union
+ 1571 |     hDma2dHandler.Init.ColorMode    = DMA2D_RGB565;
+      |                  ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1458:33: error: 'DMA2D_OUTPUT_RGB565' undeclared (first use in this function); did you mean 'DMA2D_RGB565'?
+ 1458 | #define DMA2D_RGB565            DMA2D_OUTPUT_RGB565
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1571:39: note: in expansion of macro 'DMA2D_RGB565'
+ 1571 |     hDma2dHandler.Init.ColorMode    = DMA2D_RGB565;
+      |                                       ^~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1575:18: error: request for member 'Init' in something not a structure or union
+ 1575 |     hDma2dHandler.Init.ColorMode    = DMA2D_ARGB8888;
+      |                  ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1456:33: error: 'DMA2D_OUTPUT_ARGB8888' undeclared (first use in this function); did you mean 'DMA2D_ARGB8888'?
+ 1456 | #define DMA2D_ARGB8888          DMA2D_OUTPUT_ARGB8888
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1575:39: note: in expansion of macro 'DMA2D_ARGB8888'
+ 1575 |     hDma2dHandler.Init.ColorMode    = DMA2D_ARGB8888;
+      |                                       ^~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1577:16: error: request for member 'Init' in something not a structure or union
+ 1577 |   hDma2dHandler.Init.OutputOffset = OffLine;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1579:16: error: request for member 'Instance' in something not a structure or union
+ 1579 |   hDma2dHandler.Instance = DMA2D;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1582:6: warning: implicit declaration of function 'HAL_DMA2D_Init'; did you mean 'HAL_DMA_DeInit'? [-Wimplicit-function-declaration]
+ 1582 |   if(HAL_DMA2D_Init(&hDma2dHandler) == HAL_OK)
+      |      ^~~~~~~~~~~~~~
+      |      HAL_DMA_DeInit
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1584:8: warning: implicit declaration of function 'HAL_DMA2D_ConfigLayer' [-Wimplicit-function-declaration]
+ 1584 |     if(HAL_DMA2D_ConfigLayer(&hDma2dHandler, LayerIndex) == HAL_OK)
+      |        ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1586:11: warning: implicit declaration of function 'HAL_DMA2D_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+ 1586 |       if (HAL_DMA2D_Start(&hDma2dHandler, ColorIndex, (uint32_t)pDst, xSize, ySize) == HAL_OK)
+      |           ^~~~~~~~~~~~~~~
+      |           HAL_DMA_Start
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1589:9: warning: implicit declaration of function 'HAL_DMA2D_PollForTransfer'; did you mean 'HAL_DMA_PollForTransfer'? [-Wimplicit-function-declaration]
+ 1589 |         HAL_DMA2D_PollForTransfer(&hDma2dHandler, 10);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |         HAL_DMA_PollForTransfer
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'LL_ConvertLineToARGB8888':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1606:16: error: request for member 'Init' in something not a structure or union
+ 1606 |   hDma2dHandler.Init.Mode         = DMA2D_M2M_PFC;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1606:37: error: 'DMA2D_M2M_PFC' undeclared (first use in this function)
+ 1606 |   hDma2dHandler.Init.Mode         = DMA2D_M2M_PFC;
+      |                                     ^~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1607:16: error: request for member 'Init' in something not a structure or union
+ 1607 |   hDma2dHandler.Init.ColorMode    = DMA2D_ARGB8888;
+      |                ^
+../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1456:33: error: 'DMA2D_OUTPUT_ARGB8888' undeclared (first use in this function); did you mean 'DMA2D_ARGB8888'?
+ 1456 | #define DMA2D_ARGB8888          DMA2D_OUTPUT_ARGB8888
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1607:37: note: in expansion of macro 'DMA2D_ARGB8888'
+ 1607 |   hDma2dHandler.Init.ColorMode    = DMA2D_ARGB8888;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1608:16: error: request for member 'Init' in something not a structure or union
+ 1608 |   hDma2dHandler.Init.OutputOffset = 0;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1611:16: error: request for member 'LayerCfg' in something not a structure or union
+ 1611 |   hDma2dHandler.LayerCfg[1].AlphaMode = DMA2D_NO_MODIF_ALPHA;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1611:41: error: 'DMA2D_NO_MODIF_ALPHA' undeclared (first use in this function)
+ 1611 |   hDma2dHandler.LayerCfg[1].AlphaMode = DMA2D_NO_MODIF_ALPHA;
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1612:16: error: request for member 'LayerCfg' in something not a structure or union
+ 1612 |   hDma2dHandler.LayerCfg[1].InputAlpha = 0xFF;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1613:16: error: request for member 'LayerCfg' in something not a structure or union
+ 1613 |   hDma2dHandler.LayerCfg[1].InputColorMode = ColorMode;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1614:16: error: request for member 'LayerCfg' in something not a structure or union
+ 1614 |   hDma2dHandler.LayerCfg[1].InputOffset = 0;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:1616:16: error: request for member 'Instance' in something not a structure or union
+ 1616 |   hDma2dHandler.Instance = DMA2D;
+      |                ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_GetXSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:235:1: warning: control reaches end of non-void function [-Wreturn-type]
+  235 | }
+      | ^
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c: In function 'BSP_LCD_GetYSize':
+../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.c:244:1: warning: control reaches end of non-void function [-Wreturn-type]
+  244 | }
+      | ^
+make: *** [Drivers/BSP/STM32746G-Discovery/subdir.mk:28: Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_lcd.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:31:41 Build Failed. 293 errors, 48 warnings. (took 13s.1ms)
+

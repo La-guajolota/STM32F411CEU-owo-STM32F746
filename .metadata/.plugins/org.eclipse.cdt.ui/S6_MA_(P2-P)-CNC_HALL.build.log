@@ -1,0 +1,1310 @@
+19:05:11 **** Build of configuration Debug for project S6_MA_(P2-P)-CNC_HALL ****
+make -j12 all 
+arm-none-eabi-gcc "../Utilities/Fonts/font12.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Utilities/Fonts/font12.d" -MT"Utilities/Fonts/font12.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Utilities/Fonts/font12.o"
+arm-none-eabi-gcc "../Utilities/Fonts/font16.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Utilities/Fonts/font16.d" -MT"Utilities/Fonts/font16.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Utilities/Fonts/font16.o"
+arm-none-eabi-gcc "../Utilities/Fonts/font20.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Utilities/Fonts/font20.d" -MT"Utilities/Fonts/font20.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Utilities/Fonts/font20.o"
+arm-none-eabi-gcc "../Utilities/Fonts/font24.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Utilities/Fonts/font24.d" -MT"Utilities/Fonts/font24.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Utilities/Fonts/font24.o"
+arm-none-eabi-gcc "../Utilities/Fonts/font8.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Utilities/Fonts/font8.d" -MT"Utilities/Fonts/font8.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Utilities/Fonts/font8.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DSTM32F746xx -c -IC:/Users/ASW-MNO-Admin/Atollic/TrueSTUDIO/ARM_videos/STM32F746G-Discovery/src -IC:/Users/ASW-MNO-Admin/Atollic/TrueSTUDIO/ARM_videos/STM32F746G-Discovery/Drivers/CMSIS/Include -IC:/Users/ASW-MNO-Admin/Atollic/TrueSTUDIO/ARM_videos/STM32F746G-Discovery/Drivers/CMSIS/Device/ST/STM32F7xx/Include -IC:/Users/ASW-MNO-Admin/Atollic/TrueSTUDIO/ARM_videos/STM32F746G-Discovery/Drivers/STM32F7xx_HAL_Driver/Inc -x assembler-with-cpp -MMD -MP -MF"Src/startup_stm32f746xx.d" -MT"Src/startup_stm32f746xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/startup_stm32f746xx.o" "../Src/startup_stm32f746xx.s"
+arm-none-eabi-gcc "../Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f7xx_hal_msp.d" -MT"Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f7xx_it.d" -MT"Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f7xx.d" -MT"Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f7xx.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o"
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Inc/main.h:43,
+                 from ../Src/main.c:1:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Inc/main.h:43,
+                 from ../Src/stm32f7xx_hal_msp.c:39:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Inc/main.h:43,
+                 from ../Src/stm32f7xx_it.c:41:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c:54:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:195:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../Src/main.c: In function 'PrintNumber':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../Src/main.c:95:13: warning: unused variable 'number' [-Wunused-variable]
+   95 |     uint8_t number[6] = "";
+      |             ^~~~~~
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../Src/main.c: In function 'print_template':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../Src/main.c:189:39: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  189 |         BSP_LCD_DisplayStringAt(0, 0, "GRACIAS", CENTER_MODE);
+      |                                       ^~~~~~~~~
+      |                                       |
+      |                                       char *
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../Src/stm32f7xx_hal_msp.c: In function 'HAL_LTDC_MspInit':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+In file included from ../Inc/main.h:45:
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../Src/stm32f7xx_hal_msp.c:101:1: warning: multi-line comment [-Wcomment]
+  101 | //  GPIO_Init_Structure.Pin       = GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | \
+      | ^
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../Src/stm32f7xx_hal_msp.c:108:1: warning: multi-line comment [-Wcomment]
+  108 | //  GPIO_Init_Structure.Pin       = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | \
+      | ^
+../Src/main.c:197:41: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  197 |         BSP_LCD_DisplayStringAt(25, 45, "DRV8825", LEFT_MODE);
+      |                                         ^~~~~~~~~
+      |                                         |
+      |                                         char *
+../Src/stm32f7xx_hal_msp.c:117:1: warning: multi-line comment [-Wcomment]
+  117 | //  GPIO_Init_Structure.Pin       = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_4 | \
+      | ^
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:198:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  198 |         BSP_LCD_DisplayStringAt(200, 45, "State", LEFT_MODE);
+      |                                          ^~~~~~~
+      |                                          |
+      |                                          char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:201:41: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  201 |         BSP_LCD_DisplayStringAt(25, 80, "1. EN", LEFT_MODE);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:202:41: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  202 |         BSP_LCD_DisplayStringAt(25, 97, "2. M0", LEFT_MODE);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:203:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  203 |         BSP_LCD_DisplayStringAt(25, 114, "3. M1", LEFT_MODE);
+      |                                          ^~~~~~~
+      |                                          |
+      |                                          char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:204:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  204 |         BSP_LCD_DisplayStringAt(25, 131, "4. M2", LEFT_MODE);
+      |                                          ^~~~~~~
+      |                                          |
+      |                                          char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:207:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  207 |         BSP_LCD_DisplayStringAt(25, 155, "5. RST", LEFT_MODE);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:117:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../Src/main.c:208:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  208 |         BSP_LCD_DisplayStringAt(25, 172, "6. SLP", LEFT_MODE);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          char *
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:209:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  209 |         BSP_LCD_DisplayStringAt(25, 189, "7. STP", LEFT_MODE);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          char *
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_Init':
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:294:17: error: 'HAL_ADC_STATE_BUSY' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  294 |   hadc->State = HAL_ADC_STATE_BUSY;
+      |                 ^~~~~~~~~~~~~~~~~~
+      |                 HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:294:17: note: each undeclared identifier is reported only once for each function it appears in
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../Src/main.c:210:42: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  210 |         BSP_LCD_DisplayStringAt(25, 206, "8. DIR", LEFT_MODE);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          char *
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c:104:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../Src/main.c:213:43: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  213 |         BSP_LCD_DisplayStringAt(202, 234, "1/4", LEFT_MODE);
+      |                                           ^~~~~
+      |                                           |
+      |                                           char *
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cec.c:80:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_DeInit':
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:330:17: error: 'HAL_ADC_STATE_BUSY' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  330 |   hadc->State = HAL_ADC_STATE_BUSY;
+      |                 ^~~~~~~~~~~~~~~~~~
+      |                 HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../Src/main.c: In function 'print_state':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../Src/main.c:253:50: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  253 |                 BSP_LCD_DisplayStringAt(200, 80, "1", LEFT_MODE);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  char *
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.c:68:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c:101:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../Src/main.c:257:50: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  257 |                 BSP_LCD_DisplayStringAt(200, 80, "0", LEFT_MODE);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  char *
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../Src/main.c:262:50: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.o"
+  262 |                 BSP_LCD_DisplayStringAt(200, 97, "1", LEFT_MODE);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  char *
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_Start':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:413:21: error: 'HAL_ADC_STATE_BUSY_INJ' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  413 |   if(hadc->State == HAL_ADC_STATE_BUSY_INJ)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../Src/main.c:266:50: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  266 |                 BSP_LCD_DisplayStringAt(200, 97, "0", LEFT_MODE);
+      |                                                  ^~~
+      |                                                  |
+      |                                                  char *
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.c:54:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../Src/main.c:271:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  271 |                 BSP_LCD_DisplayStringAt(200, 114, "1", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../Src/main.c:275:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  275 |                 BSP_LCD_DisplayStringAt(200, 114, "0", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'HAL_ADCEx_InjectedStart':
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:186:21: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  186 |   if(hadc->State == HAL_ADC_STATE_BUSY_REG)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_CEC_STATE_BUSY_RX
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:186:21: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:280:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  280 |                 BSP_LCD_DisplayStringAt(200, 131, "1", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:416:19: error: 'HAL_ADC_STATE_BUSY_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_BUSY_INTERNAL'?
+  416 |     hadc->State = HAL_ADC_STATE_BUSY_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_BUSY_INTERNAL
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:284:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  284 |                 BSP_LCD_DisplayStringAt(200, 131, "0", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:289:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  289 |                 BSP_LCD_DisplayStringAt(200, 155, "1", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:293:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  293 |                 BSP_LCD_DisplayStringAt(200, 155, "0", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:298:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  298 |                 BSP_LCD_DisplayStringAt(200, 172, "1", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:302:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  302 |                 BSP_LCD_DisplayStringAt(200, 172, "0", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:307:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  307 |                 BSP_LCD_DisplayStringAt(200, 189, "1", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:311:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  311 |                 BSP_LCD_DisplayStringAt(200, 189, "0", LEFT_MODE);
+      |                                                   ^~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:316:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  316 |                 BSP_LCD_DisplayStringAt(200, 206, "-->", LEFT_MODE);
+      |                                                   ^~~~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:320:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  320 |                 BSP_LCD_DisplayStringAt(200, 206, "<--", LEFT_MODE);
+      |                                                   ^~~~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:421:19: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  421 |     hadc->State = HAL_ADC_STATE_BUSY_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_CEC_STATE_BUSY_RX
+../Src/main.c: In function 'print_direction':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:189:19: error: 'HAL_ADC_STATE_BUSY_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_BUSY_INTERNAL'?
+  189 |     hadc->State = HAL_ADC_STATE_BUSY_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_BUSY_INTERNAL
+../Src/main.c:330:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  330 |                 BSP_LCD_DisplayStringAt(200, 206, "-->", LEFT_MODE);
+      |                                                   ^~~~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../Src/main.c:333:51: warning: pointer targets in passing argument 3 of 'BSP_LCD_DisplayStringAt' differ in signedness [-Wpointer-sign]
+  333 |                 BSP_LCD_DisplayStringAt(200, 206, "<--", LEFT_MODE);
+      |                                                   ^~~~~
+      |                                                   |
+      |                                                   char *
+../BSP/STM32746G-Discovery/stm32746g_discovery_lcd.h:208:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  208 | void     BSP_LCD_DisplayStringAt(uint16_t Xpos, uint16_t Ypos, uint8_t *Text, Text_AlignModeTypdef Mode);
+      |                                                                ~~~~~~~~~^~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_PollForConversion':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:510:19: error: 'HAL_ADC_STATE_ERROR' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  510 |     hadc->State = HAL_ADC_STATE_ERROR;
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_ERROR
+../Src/main.c: At top level:
+../Src/main.c:84:12: warning: 'map' defined but not used [-Wunused-function]
+   84 | static int map(long x, long in_min, long in_max, long out_min, long out_max) {
+      |            ^~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:194:19: error: 'HAL_ADC_STATE_BUSY_INJ' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  194 |     hadc->State = HAL_ADC_STATE_BUSY_INJ;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:538:21: error: 'HAL_ADC_STATE_EOC_INJ' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  538 |   if(hadc->State == HAL_ADC_STATE_EOC_INJ)
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'HAL_ADCEx_InjectedStart_IT':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:258:21: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  258 |   if(hadc->State == HAL_ADC_STATE_BUSY_REG)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_CEC_STATE_BUSY_RX
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:541:19: error: 'HAL_ADC_STATE_EOC_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  541 |     hadc->State = HAL_ADC_STATE_EOC_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:546:19: error: 'HAL_ADC_STATE_EOC_REG' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  546 |     hadc->State = HAL_ADC_STATE_EOC_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:261:19: error: 'HAL_ADC_STATE_BUSY_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_BUSY_INTERNAL'?
+  261 |     hadc->State = HAL_ADC_STATE_BUSY_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_BUSY_INTERNAL
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_PollForEvent':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:594:20: error: 'HAL_ADC_STATE_AWD' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_AWD1'?
+  594 |      hadc->State = HAL_ADC_STATE_AWD;
+      |                    ^~~~~~~~~~~~~~~~~
+      |                    HAL_ADC_STATE_AWD1
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:602:20: error: 'HAL_ADC_STATE_ERROR' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  602 |      hadc->State = HAL_ADC_STATE_ERROR;
+      |                    ^~~~~~~~~~~~~~~~~~~
+      |                    HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:266:19: error: 'HAL_ADC_STATE_BUSY_INJ' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  266 |     hadc->State = HAL_ADC_STATE_BUSY_INJ;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_Start_IT':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'HAL_ADCEx_InjectedPollForConversion':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:375:21: error: 'HAL_ADC_STATE_EOC_REG' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  375 |   if(hadc->State == HAL_ADC_STATE_EOC_REG)
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:631:21: error: 'HAL_ADC_STATE_BUSY_INJ' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_BUSY'?
+  631 |   if(hadc->State == HAL_ADC_STATE_BUSY_INJ)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_DAC_STATE_BUSY
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:378:19: error: 'HAL_ADC_STATE_EOC_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  378 |     hadc->State = HAL_ADC_STATE_EOC_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:634:19: error: 'HAL_ADC_STATE_BUSY_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_BUSY_INTERNAL'?
+  634 |     hadc->State = HAL_ADC_STATE_BUSY_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_BUSY_INTERNAL
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:383:19: error: 'HAL_ADC_STATE_EOC_INJ' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  383 |     hadc->State = HAL_ADC_STATE_EOC_INJ;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'HAL_ADCEx_MultiModeStart_DMA':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:518:17: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  518 |   hadc->State = HAL_ADC_STATE_BUSY_REG;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                 HAL_CEC_STATE_BUSY_RX
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:639:19: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  639 |     hadc->State = HAL_ADC_STATE_BUSY_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_CEC_STATE_BUSY_RX
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_IRQHandler':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:742:23: error: 'HAL_ADC_STATE_EOC_INJ' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  742 |     if(hadc->State == HAL_ADC_STATE_EOC_INJ)
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+      |                       HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'ADC_MultiModeDMAConvCplt':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:799:21: error: 'HAL_ADC_STATE_EOC_INJ' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  799 |   if(hadc->State == HAL_ADC_STATE_EOC_INJ)
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:745:21: error: 'HAL_ADC_STATE_EOC_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  745 |       hadc->State = HAL_ADC_STATE_EOC_INJ_REG;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:802:19: error: 'HAL_ADC_STATE_EOC_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+  802 |     hadc->State = HAL_ADC_STATE_EOC_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:750:21: error: 'HAL_ADC_STATE_EOC_REG' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  750 |       hadc->State = HAL_ADC_STATE_EOC_REG;
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:830:19: error: 'HAL_ADC_STATE_AWD' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_AWD1'?
+  830 |     hadc->State = HAL_ADC_STATE_AWD;
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_AWD1
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:845:19: error: 'HAL_ADC_STATE_ERROR' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  845 |     hadc->State = HAL_ADC_STATE_ERROR;
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:807:19: error: 'HAL_ADC_STATE_EOC_REG' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  807 |     hadc->State = HAL_ADC_STATE_EOC_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'HAL_ADC_Start_DMA':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:896:17: error: 'HAL_ADC_STATE_BUSY_REG' undeclared (first use in this function); did you mean 'HAL_CEC_STATE_BUSY_RX'?
+  896 |   hadc->State = HAL_ADC_STATE_BUSY_REG;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                 HAL_CEC_STATE_BUSY_RX
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c: In function 'ADC_MultiModeDMAError':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: At top level:
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c:835:18: error: 'HAL_ADC_STATE_ERROR' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+  835 |     hadc->State= HAL_ADC_STATE_ERROR;
+      |                  ^~~~~~~~~~~~~~~~~~~
+      |                  HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1228:1: error: unknown type name 'HAL_ADC_StateTypeDef'; did you mean 'HAL_DAC_StateTypeDef'?
+ 1228 | HAL_ADC_StateTypeDef HAL_ADC_GetState(ADC_HandleTypeDef* hadc)
+      | ^~~~~~~~~~~~~~~~~~~~
+      | HAL_DAC_StateTypeDef
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1228:22: error: conflicting types for 'HAL_ADC_GetState'; have 'int(ADC_HandleTypeDef *)'
+ 1228 | HAL_ADC_StateTypeDef HAL_ADC_GetState(ADC_HandleTypeDef* hadc)
+      |                      ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f7xx_hal_conf.h:250:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:617:10: note: previous declaration of 'HAL_ADC_GetState' with type 'uint32_t(ADC_HandleTypeDef *)' {aka 'long unsigned int(ADC_HandleTypeDef *)'}
+  617 | uint32_t HAL_ADC_GetState(ADC_HandleTypeDef* hadc);
+      |          ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp.c:101:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.o"
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'ADC_Init':
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:855:92: error: 'ADC_CR1_DISCNUM_Pos' undeclared (first use in this function); did you mean 'ADC_CR1_DISCNUM_2'?
+  855 | #define ADC_CR1_DISCONTINUOUS(_NBR_DISCONTINUOUSCONV_) (((_NBR_DISCONTINUOUSCONV_) - 1) << ADC_CR1_DISCNUM_Pos)
+      |                                                                                            ^~~~~~~~~~~~~~~~~~~
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1320:29: note: in expansion of macro 'ADC_CR1_DISCONTINUOUS'
+ 1320 |     hadc->Instance->CR1 |=  ADC_CR1_DISCONTINUOUS(hadc->Init.NbrOfDiscConversion);
+      |                             ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.o"
+arm-none-eabi-gcc "../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32F746xx -c -I../Src -I../BSP/STM32746G-Discovery -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F7xx/Include -I../Inc -I../STM32F7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.d" -MT"STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.o"
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'ADC_DMAConvCplt':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1352:21: error: 'HAL_ADC_STATE_EOC_INJ' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+ 1352 |   if(hadc->State == HAL_ADC_STATE_EOC_INJ)
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     HAL_ADC_STATE_INJ_EOC
+make: *** [STM32F7xx_HAL_Driver/Src/subdir.mk:196: STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o] Error 1
+make: *** Waiting for unfinished jobs....
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1355:19: error: 'HAL_ADC_STATE_EOC_INJ_REG' undeclared (first use in this function); did you mean 'HAL_ADC_STATE_INJ_EOC'?
+ 1355 |     hadc->State = HAL_ADC_STATE_EOC_INJ_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_ADC_STATE_INJ_EOC
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1360:19: error: 'HAL_ADC_STATE_EOC_REG' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+ 1360 |     hadc->State = HAL_ADC_STATE_EOC_REG;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+      |                   HAL_DAC_STATE_ERROR
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c: In function 'ADC_DMAError':
+../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c:1388:16: error: 'HAL_ADC_STATE_ERROR' undeclared (first use in this function); did you mean 'HAL_DAC_STATE_ERROR'?
+ 1388 |   hadc->State= HAL_ADC_STATE_ERROR;
+      |                ^~~~~~~~~~~~~~~~~~~
+      |                HAL_DAC_STATE_ERROR
+make: *** [STM32F7xx_HAL_Driver/Src/subdir.mk:196: STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o] Error 1
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cryp_ex.c:100:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac_ex.c:57:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+In file included from ../Inc/stm32f7xx_hal_conf.h:362,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dac.c:175:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:432: warning: "TIM_OUTPUTSTATE_DISABLE" redefined
+  432 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:49,
+                 from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:47,
+                 from ../Inc/stm32f7xx_hal_conf.h:234:
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2443: note: this is the location of the previous definition
+ 2443 | #define TIM_OUTPUTSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:461: warning: "TIM_OUTPUTNSTATE_DISABLE" redefined
+  461 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2437: note: this is the location of the previous definition
+ 2437 | #define TIM_OUTPUTNSTATE_DISABLE            ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:773: warning: "TIM_TS_ITR0" redefined
+  773 | #define TIM_TS_ITR0                        ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2423: note: this is the location of the previous definition
+ 2423 | #define TIM_TS_ITR0                        ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:774: warning: "TIM_TS_ITR1" redefined
+  774 | #define TIM_TS_ITR1                        ((uint32_t)0x0010U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2424: note: this is the location of the previous definition
+ 2424 | #define TIM_TS_ITR1                        ((uint32_t)0x0010)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:775: warning: "TIM_TS_ITR2" redefined
+  775 | #define TIM_TS_ITR2                        ((uint32_t)0x0020U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2425: note: this is the location of the previous definition
+ 2425 | #define TIM_TS_ITR2                        ((uint32_t)0x0020)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:776: warning: "TIM_TS_ITR3" redefined
+  776 | #define TIM_TS_ITR3                        ((uint32_t)0x0030U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2426: note: this is the location of the previous definition
+ 2426 | #define TIM_TS_ITR3                        ((uint32_t)0x0030)
+      | 
+In file included from ../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1259:
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:148: warning: "TIM_CHANNEL_1" redefined
+  148 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2432: note: this is the location of the previous definition
+ 2432 | #define TIM_CHANNEL_1                      ((uint32_t)0x0000)
+      | 
+../STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:149: warning: "TIM_CHANNEL_2" redefined
+  149 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004U)
+      | 
+../STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2433: note: this is the location of the previous definition
+ 2433 | #define TIM_CHANNEL_2                      ((uint32_t)0x0004)
+      | 
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+19:05:48 Build Failed. 44 errors, 155 warnings. (took 36s.483ms)
+

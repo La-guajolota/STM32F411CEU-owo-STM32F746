@@ -1,0 +1,10 @@
+11:04:43 **** Build of configuration Debug for project Frecuency_mesuarments ****
+make -j12 all 
+arm-none-eabi-size  Frecuency_mesuarments.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9700	     12	   1668	  11380	   2c74	Frecuency_mesuarments.elf
+Finished building: default.size.stdout
+ 
+
+11:04:44 Build Finished. 0 errors, 0 warnings. (took 205ms)
+

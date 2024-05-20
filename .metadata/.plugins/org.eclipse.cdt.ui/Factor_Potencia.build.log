@@ -1,10 +1,10 @@
-13:53:21 **** Build of configuration Debug for project Factor_Potencia ****
+11:04:43 **** Build of configuration Debug for project Factor_Potencia ****
 make -j12 all 
 arm-none-eabi-size  Factor_Potencia.elf 
    text	   data	    bss	    dec	    hex	filename
-  34060	    516	   2332	  36908	   902c	Factor_Potencia.elf
+  33928	    516	   2332	  36776	   8fa8	Factor_Potencia.elf
 Finished building: default.size.stdout
  
 
-13:53:22 Build Finished. 0 errors, 0 warnings. (took 413ms)
+11:04:43 Build Finished. 0 errors, 0 warnings. (took 215ms)
 

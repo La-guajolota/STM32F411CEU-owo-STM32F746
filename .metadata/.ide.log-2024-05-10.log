@@ -1,0 +1,37 @@
+2024-05-11 00:13:21,916 [INFO] Mcu:1677 - InternalPropertyChange: try BijectiveRequest:XOR ON / Hall Sensor Mode
+2024-05-11 00:33:26,510 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 479918760 Bytes (853540864)
+2024-05-11 00:33:29,814 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 500855368 Bytes (853540864)
+2024-05-11 00:33:30,060 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 579498568 Bytes (853540864)
+2024-05-11 00:33:30,178 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-11 00:33:30,179 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-11 00:33:30,179 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-05-11 00:33:30,179 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-11 00:33:30,179 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-11 00:33:30,179 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-11 00:33:30,196 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-11 00:33:30,447 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\license.tmp_save
+2024-05-11 00:33:31,295 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\license.tmp
+2024-05-11 00:33:31,829 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\gpio.tmp_save
+2024-05-11 00:33:33,157 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\gpio.tmp
+2024-05-11 00:33:33,416 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\stm32f4xx_it.c_save
+2024-05-11 00:33:33,680 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\stm32f4xx_it.c
+2024-05-11 00:33:33,786 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\stm32f4xx_it.h_save
+2024-05-11 00:33:33,978 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\stm32f4xx_it.h
+2024-05-11 00:33:34,246 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\stm32f4xx_hal_msp.c_save
+2024-05-11 00:33:34,550 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\stm32f4xx_hal_msp.c
+2024-05-11 00:33:34,657 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\system.tmp_save
+2024-05-11 00:33:34,771 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\MXTmpFiles\system.tmp
+2024-05-11 00:33:35,004 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-05-11 00:33:35,922 [INFO] CodeEngine:335 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\stm32f4xx_hal_conf.h
+2024-05-11 00:33:36,095 [WARN] IPConfigManager:3513 - IP not found : TIM
+2024-05-11 00:33:36,095 [WARN] CodeGenerator:3951 - IP not found : null
+2024-05-11 00:33:36,243 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\main.h_save
+2024-05-11 00:33:36,449 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Inc\main.h
+2024-05-11 00:33:36,578 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\main.c_save
+2024-05-11 00:33:36,845 [INFO] CodeEngine:279 - Generated code: E:\Sexto_sem\MCU_avanzados\ASK_frecuency_measures\Core\Src\main.c
+2024-05-11 00:33:48,207 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 11027mS.
+2024-05-11 00:33:48,217 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-11 00:33:48,271 [INFO] ConfigFileManager:1503 - The Die is : DIE431
+2024-05-11 00:33:57,896 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 9679mS.
+2024-05-11 00:33:57,945 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 48mS.
+2024-05-11 00:33:57,979 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

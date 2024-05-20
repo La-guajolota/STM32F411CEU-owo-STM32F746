@@ -1,9 +1,0 @@
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:126:15:Audio_PeriodicTC	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:136:15:Audio_GetState	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:115:15:Audio_MuteCtl	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:104:15:Audio_VolumeCtl	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:84:15:Audio_PlaybackCmd	3
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:71:15:Audio_DeInit	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:56:15:Audio_Init	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:146:6:BSP_AUDIO_OUT_TransferComplete_CallBack	1
-E:/Sexto_sem/MCU_avanzados/AUDIO_Standalone/Src/usbd_audio_if.c:156:6:BSP_AUDIO_OUT_HalfTransfer_CallBack	1

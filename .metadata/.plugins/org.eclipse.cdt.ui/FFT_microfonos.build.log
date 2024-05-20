@@ -1,0 +1,32 @@
+11:38:45 **** Incremental Build of configuration Debug for project FFT_microfonos ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/Common" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/STM32746G-Discovery" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/wm8994" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/rk043fn48h" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ov9655" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/n25q128a" -I"E:/Sexto_sem/MCU_avanzados/BSP/Drivers/BSP/Components/ft5336" -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:195:3: warning: implicit declaration of function 'MX_SDMMC1_SD_Init'; did you mean 'MX_DMA2D_Init'? [-Wimplicit-function-declaration]
+  195 |   MX_SDMMC1_SD_Init();
+      |   ^~~~~~~~~~~~~~~~~
+      |   MX_DMA2D_Init
+../Core/Src/main.c:209:7: warning: implicit declaration of function 'BSP_LCD_InitEx'; did you mean 'BSP_LCD_Init'? [-Wimplicit-function-declaration]
+  209 |   if (BSP_LCD_InitEx(LCD_ORIENTATION_PORTRAIT) == LCD_ERROR)
+      |       ^~~~~~~~~~~~~~
+      |       BSP_LCD_Init
+../Core/Src/main.c:209:22: error: 'LCD_ORIENTATION_PORTRAIT' undeclared (first use in this function)
+  209 |   if (BSP_LCD_InitEx(LCD_ORIENTATION_PORTRAIT) == LCD_ERROR)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:209:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:920:13: warning: conflicting types for 'MX_SDMMC1_SD_Init'; have 'void(void)'
+  920 | static void MX_SDMMC1_SD_Init(void)
+      |             ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:920:13: error: static declaration of 'MX_SDMMC1_SD_Init' follows non-static declaration
+../Core/Src/main.c:195:3: note: previous implicit declaration of 'MX_SDMMC1_SD_Init' with type 'void(void)'
+  195 |   MX_SDMMC1_SD_Init();
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:920:13: warning: 'MX_SDMMC1_SD_Init' defined but not used [-Wunused-function]
+  920 | static void MX_SDMMC1_SD_Init(void)
+      |             ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:38:50 Build Failed. 3 errors, 4 warnings. (took 5s.36ms)
+

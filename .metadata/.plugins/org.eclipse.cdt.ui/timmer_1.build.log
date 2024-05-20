@@ -1,10 +1,10 @@
-13:56:36 **** Build of configuration Debug for project timmer_1 ****
+11:06:44 **** Build of configuration Debug for project timmer_1 ****
 make -j12 all 
 arm-none-eabi-size  timmer_1.elf 
    text	   data	    bss	    dec	    hex	filename
-  23504	    100	   2148	  25752	   6498	timmer_1.elf
+  23472	    100	   2148	  25720	   6478	timmer_1.elf
 Finished building: default.size.stdout
  
 
-13:56:36 Build Finished. 0 errors, 0 warnings. (took 361ms)
+11:06:44 Build Finished. 0 errors, 0 warnings. (took 218ms)
 
