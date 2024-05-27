@@ -1,0 +1,3 @@
+../Core/Src/WS2812B.c:31:6:Set_LED	1
+../Core/Src/WS2812B.c:38:6:Init_tira	2
+../Core/Src/WS2812B.c:46:6:WS2812_Send	6

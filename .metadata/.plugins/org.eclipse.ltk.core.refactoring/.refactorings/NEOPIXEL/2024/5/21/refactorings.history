@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;NEOPIXEL/Core/Inc/WS2812B.H&apos; to &apos;WS2812B.h&apos;" description="Rename resource &apos;WS2812B.H&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/WS2812B.H" name="WS2812B.h" stamp="1716507910123" updateReferences="true"/>
+</session>

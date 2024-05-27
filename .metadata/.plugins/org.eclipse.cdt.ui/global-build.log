@@ -1,152 +1,642 @@
-22:20:51 **** Incremental Build of configuration Debug for project MCP2515 ****
+16:54:13 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  14544	     12	   1716	  16272	   3f90	MCP2515.elf
+  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-22:21:37 **** Incremental Build of configuration Debug for project MCP2515 ****
+16:54:15 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-size  MCP2515.elf 
+arm-none-eabi-size  NEOPIXELS.elf 
    text	   data	    bss	    dec	    hex	filename
-  14544	     12	   1716	  16272	   3f90	MCP2515.elf
+  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-22:25:38 **** Incremental Build of configuration Debug for project MCP2515 ****
+16:54:16 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
- 
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
    text	   data	    bss	    dec	    hex	filename
-  14544	     12	   1716	  16272	   3f90	MCP2515.elf
+  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
- 
-00:19:49 **** Incremental Build of configuration Debug for project MCP2515 ****
+16:57:06 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
-arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
-arm-none-eabi-gcc "../Core/Src/CAN_SPI.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/CAN_SPI.d" -MT"Core/Src/CAN_SPI.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/CAN_SPI.o"
-arm-none-eabi-gcc "../Core/Src/MCP2515.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/MCP2515.d" -MT"Core/Src/MCP2515.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MCP2515.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
-In file included from ../Core/Src/MCP2515.c:1:
-../Core/Inc/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
-    4 | #pragma anon_unions
-      | 
-In file included from ../Core/Src/CAN_SPI.c:2:
-../Core/Inc/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
-    4 | #pragma anon_unions
-      | 
-arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+../Core/Src/main.c: In function 'HAL_TIM_PWM_PulseFinishedCallback':
+../Core/Src/main.c:310:9: warning: implicit declaration of function 'HAL_TIM_PWMN_Stop_DMA'; did you mean 'HAL_TIM_PWM_Stop_DMA'? [-Wimplicit-function-declaration]
+  310 |         HAL_TIM_PWMN_Stop_DMA(&htim1, TIM_CHANNEL_1);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+      |         HAL_TIM_PWM_Stop_DMA
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_TIM_PWM_PulseFinishedCallback':
+D:/Sexto_sem/MCU_avanzados/NEOPIXELS/Debug/../Core/Src/main.c:310: undefined reference to `HAL_TIM_PWMN_Stop_DMA'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: NEOPIXELS.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:57:19 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-00:24:20 **** Incremental Build of configuration Debug for project MCP2515 ****
+17:06:22 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-00:27:29 **** Incremental Build of configuration Debug for project MCP2515 ****
+17:26:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-07:06:14 **** Incremental Build of configuration Debug for project MCP2515 ****
+17:30:24 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-size  MCP2515.elf 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-07:09:17 **** Incremental Build of configuration Debug for project MCP2515 ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+Finished building: NEOPIXELS.list
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+18:24:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-07:18:54 **** Incremental Build of configuration Debug for project MCP2515 ****
+18:26:22 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "MCP2515.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\MCP2515\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCP2515.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: MCP2515.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
  
-arm-none-eabi-size  MCP2515.elf 
-arm-none-eabi-objdump -h -S MCP2515.elf  > "MCP2515.list"
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-Finished building: MCP2515.list
+Finished building: NEOPIXELS.list
  
-07:28:20 **** Incremental Build of configuration Debug for project MCP2515 ****
+18:28:02 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
-arm-none-eabi-size  MCP2515.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
    text	   data	    bss	    dec	    hex	filename
-  19484	     12	   1852	  21348	   5364	MCP2515.elf
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
 Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:32:09 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:32:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:35:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:36:34 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:36:46 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-size  NEOPIXELS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+18:37:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:38:08 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:41:08 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:42:30 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:42:57 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:44:56 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:46:37 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:47:43 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:48:30 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:48:47 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-size  NEOPIXELS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+18:49:17 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:50:10 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:50:43 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+18:55:15 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:00:25 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21024	     12	   2260	  23296	   5b00	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:00:49 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:01:17 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:01:38 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:01:56 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:04:39 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:05:19 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:05:45 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:06:13 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-size  NEOPIXELS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+19:21:25 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:9: error: too few arguments to function 'Set_LED'
+  146 |         Set_LED(&regleta_leds,0,0,0);
+      |         ^~~~~~~
+In file included from ../Core/Src/main.c:33:
+../Core/Inc/WS2812B.h:44:6: note: declared here
+   44 | void Set_LED(TIRA_t* regleta,uint8_t led_num,uint8_t R,uint8_t G,uint8_t B);
+      |      ^~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+19:22:11 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21136	     12	   2260	  23408	   5b70	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:25:52 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21200	     12	   2260	  23472	   5bb0	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:26:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21200	     12	   2260	  23472	   5bb0	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:28:29 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+19:28:50 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+08:33:55 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
+ 
+08:35:07 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-size  NEOPIXELS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+08:35:23 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-size  NEOPIXELS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+08:41:28 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NEOPIXELS.elf
+ 
+arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NEOPIXELS.list
  

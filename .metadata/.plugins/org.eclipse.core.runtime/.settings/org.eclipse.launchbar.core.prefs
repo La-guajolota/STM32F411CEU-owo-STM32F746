@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:hello_world Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_iniciales Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Scanner_pixeles Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_curvefitting Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:timmer_1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:pwm_disco Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:iris_plant Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:senos_triangulos_neuronal_net,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_SAR Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_rampa Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CAN_MCP2515 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_potentes_test_RMS,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_rms_6ksampling Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Factor_Potencia Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Func_gen_mux Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ASK_frecuency_measures Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:medidor_metereologico Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Frecuency_mesuarments Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32746G_DISCOVERY,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:sensores_melchor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TUT_CAN_F103 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F746G_DISCO Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CAN_transiver_ejemplo Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MCP2515 Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TUT_CAN_F103 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NEOPIXELS Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_SAR\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_SAR\ Debug/activeLaunchTarget=null\:---
@@ -16,9 +16,13 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Factor_Potencia\ Debug/activeLa
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Frecuency_mesuarments\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_iniciales\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_iniciales\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NEOPIXELS\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NEOPIXELS\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F746G_DISCO\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Scanner_pixeles\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Scanner_pixeles\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TUT_CAN_F103\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TUT_CAN_F103\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_curvefitting\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_potentes_test_RMS/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc_rms_6ksampling\ Debug/activeLaunchMode=run
