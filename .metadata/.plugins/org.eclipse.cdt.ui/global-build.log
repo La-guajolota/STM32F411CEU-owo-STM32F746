@@ -1,642 +1,1095 @@
-16:54:13 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:14:19 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-16:54:15 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:14:23 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-size  DRV8825.elf 
    text	   data	    bss	    dec	    hex	filename
-  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-16:54:16 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:14:56 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21016	     12	   2004	  23032	   59f8	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-16:57:06 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-../Core/Src/main.c: In function 'HAL_TIM_PWM_PulseFinishedCallback':
-../Core/Src/main.c:310:9: warning: implicit declaration of function 'HAL_TIM_PWMN_Stop_DMA'; did you mean 'HAL_TIM_PWM_Stop_DMA'? [-Wimplicit-function-declaration]
-  310 |         HAL_TIM_PWMN_Stop_DMA(&htim1, TIM_CHANNEL_1);
-      |         ^~~~~~~~~~~~~~~~~~~~~
-      |         HAL_TIM_PWM_Stop_DMA
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_TIM_PWM_PulseFinishedCallback':
-D:/Sexto_sem/MCU_avanzados/NEOPIXELS/Debug/../Core/Src/main.c:310: undefined reference to `HAL_TIM_PWMN_Stop_DMA'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:64: NEOPIXELS.elf] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-16:57:19 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+Finished building: DRV8825.list
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+22:16:02 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-17:06:22 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:16:28 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-17:26:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:20:15 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-17:30:24 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:21:05 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
    text	   data	    bss	    dec	    hex	filename
-  21024	     12	   2004	  23040	   5a00	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
- 
-18:24:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:22:16 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:26:22 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:23:54 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:28:02 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:28:04 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:32:09 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:28:35 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:32:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:32:56 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:35:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:39:59 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:36:34 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:43:10 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:36:46 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:45:13 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-18:37:35 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+Finished building: DRV8825.list
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+22:52:20 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:38:08 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:53:10 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:41:08 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:53:23 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
- 
-18:42:30 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+22:55:12 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:42:57 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:03:07 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:44:56 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:03:50 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:46:37 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:04:22 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:47:43 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:05:41 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:48:30 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:06:40 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:48:47 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:07:20 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
 Finished building: default.size.stdout
  
-18:49:17 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+Finished building: DRV8825.list
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+23:07:46 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:50:10 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:08:44 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:50:43 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:09:15 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-18:55:15 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:10:43 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:00:25 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:11:13 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
    text	   data	    bss	    dec	    hex	filename
-  21024	     12	   2260	  23296	   5b00	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
- 
-19:00:49 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:13:08 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:01:17 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+23:17:00 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:01:38 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:16:33 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:01:56 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:19:54 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:04:39 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:20:31 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:05:19 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:20:53 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:05:45 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:21:18 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:06:13 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+00:22:48 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9596	     12	   1652	  11260	   2bfc	DRV8825.elf
 Finished building: default.size.stdout
  
-19:21:25 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+Finished building: DRV8825.list
+ 
+00:23:57 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:146:9: error: too few arguments to function 'Set_LED'
-  146 |         Set_LED(&regleta_leds,0,0,0);
-      |         ^~~~~~~
-In file included from ../Core/Src/main.c:33:
-../Core/Inc/WS2812B.h:44:6: note: declared here
-   44 | void Set_LED(TIRA_t* regleta,uint8_t led_num,uint8_t R,uint8_t G,uint8_t B);
-      |      ^~~~~~~
-make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:24:34 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:25:07 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:25:43 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:26:10 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:26:51 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:27:41 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:28:49 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:29:23 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:29:55 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:30:45 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:31:41 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:32:24 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:32:59 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-size  DRV8825.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+00:34:11 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:35:45 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:36:17 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:37:05 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:38:57 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-size  DRV8825.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+00:39:19 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:40:36 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:41:35 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:41:51 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-size  DRV8825.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+00:44:29 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:45:36 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:47:09 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9600	     12	   1652	  11264	   2c00	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:51:41 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9684	     12	   1652	  11348	   2c54	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:52:03 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9692	     12	   1652	  11356	   2c5c	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:54:06 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9668	     12	   1652	  11332	   2c44	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:54:30 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9652	     12	   1652	  11316	   2c34	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:55:38 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9652	     12	   1652	  11316	   2c34	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:56:46 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9668	     12	   1652	  11332	   2c44	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+00:57:31 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
+   text	   data	    bss	    dec	    hex	filename
+   9680	     12	   1652	  11344	   2c50	DRV8825.elf
+Finished building: default.size.stdout
+ 
+Finished building: DRV8825.list
+ 
+01:08:38 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:334,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/DRV8825.h:14,
+                 from ../Core/Src/DRV8825.c:11:
+../Core/Src/DRV8825.c: In function 'init_driver':
+../Core/Src/DRV8825.c:22:20: error: 'PERIOD' undeclared (first use in this function); did you mean 'PERIODO'?
+   22 | #define half_duty (PERIOD/2)
+      |                    ^~~~~~
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1396:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1396 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/DRV8825.c:47:45: note: in expansion of macro 'half_duty'
+   47 |         __HAL_TIM_SET_COMPARE(timer,channel,half_duty);
+      |                                             ^~~~~~~~~
+../Core/Src/DRV8825.c:22:20: note: each undeclared identifier is reported only once for each function it appears in
+   22 | #define half_duty (PERIOD/2)
+      |                    ^~~~~~
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1396:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1396 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/DRV8825.c:47:45: note: in expansion of macro 'half_duty'
+   47 |         __HAL_TIM_SET_COMPARE(timer,channel,half_duty);
+      |                                             ^~~~~~~~~
+../Core/Src/DRV8825.c: In function 'move':
+../Core/Src/DRV8825.c:22:20: error: 'PERIOD' undeclared (first use in this function); did you mean 'PERIODO'?
+   22 | #define half_duty (PERIOD/2)
+      |                    ^~~~~~
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1396:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1396 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/DRV8825.c:117:45: note: in expansion of macro 'half_duty'
+  117 |         __HAL_TIM_SET_COMPARE(timer,channel,half_duty);
+      |                                             ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/DRV8825.o] Error 1
 make: *** Waiting for unfinished jobs....
 "make -j12 all" terminated with exit code 2. Build might be incomplete.
-19:22:11 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:09:00 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21136	     12	   2260	  23408	   5b70	NEOPIXELS.elf
+   9812	     12	   1660	  11484	   2cdc	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:25:52 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:09:54 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21200	     12	   2260	  23472	   5bb0	NEOPIXELS.elf
+   9876	     12	   1660	  11548	   2d1c	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:26:51 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:12:13 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21200	     12	   2260	  23472	   5bb0	NEOPIXELS.elf
+   9876	     12	   1660	  11548	   2d1c	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:28:29 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:15:02 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+../Core/Src/DRV8825.c:57:30: error: unknown type name 'TIMOUT'
+   57 | void stop(DRV8825_t* driver, TIMOUT)
+      |                              ^~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/DRV8825.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:15:10 **** Incremental Build of configuration Debug for project DRV8825 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/DRV8825.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DRV8825.d" -MT"Core/Src/DRV8825.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DRV8825.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9888	     12	   1660	  11560	   2d28	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-19:28:50 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:16:32 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2260	  23368	   5b48	NEOPIXELS.elf
+   9952	     12	   1660	  11624	   2d68	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-08:33:55 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:18:19 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
  
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+  10144	     12	   1660	  11816	   2e28	DRV8825.elf
 Finished building: default.size.stdout
  
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  
-08:35:07 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+01:20:56 **** Incremental Build of configuration Debug for project DRV8825 ****
 make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DRV8825.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\DRV8825\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DRV8825.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DRV8825.elf
+ 
+arm-none-eabi-size  DRV8825.elf 
+arm-none-eabi-objdump -h -S DRV8825.elf  > "DRV8825.list"
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
+  10144	     12	   1660	  11816	   2e28	DRV8825.elf
 Finished building: default.size.stdout
  
-08:35:23 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
-   text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2004	  23112	   5a48	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-08:41:28 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
-   text	   data	    bss	    dec	    hex	filename
-  21088	     12	   2004	  23104	   5a40	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-Finished building: NEOPIXELS.list
+Finished building: DRV8825.list
  

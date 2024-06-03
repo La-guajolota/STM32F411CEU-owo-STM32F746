@@ -1,0 +1,4 @@
+../Core/Src/DRV8825.c:32:6:init_driver	16	static
+../Core/Src/DRV8825.c:57:6:stop	16	static
+../Core/Src/DRV8825.c:70:6:move	16	static
+../Core/Src/DRV8825.c:125:6:move_steps	24	static

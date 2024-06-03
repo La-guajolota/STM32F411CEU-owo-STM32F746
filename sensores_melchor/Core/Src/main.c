@@ -251,7 +251,8 @@ int main(void)
 	  //Seteamos los valores de rpm y la frecuencia de vibracion
 	  gu32_Freq = 0;
 	  piezo_Freq = 0;
-	  HAL_Delay(1000*60*3);
+	  //HAL_Delay(1000*60*3);
+	  HAL_Delay(3000);
   }
   /* USER CODE END 3 */
 }

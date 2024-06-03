@@ -16,7 +16,7 @@
 /*
  * Defines
  */
-#define MAX_LED 3 //cantidad de leds
+#define MAX_LED 4 //cantidad de leds
 
 /*
  * Estructuras

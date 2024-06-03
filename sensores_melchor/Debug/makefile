@@ -60,8 +60,8 @@ all: main-build
 main-build: sensores_melchor.elf secondary-outputs
 
 # Tool invocations
-sensores_melchor.elf sensores_melchor.map: $(OBJS) $(USER_OBJS) E:\Sexto_sem\MCU_avanzados\sensores_melchor\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "sensores_melchor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"E:\Sexto_sem\MCU_avanzados\sensores_melchor\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensores_melchor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+sensores_melchor.elf sensores_melchor.map: $(OBJS) $(USER_OBJS) D:\Sexto_sem\MCU_avanzados\sensores_melchor\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "sensores_melchor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Sexto_sem\MCU_avanzados\sensores_melchor\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensores_melchor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

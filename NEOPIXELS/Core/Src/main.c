@@ -126,7 +126,7 @@ int main(void)
 
 	//Actualizamos los valores
 	for (int num=0;num<MAX_LED;num++) {
-		Set_LED(&regleta_leds,num,254,254,254);
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
 	}
 
 	//Mandamos los valores
