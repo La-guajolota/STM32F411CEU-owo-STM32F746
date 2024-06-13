@@ -1,10 +1,10 @@
-17:20:11 **** Build of configuration Debug for project NEOPIXELS ****
+17:54:28 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
 arm-none-eabi-size  NEOPIXELS.elf 
    text	   data	    bss	    dec	    hex	filename
-  21096	     12	   2052	  23160	   5a78	NEOPIXELS.elf
+  27872	     12	   2756	  30640	   77b0	NEOPIXELS.elf
 Finished building: default.size.stdout
  
 
-17:20:11 Build Finished. 0 errors, 0 warnings. (took 307ms)
+17:54:28 Build Finished. 0 errors, 0 warnings. (took 199ms)
 

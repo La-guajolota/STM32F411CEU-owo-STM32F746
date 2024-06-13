@@ -9,22 +9,24 @@
 #define INC_NRF24L01_H_
 
 #include "stm32f1xx.h"
+#include "main.h"
 #include <stdbool.h>
 
 
 /* User Configurations */
-#define NRF24L01P_SPI                     (&hspi2)
+extern SPI_HandleTypeDef hspi2;
+#define NRF24L01P_SPI                     &hspi2
 
-#define NRF24L01P_SPI_CS_PIN_PORT         GPIOB
-#define NRF24L01P_SPI_CS_PIN_NUMBER       GPIO_PIN_13
+#define NRF24L01P_SPI_CS_PIN_PORT         CS_GPIO_Port
+#define NRF24L01P_SPI_CS_PIN_NUMBER       CS_Pin
 
-#define NRF24L01P_CE_PIN_PORT             GPIOB
-#define NRF24L01P_CE_PIN_NUMBER           GPIO_PIN_12
+#define NRF24L01P_CE_PIN_PORT             EN_GPIO_Port
+#define NRF24L01P_CE_PIN_NUMBER           EN_Pin
 
-#define NRF24L01P_IRQ_PIN_PORT            GPIOA
-#define NRF24L01P_IRQ_PIN_NUMBER          GPIO_PIN_8
+#define NRF24L01P_IRQ_PIN_PORT            IRQ_GPIO_Port
+#define NRF24L01P_IRQ_PIN_NUMBER          IRQ_Pin
 
-#define NRF24L01P_PAYLOAD_LENGTH          8     // 1 - 32bytes
+#define NRF24L01P_PAYLOAD_LENGTH          3     // 1 - 32bytes
 
 
 /* nRF24L01+ typedefs */

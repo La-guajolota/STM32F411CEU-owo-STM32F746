@@ -26,11 +26,13 @@
  * Nativas
  */
 #include <math.h>
+#include <stdbool.h>
 
 /*
  * Del usuario
  */
 #include "WS2812B.h"
+#include "NRF24L01.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,11 +51,13 @@ TIRA_t regleta_leds;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+SPI_HandleTypeDef hspi1;
+
 TIM_HandleTypeDef htim1;
 DMA_HandleTypeDef hdma_tim1_ch1;
 
 /* USER CODE BEGIN PV */
-
+uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH] = {0,0,0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,15 +65,34 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
+/*
+ * Onoff
+ */
+void ONOFF(void);
+
+/*
+ * Efectos RGB
+ */
+void EFECTO1(void);
+void EFECTO2(void);
+void EFECTO3(void);
+void EFECTO4(void);
+void EFECTO5(void);
+
+/*
+ * Efectos de luz blanca
+ */
+void LUZ_BLANCA(uint8_t dim);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-uint8_t colores[3] = {0};
-float N = 0; //timepo en iteracion
+
+
 /* USER CODE END 0 */
 
 /**
@@ -103,11 +126,21 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_TIM1_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+
+  /*
+   * Configuramos el transciver
+   * CANAL 2500Mhz
+   * Baudrate en 1Mbps
+   */
+  nrf24l01p_rx_init(2500, _1Mbps);
 
   //inicializamos la bandera de la tira
   Init_tira(&regleta_leds);
   WS2812_Send(&regleta_leds);
+
+  //Inicializamos el transciver de RF
 
   /* USER CODE END 2 */
 
@@ -119,29 +152,42 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	//Calculamos los colores para dar efecto
-	colores[0] = (uint8_t)(254.0*((sin(N           )+1.0)/2.0));
-	colores[1] = (uint8_t)(254.0*((sin(N + (2.0*PI)/3)+1.0)/2.0));
-	colores[2] = (uint8_t)(254.0*((sin(N - (2.0*PI)/3)+1.0)/2.0));
+	  /*
+	   * Maquina de estados para
+	   * efectos de RGB
+	   */
 
-	//Actualizamos los valores
-	for (int num=0;num<MAX_LED;num++) {
-		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
-	}
-
-	//Mandamos los valores
-	WS2812_Send(&regleta_leds);
-
-	if( N <= (2.0*PI)) //Mayor a 360grados
+	if(rx_data[0])
 	{
-		N += PI/100; // +0.9GRADOS
-	}
-	else
-	{
-		N = 0;
+		switch (rx_data[1])
+		{//EFECTOS DE RGB
+			case 0:
+				EFECTO1();
+				break;
+			case 1:
+				EFECTO2();
+				break;
+			case 2:
+				EFECTO3();
+				break;
+			case 3:
+				EFECTO4();
+				break;
+			case 4:
+				EFECTO5();
+				break;
+			case 5:
+				ONOFF();
+				break;
+			default:
+				break;
+		}
+	}else
+	{//EFECTOS DE LUZ BLANCA
+		LUZ_BLANCA(rx_data[2]);
 	}
 
-	HAL_Delay(50);
+
   }
   /* USER CODE END 3 */
 }
@@ -189,6 +235,44 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 10;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+
+  /* USER CODE END SPI1_Init 2 */
+
 }
 
 /**
@@ -289,6 +373,7 @@ static void MX_DMA_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 /* USER CODE BEGIN MX_GPIO_Init_1 */
 /* USER CODE END MX_GPIO_Init_1 */
 
@@ -296,6 +381,37 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : IRQ_Pin */
+  GPIO_InitStruct.Pin = IRQ_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(IRQ_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : CS_Pin */
+  GPIO_InitStruct.Pin = CS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  HAL_GPIO_Init(CS_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : EN_Pin */
+  GPIO_InitStruct.Pin = EN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(EN_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI3_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -307,6 +423,224 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
 	HAL_TIM_PWM_Stop_DMA(&htim1, TIM_CHANNEL_1);
 	regleta_leds.datasentflag = 1;
 }
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == NRF24L01P_IRQ_PIN_NUMBER)
+		nrf24l01p_rx_receive(rx_data); // read data when data ready flag is set
+}
+/*
+ * ONOFF
+ */
+void ONOFF(void)
+{
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,0,0,0);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	HAL_Delay(25);
+}
+
+/*
+ * EFECTOS RGB
+ */
+uint8_t colores[3] = {0};
+float N = 0; //timepo en iteracion
+void EFECTO1(void)
+{
+	//Calculamos los colores para dar efecto
+	colores[0] = (uint8_t)(254.0*((sin(N           )+1.0)/2.0));
+	colores[1] = (uint8_t)(254.0*((sin(N + (2.0*PI)/3)+1.0)/2.0));
+	colores[2] = (uint8_t)(254.0*((sin(N - (2.0*PI)/3)+1.0)/2.0));
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	if( N <= (2.0*PI)) //Mayor a 360grados
+	{
+		N += PI/100; // +0.9GRADOS
+	}
+	else
+	{
+		N = 0;
+	}
+
+	HAL_Delay(15);
+}
+void EFECTO2(void)
+{
+	//Calculamos los colores para dar efecto
+	switch ((uint8_t)N) {
+		case 0:
+			colores[0] = (uint8_t)(255);
+			colores[1] = (uint8_t)(0);
+			colores[2] = (uint8_t)(0);
+			break;
+		case 1:
+			colores[0] = (uint8_t)(0);
+			colores[1] = (uint8_t)(255);
+			colores[2] = (uint8_t)(0);
+			break;
+		case 2:
+			colores[0] = (uint8_t)(0);
+			colores[1] = (uint8_t)(0);
+			colores[2] = (uint8_t)(255);
+			break;
+		default:
+			break;
+	}
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	if( N < 2)
+	{
+		N += 1;
+	}
+	else
+	{
+		N = 0;
+	}
+
+	HAL_Delay(750);
+}
+void EFECTO3(void)
+{
+	//Calculamos los colores para dar efecto
+	switch ((uint8_t)N) {
+		case 0:
+			colores[0] = (uint8_t)(255);
+			colores[1] = (uint8_t)(255);
+			colores[2] = (uint8_t)(0);
+			break;
+		case 1:
+			colores[0] = (uint8_t)(255);
+			colores[1] = (uint8_t)(0);
+			colores[2] = (uint8_t)(255);
+			break;
+		case 2:
+			colores[0] = (uint8_t)(0);
+			colores[1] = (uint8_t)(255);
+			colores[2] = (uint8_t)(255);
+			break;
+		default:
+			break;
+	}
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	if( N < 2)
+	{
+		N++;
+	}
+	else
+	{
+		N = 0;
+	}
+
+	HAL_Delay(750);
+}
+void EFECTO4(void)
+{
+	//Calculamos los colores para dar efecto
+	colores[0] = (uint8_t)(254.0*((sin(N           )+1.0)/2.0));
+	colores[1] = (uint8_t)(254.0*((sin(N + (2.0*PI)/3)+1.0)/4.0));
+	colores[2] = (uint8_t)(254.0*((sin(N - (2.0*PI)/3)+1.0)/16.0));
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	if( N <= (2.0*PI)) //Mayor a 360grados
+	{
+		N += PI/100; // +0.9GRADOS
+	}
+	else
+	{
+		N = 0;
+	}
+
+	HAL_Delay(15);
+}
+void EFECTO5(void)
+{
+	//Calculamos los colores para dar efecto
+	colores[0] = (uint8_t)(254.0*((sin(N + PI/2)+1.0)/2.0));
+	colores[1] = (uint8_t)(254.0*((sin(N)       +1.0)/2.0));
+	colores[2] = (uint8_t)(254.0*((sin(N - PI/2)+1.0)/2.0));
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++) {
+		Set_LED(&regleta_leds,num,colores[0],colores[1],colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+	if( N <= (2.0*PI)) //Mayor a 360grados
+	{
+		N += PI/100; // +0.9GRADOS
+	}
+	else
+	{
+		N = 0;
+	}
+
+	HAL_Delay(15);
+}
+
+/*
+ * EFECTO DE LUZ BLANCA
+ */
+void LUZ_BLANCA(uint8_t dim)
+{
+	/*
+	 * En que punto estamos?
+	 * Cuantos nos vamos a mover
+	 *
+	 * hot                 cold
+	 * 254 <-------------> 0
+	 *
+	 */
+	//Calculamos los colores para dar efecto
+	colores[0] = dim;//R
+	colores[2] = 254-dim; //G
+
+	//Actualizamos los valores
+	for (int num=0;num<MAX_LED;num++)
+	{
+		Set_LED(&regleta_leds,num,colores[0],110,colores[2]);
+	}
+
+	//Mandamos los valores
+	WS2812_Send(&regleta_leds);
+
+}
+
 /* USER CODE END 4 */
 
 /**
