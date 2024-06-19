@@ -1,4 +1,4 @@
-17:21:06 **** Incremental Build of configuration Debug for project sensores_melchor ****
+06:49:13 **** Build of configuration Debug for project sensores_melchor ****
 make -j12 all 
 arm-none-eabi-size  sensores_melchor.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  sensores_melchor.elf
 Finished building: default.size.stdout
  
 
-17:21:08 Build Finished. 0 errors, 0 warnings. (took 2s.26ms)
+06:49:14 Build Finished. 0 errors, 0 warnings. (took 528ms)
 

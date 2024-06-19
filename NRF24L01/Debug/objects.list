@@ -1,4 +1,5 @@
 "./Core/Src/NRF24L01.o"
+"./Core/Src/WS2812B.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"
 "./Core/Src/stm32f1xx_it.o"

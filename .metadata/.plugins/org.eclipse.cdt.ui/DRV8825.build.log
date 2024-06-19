@@ -1,4 +1,4 @@
-07:33:57 **** Build of configuration Debug for project DRV8825 ****
+06:49:01 **** Build of configuration Debug for project DRV8825 ****
 make -j12 all 
 arm-none-eabi-size  DRV8825.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  DRV8825.elf
 Finished building: default.size.stdout
  
 
-07:33:57 Build Finished. 0 errors, 0 warnings. (took 423ms)
+06:49:02 Build Finished. 0 errors, 0 warnings. (took 520ms)
 

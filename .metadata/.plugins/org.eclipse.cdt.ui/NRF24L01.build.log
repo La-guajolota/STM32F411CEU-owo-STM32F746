@@ -1,10 +1,10 @@
-17:07:13 **** Incremental Build of configuration Debug for project NRF24L01 ****
+06:56:32 **** Incremental Build of configuration Debug for project NRF24L01 ****
 make -j12 all 
 arm-none-eabi-size  NRF24L01.elf 
    text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
+  24860	     16	   1968	  26844	   68dc	NRF24L01.elf
 Finished building: default.size.stdout
  
 
-17:07:13 Build Finished. 0 errors, 0 warnings. (took 204ms)
+06:56:32 Build Finished. 0 errors, 0 warnings. (took 366ms)
 

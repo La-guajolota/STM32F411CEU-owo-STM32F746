@@ -1,4 +1,4 @@
-16:21:23 **** Incremental Build of configuration Debug for project NRF24L01 ****
+06:54:09 **** Incremental Build of configuration Debug for project NRF24L01 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "NRF24L01.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\NRF24L01\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NRF24L01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,200 +7,29 @@ Finished building target: NRF24L01.elf
 arm-none-eabi-size  NRF24L01.elf 
 arm-none-eabi-objdump -h -S NRF24L01.elf  > "NRF24L01.list"
    text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
+  24860	     16	   1968	  26844	   68dc	NRF24L01.elf
 Finished building: default.size.stdout
  
 Finished building: NRF24L01.list
  
-16:21:38 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NRF24L01.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\NRF24L01\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NRF24L01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NRF24L01.elf
- 
-arm-none-eabi-size  NRF24L01.elf 
-arm-none-eabi-objdump -h -S NRF24L01.elf  > "NRF24L01.list"
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-Finished building: NRF24L01.list
- 
-17:33:54 **** Incremental Build of configuration Debug for project NRF24L01 ****
+06:55:55 **** Incremental Build of configuration Debug for project NRF24L01 ****
 make -j12 all 
 arm-none-eabi-size  NRF24L01.elf 
    text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
+  24860	     16	   1968	  26844	   68dc	NRF24L01.elf
 Finished building: default.size.stdout
  
-17:44:58 **** Incremental Build of configuration Debug for project Blinkeo_blue ****
-make -j12 all 
-arm-none-eabi-size  Blinkeo_blue.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4668	     12	   1572	   6252	   186c	Blinkeo_blue.elf
-Finished building: default.size.stdout
- 
-17:46:11 **** Incremental Build of configuration Debug for project Blinkeo_blue ****
-make -j12 all 
-arm-none-eabi-size  Blinkeo_blue.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4668	     12	   1572	   6252	   186c	Blinkeo_blue.elf
-Finished building: default.size.stdout
- 
-17:46:27 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-16:40:14 **** Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NRF24L01.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\NRF24L01\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NRF24L01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NRF24L01.elf
- 
-arm-none-eabi-size  NRF24L01.elf 
-arm-none-eabi-objdump -h -S NRF24L01.elf  > "NRF24L01.list"
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-Finished building: NRF24L01.list
- 
-16:43:11 **** Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
-   text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2348	  30232	   7618	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-Finished building: NEOPIXELS.list
- 
-16:45:17 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-16:52:32 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-16:52:55 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-17:02:45 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-17:03:59 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NRF24L01.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Sexto_sem\MCU_avanzados\NRF24L01\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NRF24L01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NRF24L01.elf
- 
-arm-none-eabi-size  NRF24L01.elf 
-arm-none-eabi-objdump -h -S NRF24L01.elf  > "NRF24L01.list"
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-Finished building: NRF24L01.list
- 
-17:04:47 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-17:07:13 **** Incremental Build of configuration Debug for project NRF24L01 ****
-make -j12 all 
-arm-none-eabi-size  NRF24L01.elf 
-   text	   data	    bss	    dec	    hex	filename
-   9732	     16	   1664	  11412	   2c94	NRF24L01.elf
-Finished building: default.size.stdout
- 
-17:09:04 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+06:56:14 **** Incremental Build of configuration Debug for project NEOPIXELS ****
 make -j12 all 
 arm-none-eabi-size  NEOPIXELS.elf 
    text	   data	    bss	    dec	    hex	filename
   27872	     12	   2348	  30232	   7618	NEOPIXELS.elf
 Finished building: default.size.stdout
  
-17:27:45 **** Incremental Build of configuration Debug for project NEOPIXELS ****
+06:56:32 **** Incremental Build of configuration Debug for project NRF24L01 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
+arm-none-eabi-size  NRF24L01.elf 
    text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2100	  29984	   7520	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-Finished building: NEOPIXELS.list
- 
-17:29:48 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
-   text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2348	  30232	   7618	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-Finished building: NEOPIXELS.list
- 
-17:30:22 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/WS2812B.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/WS2812B.d" -MT"Core/Src/WS2812B.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/WS2812B.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "NEOPIXELS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Sexto_sem\MCU_avanzados\NEOPIXELS\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEOPIXELS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NEOPIXELS.elf
- 
-arm-none-eabi-size  NEOPIXELS.elf 
-arm-none-eabi-objdump -h -S NEOPIXELS.elf  > "NEOPIXELS.list"
-   text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2756	  30640	   77b0	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-Finished building: NEOPIXELS.list
- 
-17:53:33 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
-   text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2756	  30640	   77b0	NEOPIXELS.elf
-Finished building: default.size.stdout
- 
-17:54:28 **** Incremental Build of configuration Debug for project NEOPIXELS ****
-make -j12 all 
-arm-none-eabi-size  NEOPIXELS.elf 
-   text	   data	    bss	    dec	    hex	filename
-  27872	     12	   2756	  30640	   77b0	NEOPIXELS.elf
+  24860	     16	   1968	  26844	   68dc	NRF24L01.elf
 Finished building: default.size.stdout
  
